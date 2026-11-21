@@ -1,0 +1,2089 @@
+P0041 port build transcript
+platform: Linux x86_64 (6.8.0-149-generic)
+lean: leanprover/lean4:v4.36.0 -> Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+archive: 14 parts from https://alpo.ge/lean.tar.gz.partNN, all matching parts.sha256
+lakefile.toml: the archive's name, srcDir, moreLeanArgs, leanOptions and Mathlib require (rev changed to the target),
+               with only the `Development` lean_lib (as in the archive) and no defaultTargets
+tree: the 64 pinned packet sources, each matching tracker/modules.jsonl.gz, plus port/patches/<ID>.patch
+      applied with `git apply --whitespace=error-all` where present (16 modules); the other 48 are unchanged
+command per module: lake build +<Module>:olean (fresh .lake/build)
+
+| ID | module | patch | source sha256 (pinned) | built file sha256 | olean sha256 | exit |
+| M093542 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsMultilinearSlotwiseExtensionOfEquivariant | yes | 30ebec99b99e11db35a821775409f46cf22164ac974f824b4dfb6c292f1d9f09 | f96fd85e62c2834e0a9ba1d387cca2bc1c87241c53dfde6881db0206a9475ea3 | 33ac5daa0a219384388d027fb73eb08c1d9758f20481c8724b2de753746e8a2e | 0 |
+| M093564 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNonzeroIntSmulMemOfIsLattice | yes | a49d36f039fb49b28059d4673d8733cfda35de57b54d264180872060d0f4b65f | 81df1ba6cb1ef8bb3dd402ac4048b8586ecec3313d68c615d96bb62f6ea23b67 | 70d95084630716be60ab946c04186db8b38311fcb53f084408900ea37eb1ef1d | 0 |
+| M093574 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNsmulMemLattice | yes | caf17c1098eb71105320fb552993b8ccfe9cc5a39a02c6ef0e861e3511d710ed | 8d8c791e2877b057db950c2a9a161ca1e4f31e156c92cb04a675f3c337719be4 | 21b5b72990538a9c6e52d81da8eccc641102eed2bb45f1a07cd6fe88f6ccaa17 | 0 |
+| M093753 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSmoothMulExtensionOfContinuousChar | yes | 2d2db9af24e6c358497d4204958a57ccf43d3f139dda422c6cdf3c7db3a74ebb | 6b792702d0cd8d24fc42ccece0a0e7d9ea3e19ceabbf9d0e3a87fea276536efc | fc8c82e9920c407b7f01f5a47dcac490de0130b27424114a8ebf490cb72cd55b | 0 |
+| M093897 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExpandPiOfExpandEach | no | cf866ebf29e2f9aa1007e1a6046ab1350d6d33d27169a75a98578d30a8300d09 | cf866ebf29e2f9aa1007e1a6046ab1350d6d33d27169a75a98578d30a8300d09 | f3df515138bf501255e7cc5b8d905be49a80e5e59cbf8a28ac991e07c18acffb | 0 |
+| M093949 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteAndNcardMinpolyCoeffHeightLe | yes | 04afe51417ff25301a9ed757ffbee3d9f70fb23d2c342efbaa5c635f4c143498 | 679eb10dcfc47d384c04f4c8bed92fdd7d812c636105a665377a4b6012bf98b3 | 890da38085fa536c17397fa4771a3556de2a482e167d4f5c3f08ae76de3457ba | 0 |
+| M094039 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinrankEqCardMulAndTraceEqZeroOfFreeValues | no | 6bc1c3635caa1fb80015f6ddf1a96f94d8fd8a8853f4903ddd695d3279863d41 | 6bc1c3635caa1fb80015f6ddf1a96f94d8fd8a8853f4903ddd695d3279863d41 | 3675f483cb42076538a3fa7ed7de58ca7bd832c2a184f1ddb1ecfe025e39fad6 | 0 |
+| M094042 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinsetFunctionsRecoveredFromValues | no | 7a366683fa15a91cc36832a075d409fc6c669103cf14a8885967e9d7163700c0 | 7a366683fa15a91cc36832a075d409fc6c669103cf14a8885967e9d7163700c0 | 19aa67e4e953c07538973a5724cd4a72bdd3498797834ac587c9d46fa79815df | 0 |
+| M094302 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.FourierUniquenessOfOpenSubgroup | yes | 9eeed483e01bd9994715faff3ca5b6343baaaf3bbc3fcd09e30591e276a251d5 | 656af50e6a785f014c4c7078a1177b64056267f2dbc54d16dd5702ec98a5eff7 | d574ff201183d7c52e91a3c4b5ca4710928ce7c370965c9b1f41cb2aebb6c928 | 0 |
+| M094346 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.FromColsMulVecEqZero | no | d8eaae19fbb9b497e036bea252d83f6ec64357bfffae5e203080cd609228cee1 | d8eaae19fbb9b497e036bea252d83f6ec64357bfffae5e203080cd609228cee1 | 502d2f79c56a12befad1185f1e97a90023d547a00e9d1263d47d58a6a72f596e | 0 |
+| M094347 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.FubiniRightConvolutionBoundedContinuous | no | e4f3314966e4a169239b7ca95638b26bebd06a069165748dc65fd34ff81cb30d | e4f3314966e4a169239b7ca95638b26bebd06a069165748dc65fd34ff81cb30d | 317526d0b81471eecf617fa9108edf04878c44a8fb2a5639a95c35473d59a18e | 0 |
+| M094472 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.GradedSeriesContinuationDominated | yes | 5bd21f87823ab8a8817eaf32dcb2ceb264a2e59889d4ce876323e4179988f0e9 | 546f5fe91db4ec89af628a815ad7ad01c5b3d08701971cf9b6ce90603fed1d63 | 504ce16b355d1d2ab0d96d6de57b4adc8bc24b490cbe16c083526888652cc266 | 0 |
+| M094558 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.HaarMapMulRightOfMemCompactSubgroup | no | 2d904d52a6f98b8da0b4c180201cee619164239d6799bb9210d219c5db1df33b | 2d904d52a6f98b8da0b4c180201cee619164239d6799bb9210d219c5db1df33b | af18b052c555184b8c31666190becb8cea70b2721fcb18ee7103fcec28ec8187 | 0 |
+| M094564 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.HaarTraceConjEqConstMulKernelImage | no | 0a161efce7f7877c8ac01714baf0bd29d2b2d971964f53f521ee45c6f79b2a8b | 0a161efce7f7877c8ac01714baf0bd29d2b2d971964f53f521ee45c6f79b2a8b | e0ef553b218d526d1fb8dbf2cebdeac396244e62a2443f3c9b76101838879a0a | 0 |
+| M094631 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumCosetsEulerProduct | yes | a7473e90123799b7cbe264de1c0059df4e4bf5d060b3e47cb90d6e44e44d74fc | abf1b47737033b7e616846e3c184cf1416228bb0ea215a7608ebd756ee7fa7d6 | ffdac34c0020480033fd79e782cc04ae959d021df9bb6dbc1075064b3b4e689a | 0 |
+| M094633 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumCosetsSmallerLevelRelIndexMul | no | aa29a19a1bb2857b2628e12f5cac30181892de7cea406a7c39476dd478fb65a5 | aa29a19a1bb2857b2628e12f5cac30181892de7cea406a7c39476dd478fb65a5 | 014b83bd5da0cdba556bb6051bb2c7e8f8022142f1603d8d447b496b7e5b4ab7 | 0 |
+| M094637 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumEqSumOfMatchingFamily | no | 73b82e6d3b8dc395c21d23da8f3fc9bb67577b93f81ac662c1f742542f2661a8 | 73b82e6d3b8dc395c21d23da8f3fc9bb67577b93f81ac662c1f742542f2661a8 | a643b957888d4502caa1030b14f117019638e9e7c9d50533f5514ebde9d7ee09 | 0 |
+| M094649 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumOfDominatedOfEqNearZero | no | 0e1ca14e3ef3b36ee5de180a9cc96f54ad4071af7b30bc29638adbb0ac925e0a | 0e1ca14e3ef3b36ee5de180a9cc96f54ad4071af7b30bc29638adbb0ac925e0a | f9703655923c62f4bfa90f8a1bd95f0c4f12afd582a5820d35afabccb710aba8 | 0 |
+| M094650 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumQuotientTransport | no | a8fadf717eaeb911320d628529208689c0e0d6a54d12335cf3b02c775c2699b1 | a8fadf717eaeb911320d628529208689c0e0d6a54d12335cf3b02c775c2699b1 | 9d6975b6ef1208d9ee38c5f3a440d724ef2d0dd86da855defc2c450f84619521 | 0 |
+| M094795 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermiteReductionUnipotent | no | 75659c85d6696311f04994e72ad48a6d0c28309beea421a35ec290c99f4443af | 75659c85d6696311f04994e72ad48a6d0c28309beea421a35ec290c99f4443af | 4a6cffedb9fed2a39bbaa52601ff46f2ec7a2d35562fbfb56df6a916f5ff209d | 0 |
+| M094903 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.Imports | no | cd5d6874fbe30a95824de5c547341063c8f16bce25dfa6b3c6a18fe024aaf127 | cd5d6874fbe30a95824de5c547341063c8f16bce25dfa6b3c6a18fe024aaf127 | 9a8e48766a90b20cf8a61deb6173e25be33797f9ab4faeb0bee8e75bdf0c1d85 | 0 |
+| M094904 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsAlt | no | b4341750bea8722374696e2c45601a48aa7ade01142b9d7e3fa6bd06c5a8f338 | b4341750bea8722374696e2c45601a48aa7ade01142b9d7e3fa6bd06c5a8f338 | c6d086e70c4c6e72e965774dc0385f41c83a69c5bbc8800abf9f73ef59e1719b | 0 |
+| M094905 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsBis | no | 44168655e3768b49189856e959f385716ac4ae910132700df244992f0b9f180c | 44168655e3768b49189856e959f385716ac4ae910132700df244992f0b9f180c | 286fcdc9b88f3409d42e1511bb6b1ddc424ffe575eaf25f77a99d5c45ce64798 | 0 |
+| M094907 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsFurther | no | c369258f121374a592f5052117dbfaa57a41812ee652e3baccea3f72165cb76d | c369258f121374a592f5052117dbfaa57a41812ee652e3baccea3f72165cb76d | 6dbdb444c347b0a3b38d37f5bc324a61181518726f1eb0883c938d8966f0896f | 0 |
+| M094908 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsMore | no | 834c4eae03abf24482913f4f05eb2643a05961c6ae41f193c8e406eaa3bd1b28 | 834c4eae03abf24482913f4f05eb2643a05961c6ae41f193c8e406eaa3bd1b28 | d53c5e5c2b92bc2e7704d1c716961ee90f7ca55cb0cdd330be54d9746f43739d | 0 |
+| M094909 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsTer | no | 131596b842f4843e0270c5f607e4726ba00e8451cb84473073754f545dd3a577 | 131596b842f4843e0270c5f607e4726ba00e8451cb84473073754f545dd3a577 | f77297c4e4d9671529b037ccc82af63df82339e23135556bebd8a11e89960a60 | 0 |
+| M094964 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.InjectiveSumOfLinIndepIntertwiners | no | e5a2b011fae27e8188e82f0a4b0ef269d0abc8325d53f942a880f9f6805be1e4 | e5a2b011fae27e8188e82f0a4b0ef269d0abc8325d53f942a880f9f6805be1e4 | 25e8d4c67b63c4161c0cf67987a839f76919245541114a25bb392c1a8bad34a6 | 0 |
+| M094974 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.InnerMapEqConstMulProdInner | yes | d05e951c56a53524151d0f720af0887da7f117ee4e3b0642bf155287693d4695 | 834b9d1623b740c2d9df6e73cf48d84ebea172153e03172dd3ce00d7b90993f5 | 18bbea0ff708e28ec91056da4c43a8730497f2b4c9e07cfb2f3cce67bef02d0f | 0 |
+| M095000 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableOfTsumTranslateNormLe | no | d5b4811150c9477803f5ae03962e8e0cf83e9e7bf37f31d304e5605b2d7e2087 | d5b4811150c9477803f5ae03962e8e0cf83e9e7bf37f31d304e5605b2d7e2087 | 1ca9d079d4b8bff08d559bf839c7934de7abd43e2feb352cddd8b3698d6395bc | 0 |
+| M095024 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralContinuousMultilinearMapPiMeasure | no | 4b85fc49496ef1440421ae1b6847ed54c5ce7619231411c0ab6eaf2055b56e6f | 4b85fc49496ef1440421ae1b6847ed54c5ce7619231411c0ab6eaf2055b56e6f | 76cc371ecd2ca53a290874adb4c5d621bc5e89108c276fef962eb19a98aedec6 | 0 |
+| M095049 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralHaarEqZeroOfFibreIntegralsEqZero | yes | d5cc62cc7a95c051a075381242bc93717c8cb7e8d29ca7c46405cc000bdd5a2a | 9174b035cfe33abb6edd31af66d8caf90a5cf05d4ad41e0151ee3537f630b16c | 46f24459c8bfb10e30bfbe0ebd0da0e6dba411fa86a33e22254d2d6ba9e78015 | 0 |
+| M095099 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntertwinerMemISupRangeEqSumSmul | no | cb2c533ed53103446392397eb2b3b5a1129c3af73120310614c7ed2dc59d4107 | cb2c533ed53103446392397eb2b3b5a1129c3af73120310614c7ed2dc59d4107 | f19189685d11472a4e28c09267bb27d010ad7caad02f27332f40e378cb5b3ea3 | 0 |
+| M095126 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.IrreducibleUnitaryVectorDensity | no | ceecae65a8af18f4216deb8c741ad97a2903ae3084e733b0985262db6e30fd79 | ceecae65a8af18f4216deb8c741ad97a2903ae3084e733b0985262db6e30fd79 | 7ed435a3e20fb13d81ca3d7628809f35ac5d9072af1e40003336bd925e67cee6 | 0 |
+| M095383 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsotypicFactorOfIsIrreduciblePiFiniteGroups | no | f881dcaac9d4aca025b59e4fab85c255041adcc5a18abe7bff34ee2d42ca3189 | f881dcaac9d4aca025b59e4fab85c255041adcc5a18abe7bff34ee2d42ca3189 | 241357ebe14a01adf8545bfebb71a37149fc5083eb9f5b3c3eb11af42d4649bb | 0 |
+| M095588 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeSumProdNormLeOfProdNormLowerBound | yes | df0d62d9432d211a2a5811edc217052664c0529f53abddf437e527584f13b815 | 0941fb4967dc7dd0b73a57a1caebef4b072b4ce96b9672487fbab0dd5150e690 | 7e4616c8c3d80a96d3c37f94dcdfc71059e53f1a4e4d7672624a2ba6ea9b604b | 0 |
+| M095752 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralFundamentalDomainLeOfMeetsOrbits | no | 1d220f9929052afd5ac9a517660cf2eeb440cd8c3579b01022c0a4700f09c93e | 1d220f9929052afd5ac9a517660cf2eeb440cd8c3579b01022c0a4700f09c93e | c87b09d2e5d74e92c58137fbbe9d27d6db3d9d79ea538b74fd929fc8986343c3 | 0 |
+| M095754 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralHaarEqCompactSubgroupTransversal | yes | add74b52c27349fa8c91fa573983f21907608191aec8888077f881938e0ec11f | 7832b1e4b7162c9b80d3f4a91435366c8683d3be3dbeacfad695da4b1f0e15bd | 5284220dcdb692c6e36dd82698632319f465562b2166da63335824858021c0f8 | 0 |
+| M095761 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralUnfoldingLeOfTranslateCover | no | d10ebc65efc78f72a09238cb972daa718f926cdcbb675c5f681480bd2110c876 | d10ebc65efc78f72a09238cb972daa718f926cdcbb675c5f681480bd2110c876 | ca9ce7c9a12913de1dd051d8d853f8f66967352d65a802f77e7af97cc8cc5f91 | 0 |
+| M095854 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.MainThm | yes | e73cdc0a3ecba78641e1b75326c1d8bff26a9d46cfc35c5cb4a9eb8e164cb550 | 19dbdcfeae8c34b0820d336f3d00f8851f0fe877fe7c5b624cf1cc81e4ea29c4 | bf6d8d1388f49b49bf49709429ba9cf82f1378645c506896843b3bcc98bcbd6e | 0 |
+| M095938 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.MeanFundamentalDomainOfLe | no | de67c2b75b8fec6fa03f69557b14b88be906d63887d9ce251a5a1e72790dcc8b | de67c2b75b8fec6fa03f69557b14b88be906d63887d9ce251a5a1e72790dcc8b | 25c464162bb7d0fa6564277b5e3fe9cb0455c86c9442a2eefbfcf19970921a9c | 0 |
+| M095940 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.MeanPeriodicIndepOfCovolumeOne | no | 077fbce28f2d9aefbae83b45ce660a9f6a1f4f0b227509d1465316884ef436f1 | 077fbce28f2d9aefbae83b45ce660a9f6a1f4f0b227509d1465316884ef436f1 | 557d59ea1a64e4ef60dc157351780e6dae78850937922fdbd04bf6c5c221906b | 0 |
+| M095960 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemClosureOfForallDualVanish | no | d86141a59b5049282cb6cee7e0c15449f67325a7c461d10c1a2154157201409b | d86141a59b5049282cb6cee7e0c15449f67325a7c461d10c1a2154157201409b | 3ec8565fd36dbd03eeb5ab9c252f5b98aefbdace48a7a8299d014d88e5fb20db | 0 |
+| M096058 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemSymplecticLieAlgebraOfExpSmulMemSymplecticGro | no | 7676e6465ec192d5458c368cd3cfb22ee57dd5352bcd2533d6c414f2f34518ed | 7676e6465ec192d5458c368cd3cfb22ee57dd5352bcd2533d6c414f2f34518ed | 041f8c4c565c9b9c2f4cdaea4c88e48f9dbb37d722b6134ed9c8b55cd13dcfa1 | 0 |
+| M096151 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultiplicativeHasDerivAtZero | no | 8bd7cd355c21d53186b7e17041766ff199660bd04cc8c8fae25a3ab48f332276 | 8bd7cd355c21d53186b7e17041766ff199660bd04cc8c8fae25a3ab48f332276 | 98e5c77a924f611ff58e8334f2f60b16da2be5169d4b765836c1c0ec60fc56df | 0 |
+| M096171 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.NatCastMemOfPrimeDvdAbsNorm | no | 4745c71f0f8c71f3ce248ec7f41f9f691a0618154a76ea8158ff8ae8891594e0 | 4745c71f0f8c71f3ce248ec7f41f9f691a0618154a76ea8158ff8ae8891594e0 | e0ecdb3f7f6adf1eda759edb252758448c2666dc34f86ba4fbaca50e0ca99752 | 0 |
+| M096209 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.NewtonRecursionPolyUnique | yes | 749c6012da64319f475b7243ab7b32f87f689f65ac6e21975cdbfb868601ee81 | 8527434854c0143555aab61deb0a626370169235fc7c5f2eb7b8ad88eeb50918 | 8081de21fdac45a5c16a4197014e5450b1ddd603af15f111a23b33361c7af1c6 | 0 |
+| M096247 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormCreationAnnihilationWordLeNumberOperatorPow | no | eb53ab13bdd261fedc97159b56ba808ffb8a304f67d2f5e17c3be3aff4e065f6 | eb53ab13bdd261fedc97159b56ba808ffb8a304f67d2f5e17c3be3aff4e065f6 | c0f3d697ec18017046f69a40efab076ce63963712921595886181d151fbeb1c3 | 0 |
+| M096260 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormLeOfCompleteHomogeneousLe | no | 28fee4f01662044f1905660e9009367e6578b38602a80948e0181188a56f2db9 | 28fee4f01662044f1905660e9009367e6578b38602a80948e0181188a56f2db9 | a8c8c8c08b99425b03cc940613637f414d6f44fe91dc112844ad66a56f49b120 | 0 |
+| M096311 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.NotLocallyFiniteQuadraticMulAddDegreeNonraising | no | c9cb0b7bd29144b6496c692b34e45ee4d2f714ba8b9f6197166302cb7426a3eb | c9cb0b7bd29144b6496c692b34e45ee4d2f714ba8b9f6197166302cb7426a3eb | 6b3790ec9783ffcf704fe4c9acc9430814ead61b2e6fdaa58155f1f6c556f00e | 0 |
+| M096317 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.NullMeasurableSetShearImage | yes | aaaf160624a55bdc618b2503f50732859358a6d89005a2976d883c47b0b0919c | 27b63ed419a85d2e8be656853b31b54579b3d7168d402b7d448c1a5911dfddcf | 0b65e0e72514a1860bac9406f571866a5d06b45556fdc7c9b1f25809b3cfb82c | 0 |
+| M096539 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.PosDefConjTransposeMulSelfEqExpPolynomial | no | 3913f44a54a55181316d283b3b97922f520a70c96312548536fde5268626a195 | 3913f44a54a55181316d283b3b97922f520a70c96312548536fde5268626a195 | 2e9b3a66291ef588dfa3249a780511db3bae1a6ccd7e2d65e0475fbdbb698e1b | 0 |
+| M096549 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.PowSubCreationVacuumFockBound | no | 22e374746d8cfb635d91fb6afe8aad8d5379c66c786fe415098786a725ae3b8d | 22e374746d8cfb635d91fb6afe8aad8d5379c66c786fe415098786a725ae3b8d | f03955f29838a4433cccd8521fbb1f4568bab60dd5a76b0438a05c9beb3fc378 | 0 |
+| M096566 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdEqSumOfFactorwiseLinearExpansion | no | 08b459f12b304692654a8a140c68256e190499429279cadf43d737f5fa4c3d1d | 08b459f12b304692654a8a140c68256e190499429279cadf43d737f5fa4c3d1d | 2f2fc8b5bac6aa7fb9970af22f4b227cfd7af02b8f5003f1bb24aedb11006d18 | 0 |
+| M096568 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdMapMulSingleApply | no | edb515ba68557dc5e420ff0c973e70a29699e138e04cb07192a776aa7af118b2 | edb515ba68557dc5e420ff0c973e70a29699e138e04cb07192a776aa7af118b2 | df7284ef926cb8f1027f32c48859045fa577f7b523551be69d6606fdef8c37b6 | 0 |
+| M096577 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdSubProdLe | no | 26f96d7d03973e68c87f301734e4de45ebc8d9efd8a2af48c6fecf7fa0343458 | 26f96d7d03973e68c87f301734e4de45ebc8d9efd8a2af48c6fecf7fa0343458 | fb007970347ee5f3ef9c389595877649912bde85e32974de005ccd1a98591707 | 0 |
+| M096814 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.RelIndexEqOfMap | no | e400353de3e072b7474d194dd9051f229d931f1176cfc69fffb9aede4fc24aa6 | e400353de3e072b7474d194dd9051f229d931f1176cfc69fffb9aede4fc24aa6 | 1229d89766727888be6438749652f45175c7e2b63f5d4a48b7541955d9f395b3 | 0 |
+| M097050 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzEqGaussianOfFderivAddEqZero | no | 4265f07c7942a27ed0bf1fc526bb08d28e33b9539076ddae27269a8ec65bcef9 | 4265f07c7942a27ed0bf1fc526bb08d28e33b9539076ddae27269a8ec65bcef9 | 0722f3d927192dee126370d7e7f009162ccab73a86190b50fd761dc4e135e805 | 0 |
+| M097052 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzEqZeroOfWrongSignGaussianRelation | no | d06f7521595e0a401f46e8c006066b89e7fc309953237169f53cf18b10c7ead9 | d06f7521595e0a401f46e8c006066b89e7fc309953237169f53cf18b10c7ead9 | 2666143f81a18710addf9b3690e66c06f34d333c913db39fb634fd9676a219d4 | 0 |
+| M097217 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.SimpleOver | no | 7883d36664d80972367b01fd5ff0085286f9d7efbe08e89b2f991cbc50a7efc6 | 7883d36664d80972367b01fd5ff0085286f9d7efbe08e89b2f991cbc50a7efc6 | 6b7d432e85c20332f07b34b2690ae4d62a021c432efcc0487e36aa148fd07482 | 0 |
+| M097447 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.SubmodulePowSimpleEqSumEquivValues | no | 5443bc09cf053f10752e1fa3c003c78a57a0683d656984072f8bee21cd47ae8c | 5443bc09cf053f10752e1fa3c003c78a57a0683d656984072f8bee21cd47ae8c | ea69a2a10342d62cf409d6d1318fc07e31c3131051b4658ca1e63a00e10d95dd | 0 |
+| M097461 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumFourSwap | no | c28f44a54f0c72c52adad71b4018e8707d2ccc46b6ee5c94cb0c42980e19f26b | c28f44a54f0c72c52adad71b4018e8707d2ccc46b6ee5c94cb0c42980e19f26b | c3d359e917a4659ad1eb564c502cc765caf175c4777db769599ec0ec5f83bb47 | 0 |
+| M097468 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumProdUpdateRegroup | no | e919f848652e2e973dc3a2df8b2c2e8c33f4eb39e36520c7bfdf7ed9ab7ee88c | e919f848652e2e973dc3a2df8b2c2e8c33f4eb39e36520c7bfdf7ed9ab7ee88c | f146886e5ab29ed4db461541628a54f7fe1a8b4d9e1455e8a11177f24f2f5437 | 0 |
+| M097481 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.SummableNonnegFamilyOfDifferentiableOn | yes | 80545a9034daf51a91ad8d161b0855bd041f76d08ae3e86e71406f2136dae137 | 85b4e5ba4c1468f28e30c173d1c1a254faaf21e342a73182fb24fcf9472e1441 | 73baf51bd5948d877d438c4ddf1ca0d82e926be0ee7f70b2731dda94eee9d065 | 0 |
+| M097482 | Development.AbelianVarietyTheory.Proofs.TwistedOperators.SummableNormCosetOut | no | 72678e4ee660533a299cdbe5870c6256c7a7180c79e05c9bd688de3ded0198a0 | 72678e4ee660533a299cdbe5870c6256c7a7180c79e05c9bd688de3ded0198a0 | 80bb49ce8b544ad4ab5ae2cbe3a9bbc70edcce8fbe6141b86ccc8c5ce3604cf6 | 0 |
+
+====================================================================================================
+M093542  Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsMultilinearSlotwiseExtensionOfEquivariant
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsMultilinearSlotwiseExtensionOfEquivariant:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsMultilinearSlotwiseExtensionOfEquivariant (33s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsMultilinearSlotwiseExtensionOfEquivariant.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsMultilinearSlotwiseExtensionOfEquivariant.lean:68:30: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsMultilinearSlotwiseExtensionOfEquivariant.lean:80:51: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsMultilinearSlotwiseExtensionOfEquivariant.lean:240:55: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M093564  Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNonzeroIntSmulMemOfIsLattice
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNonzeroIntSmulMemOfIsLattice:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNonzeroIntSmulMemOfIsLattice (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsNonzeroIntSmulMemOfIsLattice.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsNonzeroIntSmulMemOfIsLattice.lean:44:65: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M093574  Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNsmulMemLattice
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNsmulMemLattice:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNsmulMemLattice (14s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsNsmulMemLattice.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M093753  Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSmoothMulExtensionOfContinuousChar
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSmoothMulExtensionOfContinuousChar:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSmoothMulExtensionOfContinuousChar (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsSmoothMulExtensionOfContinuousChar.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsSmoothMulExtensionOfContinuousChar.lean:116:18: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsSmoothMulExtensionOfContinuousChar.lean:117:53: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M093897  Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExpandPiOfExpandEach
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExpandPiOfExpandEach:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExpandPiOfExpandEach (27s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExpandPiOfExpandEach.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExpandPiOfExpandEach.lean:19:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExpandPiOfExpandEach.lean:21:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExpandPiOfExpandEach.lean:60:21: This simp argument is unused:
+  Function.update_of_ne hia
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [H, Finset.mem_insert, hia]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExpandPiOfExpandEach.lean:73:19: This simp argument is unused:
+  Finset.coe_product
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Set.mem_prod, Finset.mem_coe, Finset.mem_product, hmem] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExpandPiOfExpandEach.lean:73:39: This simp argument is unused:
+  Set.mem_prod
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.coe_product, Finset.mem_coe, Finset.mem_product, hmem] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExpandPiOfExpandEach.lean:73:53: This simp argument is unused:
+  Finset.mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.coe_product, Set.mem_prod, Finset.mem_product, hmem] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExpandPiOfExpandEach.lean:74:19: This simp argument is unused:
+  Finset.mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hmem]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExpandPiOfExpandEach.lean:80:19: This simp argument is unused:
+  Finset.mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hmem] at hJ'
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExpandPiOfExpandEach.lean:81:19: This simp argument is unused:
+  Finset.coe_product
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Set.mem_prod, Finset.mem_coe, Finset.mem_product, Finset.mem_univ, and_true, hmem]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExpandPiOfExpandEach.lean:81:39: This simp argument is unused:
+  Set.mem_prod
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.coe_product, Finset.mem_coe, Finset.mem_product, Finset.mem_univ, and_true, hmem]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExpandPiOfExpandEach.lean:81:53: This simp argument is unused:
+  Finset.mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.coe_product, Set.mem_prod, Finset.mem_product, Finset.mem_univ, and_true, hmem]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExpandPiOfExpandEach.lean:90:19: This simp argument is unused:
+  Finset.coe_product
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Set.mem_prod, Finset.mem_coe, Finset.mem_product, hmem] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExpandPiOfExpandEach.lean:90:39: This simp argument is unused:
+  Set.mem_prod
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.coe_product, Finset.mem_coe, Finset.mem_product, hmem] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExpandPiOfExpandEach.lean:90:53: This simp argument is unused:
+  Finset.mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.coe_product, Set.mem_prod, Finset.mem_product, hmem] at hp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M093949  Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteAndNcardMinpolyCoeffHeightLe
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteAndNcardMinpolyCoeffHeightLe:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteAndNcardMinpolyCoeffHeightLe (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/FiniteAndNcardMinpolyCoeffHeightLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/FiniteAndNcardMinpolyCoeffHeightLe.lean:201:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094039  Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinrankEqCardMulAndTraceEqZeroOfFreeValues
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinrankEqCardMulAndTraceEqZeroOfFreeValues:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinrankEqCardMulAndTraceEqZeroOfFreeValues (8.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/FinrankEqCardMulAndTraceEqZeroOfFreeValues.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/FinrankEqCardMulAndTraceEqZeroOfFreeValues.lean:21:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/FinrankEqCardMulAndTraceEqZeroOfFreeValues.lean:65:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094042  Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinsetFunctionsRecoveredFromValues
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinsetFunctionsRecoveredFromValues:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinsetFunctionsRecoveredFromValues (8.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/FinsetFunctionsRecoveredFromValues.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/FinsetFunctionsRecoveredFromValues.lean:12:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094302  Development.AbelianVarietyTheory.Proofs.TwistedOperators.FourierUniquenessOfOpenSubgroup
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.FourierUniquenessOfOpenSubgroup:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.FourierUniquenessOfOpenSubgroup (8.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/FourierUniquenessOfOpenSubgroup.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/FourierUniquenessOfOpenSubgroup.lean:12:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/FourierUniquenessOfOpenSubgroup.lean:18:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094346  Development.AbelianVarietyTheory.Proofs.TwistedOperators.FromColsMulVecEqZero
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.FromColsMulVecEqZero:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.FromColsMulVecEqZero (7.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/FromColsMulVecEqZero.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/FromColsMulVecEqZero.lean:9:0: automatically included section variable(s) unused in theorem `GlobalTheory.TwistDual.fromCols_mulVec_eq_zero`:
+  [CharZero E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/FromColsMulVecEqZero.lean:74:10: This simp argument is unused:
+  eq_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/FromColsMulVecEqZero.lean:105:31: This simp argument is unused:
+  Matrix.sub_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.mul_sub, Matrix.mul_assoc, hC1, a1, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094347  Development.AbelianVarietyTheory.Proofs.TwistedOperators.FubiniRightConvolutionBoundedContinuous
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.FubiniRightConvolutionBoundedContinuous:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.FubiniRightConvolutionBoundedContinuous (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/FubiniRightConvolutionBoundedContinuous.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/FubiniRightConvolutionBoundedContinuous.lean:16:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094472  Development.AbelianVarietyTheory.Proofs.TwistedOperators.GradedSeriesContinuationDominated
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.GradedSeriesContinuationDominated:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.GradedSeriesContinuationDominated (7.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/GradedSeriesContinuationDominated.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/GradedSeriesContinuationDominated.lean:48:60: `coe_nnnorm` has been deprecated: Use `coe_nnNorm` instead
+
+Hint: Replace the deprecated name:
+  coe_nnn̵N̲orm
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/GradedSeriesContinuationDominated.lean:79:60: `coe_nnnorm` has been deprecated: Use `coe_nnNorm` instead
+
+Hint: Replace the deprecated name:
+  coe_nnn̵N̲orm
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094558  Development.AbelianVarietyTheory.Proofs.TwistedOperators.HaarMapMulRightOfMemCompactSubgroup
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.HaarMapMulRightOfMemCompactSubgroup:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.HaarMapMulRightOfMemCompactSubgroup (7.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HaarMapMulRightOfMemCompactSubgroup.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094564  Development.AbelianVarietyTheory.Proofs.TwistedOperators.HaarTraceConjEqConstMulKernelImage
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.HaarTraceConjEqConstMulKernelImage:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.HaarTraceConjEqConstMulKernelImage (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HaarTraceConjEqConstMulKernelImage.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HaarTraceConjEqConstMulKernelImage.lean:60:0: automatically included section variable(s) unused in theorem `GlobalTheory.RowFubini.finiteIndex_subgroupOf`:
+  [MeasurableSpace G]
+  [BorelSpace G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace G] [BorelSpace G] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HaarTraceConjEqConstMulKernelImage.lean:104:0: automatically included section variable(s) unused in theorem `GlobalTheory.RowFubini.measure_pos_lt_top`:
+  [IsTopologicalGroup G]
+  [BorelSpace G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTopologicalGroup G] [BorelSpace G] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HaarTraceConjEqConstMulKernelImage.lean:118:0: automatically included section variable(s) unused in theorem `GlobalTheory.RowFubini.comap_open_compact`:
+  [IsTopologicalGroup X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTopologicalGroup X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HaarTraceConjEqConstMulKernelImage.lean:124:0: automatically included section variable(s) unused in theorem `GlobalTheory.RowFubini.map_open_compact`:
+  [IsTopologicalGroup X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsTopologicalGroup X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094631  Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumCosetsEulerProduct
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumCosetsEulerProduct:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumCosetsEulerProduct (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HasSumCosetsEulerProduct.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HasSumCosetsEulerProduct.lean:34:36: Variable name `hJH` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hJH
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HasSumCosetsEulerProduct.lean:50:21: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HasSumCosetsEulerProduct.lean:87:0: automatically included section variable(s) unused in theorem `GlobalTheory.CosetEuler.stepMap_mem`:
+  hpe
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hpe in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HasSumCosetsEulerProduct.lean:94:0: automatically included section variable(s) unused in theorem `GlobalTheory.CosetEuler.stepMap_injective`:
+  [DecidableEq ι]
+  hJH
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] hJH in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HasSumCosetsEulerProduct.lean:200:0: automatically included section variable(s) unused in theorem `GlobalTheory.CosetEuler.offSet_empty`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094633  Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumCosetsSmallerLevelRelIndexMul
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumCosetsSmallerLevelRelIndexMul:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumCosetsSmallerLevelRelIndexMul (6.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HasSumCosetsSmallerLevelRelIndexMul.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HasSumCosetsSmallerLevelRelIndexMul.lean:77:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HasSumCosetsSmallerLevelRelIndexMul.lean:79:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HasSumCosetsSmallerLevelRelIndexMul.lean:81:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094637  Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumEqSumOfMatchingFamily
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumEqSumOfMatchingFamily:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumEqSumOfMatchingFamily (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HasSumEqSumOfMatchingFamily.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094649  Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumOfDominatedOfEqNearZero
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumOfDominatedOfEqNearZero:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumOfDominatedOfEqNearZero (13s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HasSumOfDominatedOfEqNearZero.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094650  Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumQuotientTransport
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumQuotientTransport:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumQuotientTransport (13s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HasSumQuotientTransport.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094795  Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermiteReductionUnipotent
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermiteReductionUnipotent:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermiteReductionUnipotent (15s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/HermiteReductionUnipotent.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094903  Development.AbelianVarietyTheory.Proofs.TwistedOperators.Imports
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.Imports:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.Imports (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/Imports.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/Imports.lean:30:33: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/Imports.lean:30:66: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/Imports.lean:30:85: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/Imports.lean:30:129: Variable name `inst_5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/Imports.lean:30:155: Variable name `inst_6` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_6
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/Imports.lean:30:177: Variable name `inst_7` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_7
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094904  Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsAlt
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsAlt:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsAlt (21s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ImportsAlt.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094905  Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsBis
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsBis:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsBis (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ImportsBis.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094907  Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsFurther
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsFurther:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsFurther (18s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ImportsFurther.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094908  Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsMore
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsMore:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsMore (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ImportsMore.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ImportsMore.lean:21:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094909  Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsTer
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsTer:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsTer (13s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ImportsTer.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ImportsTer.lean:29:31: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ImportsTer.lean:29:75: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ImportsTer.lean:30:5: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ImportsTer.lean:30:27: Variable name `inst_4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094964  Development.AbelianVarietyTheory.Proofs.TwistedOperators.InjectiveSumOfLinIndepIntertwiners
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.InjectiveSumOfLinIndepIntertwiners:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.InjectiveSumOfLinIndepIntertwiners (18s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/InjectiveSumOfLinIndepIntertwiners.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M094974  Development.AbelianVarietyTheory.Proofs.TwistedOperators.InnerMapEqConstMulProdInner
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.InnerMapEqConstMulProdInner:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.InnerMapEqConstMulProdInner (13s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/InnerMapEqConstMulProdInner.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M095000  Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableOfTsumTranslateNormLe
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableOfTsumTranslateNormLe:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableOfTsumTranslateNormLe (24s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegrableOfTsumTranslateNormLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegrableOfTsumTranslateNormLe.lean:13:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegrableOfTsumTranslateNormLe.lean:15:6: `MeasureTheory.hasFiniteIntegral_iff_enorm` has been deprecated: Use `MeasureTheory.hasFiniteIntegral_iff_eNorm` instead
+
+Hint: Replace the deprecated name:
+  hasFiniteIntegral_iff_en̵N̲orm
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegrableOfTsumTranslateNormLe.lean:18:58: `Measurable.enorm` has been deprecated: Use `Measurable.eNorm` instead
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegrableOfTsumTranslateNormLe.lean:24:10: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead
+
+Hint: Replace the deprecated name:
+  ofReal_norm_̵e̵q̵_̵e̵n̵o̵r̵m̵
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M095024  Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralContinuousMultilinearMapPiMeasure
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralContinuousMultilinearMapPiMeasure:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralContinuousMultilinearMapPiMeasure (40s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralContinuousMultilinearMapPiMeasure.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralContinuousMultilinearMapPiMeasure.lean:14:47: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralContinuousMultilinearMapPiMeasure.lean:22:14: This simp argument is unused:
+  Function.update_of_ne hi
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hi]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralContinuousMultilinearMapPiMeasure.lean:39:24: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralContinuousMultilinearMapPiMeasure.lean:42:24: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralContinuousMultilinearMapPiMeasure.lean:76:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralContinuousMultilinearMapPiMeasure.lean:88:26: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralContinuousMultilinearMapPiMeasure.lean:88:38: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralContinuousMultilinearMapPiMeasure.lean:93:28: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralContinuousMultilinearMapPiMeasure.lean:93:40: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralContinuousMultilinearMapPiMeasure.lean:96:28: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralContinuousMultilinearMapPiMeasure.lean:96:40: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralContinuousMultilinearMapPiMeasure.lean:126:28: This simp argument is unused:
+  Function.update_of_ne hia
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hw, his, hia]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralContinuousMultilinearMapPiMeasure.lean:144:24: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M095049  Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralHaarEqZeroOfFibreIntegralsEqZero
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralHaarEqZeroOfFibreIntegralsEqZero:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralHaarEqZeroOfFibreIntegralsEqZero (23s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralHaarEqZeroOfFibreIntegralsEqZero.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralHaarEqZeroOfFibreIntegralsEqZero.lean:9:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralHaarEqZeroOfFibreIntegralsEqZero.lean:10:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralHaarEqZeroOfFibreIntegralsEqZero.lean:11:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralHaarEqZeroOfFibreIntegralsEqZero.lean:12:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralHaarEqZeroOfFibreIntegralsEqZero.lean:13:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralHaarEqZeroOfFibreIntegralsEqZero.lean:14:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralHaarEqZeroOfFibreIntegralsEqZero.lean:45:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralHaarEqZeroOfFibreIntegralsEqZero.lean:46:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralHaarEqZeroOfFibreIntegralsEqZero.lean:47:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntegralHaarEqZeroOfFibreIntegralsEqZero.lean:48:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M095099  Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntertwinerMemISupRangeEqSumSmul
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntertwinerMemISupRangeEqSumSmul:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntertwinerMemISupRangeEqSumSmul (23s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntertwinerMemISupRangeEqSumSmul.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IntertwinerMemISupRangeEqSumSmul.lean:28:26: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hb]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M095126  Development.AbelianVarietyTheory.Proofs.TwistedOperators.IrreducibleUnitaryVectorDensity
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.IrreducibleUnitaryVectorDensity:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.IrreducibleUnitaryVectorDensity (34s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleUnitaryVectorDensity.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IrreducibleUnitaryVectorDensity.lean:93:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M095383  Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsotypicFactorOfIsIrreduciblePiFiniteGroups
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsotypicFactorOfIsIrreduciblePiFiniteGroups:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsotypicFactorOfIsIrreduciblePiFiniteGroups (28s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IsotypicFactorOfIsIrreduciblePiFiniteGroups.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IsotypicFactorOfIsIrreduciblePiFiniteGroups.lean:11:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IsotypicFactorOfIsIrreduciblePiFiniteGroups.lean:77:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IsotypicFactorOfIsIrreduciblePiFiniteGroups.lean:89:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IsotypicFactorOfIsIrreduciblePiFiniteGroups.lean:128:16: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IsotypicFactorOfIsIrreduciblePiFiniteGroups.lean:128:65: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IsotypicFactorOfIsIrreduciblePiFiniteGroups.lean:130:16: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IsotypicFactorOfIsIrreduciblePiFiniteGroups.lean:135:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IsotypicFactorOfIsIrreduciblePiFiniteGroups.lean:139:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M095588  Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeSumProdNormLeOfProdNormLowerBound
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeSumProdNormLeOfProdNormLowerBound:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeSumProdNormLeOfProdNormLowerBound (36s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LatticeSumProdNormLeOfProdNormLowerBound.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LatticeSumProdNormLeOfProdNormLowerBound.lean:53:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LatticeSumProdNormLeOfProdNormLowerBound.lean:160:36: This simp argument is unused:
+  ENNReal.toReal_prod
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Measure.real, hBvol, Finset.prod_const, Finset.card_univ, hvb, hd, ENNReal.toReal_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LatticeSumProdNormLeOfProdNormLowerBound.lean:238:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M095752  Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralFundamentalDomainLeOfMeetsOrbits
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralFundamentalDomainLeOfMeetsOrbits:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralFundamentalDomainLeOfMeetsOrbits (151s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LintegralFundamentalDomainLeOfMeetsOrbits.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M095754  Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralHaarEqCompactSubgroupTransversal
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralHaarEqCompactSubgroupTransversal:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralHaarEqCompactSubgroupTransversal (113s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LintegralHaarEqCompactSubgroupTransversal.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M095761  Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralUnfoldingLeOfTranslateCover
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralUnfoldingLeOfTranslateCover:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralUnfoldingLeOfTranslateCover (78s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LintegralUnfoldingLeOfTranslateCover.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LintegralUnfoldingLeOfTranslateCover.lean:14:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LintegralUnfoldingLeOfTranslateCover.lean:48:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LintegralUnfoldingLeOfTranslateCover.lean:74:52: `ENNReal.tsum_prod` has been deprecated: Use `tsum_prod` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {α : Type u_3} [inst : AddCommMonoid α] [inst_1 : CompleteLattice α] [CanonicallyOrderedAdd α]
+    [inst_3 : TopologicalSpace α] [SupConvergenceClass α] {ι' : Type u_4} [ContinuousAdd α] [T3Space α]
+    {f : ι → ι' → α}, ∑' (p : ι × ι'), f p.1 p.2 = ∑' (a : ι) (b : ι'), f a b
+instead of
+  ∀ {α : Type u_1} {β : Type u_2} {f : α → β → ENNReal}, ∑' (p : α × β), f p.1 p.2 = ∑' (a : α) (b : β), f a b
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.tsum_prod` to `tsum_prod x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LintegralUnfoldingLeOfTranslateCover.lean:78:32: `ENNReal.tsum_comp_le_tsum_of_injective` has been deprecated: Use `tsum_comp_le_tsum_of_injective` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {α : Type u_3} [inst : AddCommMonoid α] [inst_1 : CompleteLattice α] [CanonicallyOrderedAdd α]
+    [inst_3 : TopologicalSpace α] [SupConvergenceClass α] {ι' : Type u_4} [IsOrderedAddMonoid α] [OrderClosedTopology α]
+    {f : ι → ι'}, Function.Injective f → ∀ (g : ι' → α), ∑' (x : ι), g (f x) ≤ ∑' (y : ι'), g y
+instead of
+  ∀ {α : Type u_1} {β : Type u_2} {f : α → β},
+    Function.Injective f → ∀ (g : β → ENNReal), ∑' (x : α), g (f x) ≤ ∑' (y : β), g y
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.tsum_comp_le_tsum_of_injective` to `tsum_comp_le_tsum_of_injective x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/LintegralUnfoldingLeOfTranslateCover.lean:72:15: `ENNReal.tsum_le_tsum` has been deprecated: Use `tsum_le_tsum` instead
+
+Note: The updated constant has a different type:
+  ∀ {ι : Type u_1} {α : Type u_3} [inst : AddCommMonoid α] [inst_1 : CompleteLattice α] [CanonicallyOrderedAdd α]
+    [inst_3 : TopologicalSpace α] [SupConvergenceClass α] {f g : ι → α} [IsOrderedAddMonoid α] [OrderClosedTopology α],
+    f ≤ g → ∑' (a : ι), f a ≤ ∑' (a : ι), g a
+instead of
+  ∀ {α : Type u_1} {f g : α → ENNReal}, (∀ (a : α), f a ≤ g a) → ∑' (a : α), f a ≤ ∑' (a : α), g a
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.tsum_le_tsum` to `tsum_le_tsum x`).
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M095854  Development.AbelianVarietyTheory.Proofs.TwistedOperators.MainThm
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.MainThm:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.MainThm (75s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MainThm.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MainThm.lean:7:33: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MainThm.lean:7:50: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MainThm.lean:7:103: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M095938  Development.AbelianVarietyTheory.Proofs.TwistedOperators.MeanFundamentalDomainOfLe
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.MeanFundamentalDomainOfLe:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.MeanFundamentalDomainOfLe (56s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MeanFundamentalDomainOfLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MeanFundamentalDomainOfLe.lean:23:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MeanFundamentalDomainOfLe.lean:24:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MeanFundamentalDomainOfLe.lean:80:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MeanFundamentalDomainOfLe.lean:84:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M095940  Development.AbelianVarietyTheory.Proofs.TwistedOperators.MeanPeriodicIndepOfCovolumeOne
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.MeanPeriodicIndepOfCovolumeOne:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.MeanPeriodicIndepOfCovolumeOne (23s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MeanPeriodicIndepOfCovolumeOne.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MeanPeriodicIndepOfCovolumeOne.lean:12:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MeanPeriodicIndepOfCovolumeOne.lean:31:13: `MeasureTheory.Measure.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  M̵e̵a̵s̵u̵r̵e̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MeanPeriodicIndepOfCovolumeOne.lean:36:13: `MeasureTheory.Measure.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  M̵e̵a̵s̵u̵r̵e̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M095960  Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemClosureOfForallDualVanish
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemClosureOfForallDualVanish:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemClosureOfForallDualVanish (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MemClosureOfForallDualVanish.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MemClosureOfForallDualVanish.lean:12:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MemClosureOfForallDualVanish.lean:13:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M096058  Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemSymplecticLieAlgebraOfExpSmulMemSymplecticGro
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemSymplecticLieAlgebraOfExpSmulMemSymplecticGro:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemSymplecticLieAlgebraOfExpSmulMemSymplecticGro (16s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MemSymplecticLieAlgebraOfExpSmulMemSymplecticGro.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MemSymplecticLieAlgebraOfExpSmulMemSymplecticGro.lean:10:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MemSymplecticLieAlgebraOfExpSmulMemSymplecticGro.lean:11:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M096151  Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultiplicativeHasDerivAtZero
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultiplicativeHasDerivAtZero:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultiplicativeHasDerivAtZero (7.6s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/MultiplicativeHasDerivAtZero.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M096171  Development.AbelianVarietyTheory.Proofs.TwistedOperators.NatCastMemOfPrimeDvdAbsNorm
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.NatCastMemOfPrimeDvdAbsNorm:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.NatCastMemOfPrimeDvdAbsNorm (6.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NatCastMemOfPrimeDvdAbsNorm.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NatCastMemOfPrimeDvdAbsNorm.lean:10:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NatCastMemOfPrimeDvdAbsNorm.lean:11:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NatCastMemOfPrimeDvdAbsNorm.lean:12:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M096209  Development.AbelianVarietyTheory.Proofs.TwistedOperators.NewtonRecursionPolyUnique
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.NewtonRecursionPolyUnique:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.NewtonRecursionPolyUnique (14s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NewtonRecursionPolyUnique.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NewtonRecursionPolyUnique.lean:9:8: This simp argument is unused:
+  finsetSum_coeff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [coeff_C_mul, coeff_X_add_one_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M096247  Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormCreationAnnihilationWordLeNumberOperatorPow
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormCreationAnnihilationWordLeNumberOperatorPow:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormCreationAnnihilationWordLeNumberOperatorPow (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:18:29: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:51:52: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:52:30: `Module.End.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : One F} [self : IsOneApplyEqSelf F]
+    (x : α), 1 x = x
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M] (x : M), 1 x = x
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:52:52: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:60:51: `Module.End.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : One F} [self : IsOneApplyEqSelf F]
+    (x : α), 1 x = x
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M] (x : M), 1 x = x
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:72:10: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:72:32: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:73:40: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:73:77: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:82:8: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:82:30: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:89:8: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:89:30: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:96:8: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:96:30: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:106:64: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:113:64: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:148:26: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:160:47: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:164:16: `Module.End.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : One F} [self : IsOneApplyEqSelf F]
+    (x : α), 1 x = x
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M] (x : M), 1 x = x
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:12:10: This simp argument is unused:
+  Complex.mul_re
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormCreationAnnihilationWordLeNumberOperatorPow.lean:18:29: This simp argument is unused:
+  Module.End.mul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M096260  Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormLeOfCompleteHomogeneousLe
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormLeOfCompleteHomogeneousLe:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormLeOfCompleteHomogeneousLe (7.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NormLeOfCompleteHomogeneousLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M096311  Development.AbelianVarietyTheory.Proofs.TwistedOperators.NotLocallyFiniteQuadraticMulAddDegreeNonraising
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.NotLocallyFiniteQuadraticMulAddDegreeNonraising:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.NotLocallyFiniteQuadraticMulAddDegreeNonraising (5.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NotLocallyFiniteQuadraticMulAddDegreeNonraising.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NotLocallyFiniteQuadraticMulAddDegreeNonraising.lean:42:21: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M096317  Development.AbelianVarietyTheory.Proofs.TwistedOperators.NullMeasurableSetShearImage
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.NullMeasurableSetShearImage:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.NullMeasurableSetShearImage (6.2s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/NullMeasurableSetShearImage.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M096539  Development.AbelianVarietyTheory.Proofs.TwistedOperators.PosDefConjTransposeMulSelfEqExpPolynomial
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.PosDefConjTransposeMulSelfEqExpPolynomial:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.PosDefConjTransposeMulSelfEqExpPolynomial (5.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PosDefConjTransposeMulSelfEqExpPolynomial.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M096549  Development.AbelianVarietyTheory.Proofs.TwistedOperators.PowSubCreationVacuumFockBound
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.PowSubCreationVacuumFockBound:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.PowSubCreationVacuumFockBound (8.5s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PowSubCreationVacuumFockBound.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PowSubCreationVacuumFockBound.lean:13:36: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PowSubCreationVacuumFockBound.lean:14:6: `Module.End.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : One F} [self : IsOneApplyEqSelf F]
+    (x : α), 1 x = x
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M] (x : M), 1 x = x
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PowSubCreationVacuumFockBound.lean:26:61: `Module.End.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : One F} [self : IsOneApplyEqSelf F]
+    (x : α), 1 x = x
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M] (x : M), 1 x = x
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PowSubCreationVacuumFockBound.lean:31:22: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PowSubCreationVacuumFockBound.lean:33:22: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PowSubCreationVacuumFockBound.lean:35:22: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PowSubCreationVacuumFockBound.lean:55:19: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PowSubCreationVacuumFockBound.lean:69:36: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PowSubCreationVacuumFockBound.lean:70:6: `Module.End.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : One F} [self : IsOneApplyEqSelf F]
+    (x : α), 1 x = x
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M] (x : M), 1 x = x
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/PowSubCreationVacuumFockBound.lean:115:37: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M096566  Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdEqSumOfFactorwiseLinearExpansion
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdEqSumOfFactorwiseLinearExpansion:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdEqSumOfFactorwiseLinearExpansion (22s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ProdEqSumOfFactorwiseLinearExpansion.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M096568  Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdMapMulSingleApply
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdMapMulSingleApply:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdMapMulSingleApply (57s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ProdMapMulSingleApply.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ProdMapMulSingleApply.lean:18:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ProdMapMulSingleApply.lean:18:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M096577  Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdSubProdLe
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdSubProdLe:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdSubProdLe (14s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ProdSubProdLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ProdSubProdLe.lean:15:27: `Finset.prod_le_one'` has been deprecated: Use `Finset.prod_le_one` instead
+
+Hint: Replace the deprecated name:
+  Finset.prod_le_one'̵
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ProdSubProdLe.lean:27:31: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ProdSubProdLe.lean:27:48: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M096814  Development.AbelianVarietyTheory.Proofs.TwistedOperators.RelIndexEqOfMap
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.RelIndexEqOfMap:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.RelIndexEqOfMap (9.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/RelIndexEqOfMap.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/RelIndexEqOfMap.lean:65:39: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/RelIndexEqOfMap.lean:65:383: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/RelIndexEqOfMap.lean:65:432: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/RelIndexEqOfMap.lean:65:468: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M097050  Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzEqGaussianOfFderivAddEqZero
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzEqGaussianOfFderivAddEqZero:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzEqGaussianOfFderivAddEqZero (9.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqGaussianOfFderivAddEqZero.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M097052  Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzEqZeroOfWrongSignGaussianRelation
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzEqZeroOfWrongSignGaussianRelation:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzEqZeroOfWrongSignGaussianRelation (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:33:0: automatically included section variable(s) unused in theorem `GlobalTheory.WrongSignGauss.lineDerivOp_comm'`:
+  [FiniteDimensional ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:66:17: `SchwartzMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  S̵c̵h̵w̵a̵r̵t̵z̵M̵a̵p̵.̵smul_apply
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:65:0: automatically included section variable(s) unused in theorem `GlobalTheory.WrongSignGauss.ip_smul_left`:
+  [FiniteDimensional ℝ V]
+  [BorelSpace V]
+  [μ.IsAddHaarMeasure]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] [BorelSpace V] [μ.IsAddHaarMeasure] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:70:17: `SchwartzMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  S̵c̵h̵w̵a̵r̵t̵z̵M̵a̵p̵.̵smul_apply
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:69:0: automatically included section variable(s) unused in theorem `GlobalTheory.WrongSignGauss.ip_smul_right`:
+  [FiniteDimensional ℝ V]
+  [BorelSpace V]
+  [μ.IsAddHaarMeasure]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] [BorelSpace V] [μ.IsAddHaarMeasure] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:75:17: `SchwartzMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+
+Hint: Replace the deprecated name:
+  S̵c̵h̵w̵a̵r̵t̵z̵M̵a̵p̵.̵sub_apply
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:79:17: `SchwartzMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+
+Hint: Replace the deprecated name:
+  S̵c̵h̵w̵a̵r̵t̵z̵M̵a̵p̵.̵sub_apply
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:87:0: automatically included section variable(s) unused in theorem `GlobalTheory.WrongSignGauss.ip_mulForm`:
+  [BorelSpace V]
+  [μ.IsAddHaarMeasure]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [BorelSpace V] [μ.IsAddHaarMeasure] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:104:13: `SchwartzMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+
+Hint: Replace the deprecated name:
+  S̵c̵h̵w̵a̵r̵t̵z̵M̵a̵p̵.̵sub_apply
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:104:36: `SchwartzMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  S̵c̵h̵w̵a̵r̵t̵z̵M̵a̵p̵.̵smul_apply
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:110:13: `SchwartzMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+
+Hint: Replace the deprecated name:
+  S̵c̵h̵w̵a̵r̵t̵z̵M̵a̵p̵.̵sub_apply
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:110:36: `SchwartzMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  S̵c̵h̵w̵a̵r̵t̵z̵M̵a̵p̵.̵smul_apply
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:120:0: automatically included section variable(s) unused in theorem `GlobalTheory.WrongSignGauss.ip_self`:
+  [FiniteDimensional ℝ V]
+  [BorelSpace V]
+  [μ.IsAddHaarMeasure]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ V] [BorelSpace V] [μ.IsAddHaarMeasure] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:124:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:124:4: Unused tactic linter: `rw [← integral_ofReal (𝕜 := ℂ)]` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:153:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:154:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:158:15: `SchwartzMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  S̵c̵h̵w̵a̵r̵t̵z̵M̵a̵p̵.̵smul_apply
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SchwartzEqZeroOfWrongSignGaussianRelation.lean:167:10: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [sq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M097217  Development.AbelianVarietyTheory.Proofs.TwistedOperators.SimpleOver
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.SimpleOver:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.SimpleOver (5.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SimpleOver.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M097447  Development.AbelianVarietyTheory.Proofs.TwistedOperators.SubmodulePowSimpleEqSumEquivValues
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.SubmodulePowSimpleEqSumEquivValues:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.SubmodulePowSimpleEqSumEquivValues (7.7s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SubmodulePowSimpleEqSumEquivValues.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M097461  Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumFourSwap
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumFourSwap:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumFourSwap (5.4s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SumFourSwap.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M097468  Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumProdUpdateRegroup
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumProdUpdateRegroup:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumProdUpdateRegroup (6.9s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SumProdUpdateRegroup.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SumProdUpdateRegroup.lean:48:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SumProdUpdateRegroup.lean:23:5: Variable name `hone` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hone
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M097481  Development.AbelianVarietyTheory.Proofs.TwistedOperators.SummableNonnegFamilyOfDifferentiableOn
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.SummableNonnegFamilyOfDifferentiableOn:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.SummableNonnegFamilyOfDifferentiableOn (8.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SummableNonnegFamilyOfDifferentiableOn.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SummableNonnegFamilyOfDifferentiableOn.lean:82:29: `coe_nnnorm` has been deprecated: Use `coe_nnNorm` instead
+
+Hint: Replace the deprecated name:
+  coe_nnn̵N̲orm
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SummableNonnegFamilyOfDifferentiableOn.lean:87:26: `enorm_eq_nnnorm` has been deprecated: Use `eNorm_eq_nnNorm` instead
+
+Hint: Replace the deprecated name:
+  e̵n̵o̵r̵m̵_̵e̵q̵_̵n̵n̵n̵o̵r̵m̵e̲N̲o̲r̲m̲_̲e̲q̲_̲n̲n̲N̲o̲r̲m̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M097482  Development.AbelianVarietyTheory.Proofs.TwistedOperators.SummableNormCosetOut
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.TwistedOperators.SummableNormCosetOut:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.TwistedOperators.SummableNormCosetOut (6.1s)
+warning: src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/SummableNormCosetOut.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
