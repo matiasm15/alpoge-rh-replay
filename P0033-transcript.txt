@@ -1,0 +1,1681 @@
+P0033 port build transcript
+platform: Linux x86_64
+lean: leanprover/lean4:v4.36.0 -> Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+archive: 14 parts from https://alpo.ge/lean.tar.gz.partNN, all matching parts.sha256
+lakefile.toml: the archive's name, srcDir, moreLeanArgs, leanOptions and Mathlib require (rev changed to the target),
+               with only the `Development` lean_lib (as in the archive) and no defaultTargets
+tree: the 64 pinned packet sources, each matching tracker/modules.jsonl.gz, plus port/patches/<ID>.patch
+      applied with `git apply --whitespace=error-all` where present (10 modules); the other 54 are unchanged
+command per module: lake build +<Module>:olean (fresh .lake/build)
+
+| ID | module | patch | source sha256 (pinned) | built file sha256 | olean sha256 | exit |
+| M072545 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MatrixRegular | no | 41f8d018dc0daf3da4a337a17c95d135c997aeda7120788c891c8c73fa755356 | 41f8d018dc0daf3da4a337a17c95d135c997aeda7120788c891c8c73fa755356 | ed3f2ce95476149c5d560f9879635e03b20fb0a36249fbfc2bf46decedbc0ccb | 0 |
+| M072550 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MaxIdealExactPowDvdSpanPrime | no | 62a59b62075eded7592762a4e3685f9a643091f8fa3f628dd0f5b475175fd506 | 62a59b62075eded7592762a4e3685f9a643091f8fa3f628dd0f5b475175fd506 | f52c07edec0b2820b3ae2cb1cb6c44bbc0d8e2510404d68e512d3168d649e8a2 | 0 |
+| M072557 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MaximalIsotropicDoubled | no | 6e41f75b7c6827757abfeb59889a9ee2adecd480aefe8cbc86b5686cdfa6928d | 6e41f75b7c6827757abfeb59889a9ee2adecd480aefe8cbc86b5686cdfa6928d | 09a93867b9d93e7934cd869444c35adc1f7894bdbd8ed47908ffb395030cadee | 0 |
+| M072663 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSmulTopOfEntries | no | 32a599c43054db977ace64371c1065190e4e9c0ca9efbaee58dc1d57622540ef | 32a599c43054db977ace64371c1065190e4e9c0ca9efbaee58dc1d57622540ef | 29975c5106f8bacb54a0fdc9fe8da75571d68c3c807e9deb775ff355879d4edc | 0 |
+| M072667 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSpanIndicatorLowerSetsFinitePoset | no | 2c489182f1d898bebd3341c897bb9e99cecaaf3b5feb1a9bc6788ea095df9823 | 2c489182f1d898bebd3341c897bb9e99cecaaf3b5feb1a9bc6788ea095df9823 | e8fe5c41a3080f253330b306fbe44aa008119b37e335655fbdcef53a063b0ef1 | 0 |
+| M072668 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSpanKilledUnionAverages | no | 80269a87512252f588b0bcbec6d070827789a3e46ad540f3a65dd9e87c5682aa | 80269a87512252f588b0bcbec6d070827789a3e46ad540f3a65dd9e87c5682aa | c17d918b95a219238cb2634951c42c4a445ad3d63288aa225e3a94411f3fa766 | 0 |
+| M072737 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonicDvdXPowCardSubOneExistsRoot | yes | e24cf1058d91483ddec1f013747bbaf8ff3cf287fca08bea02fddda3c050eed2 | 9f1cb6cea0a8be44412f6d6c23a915c0ed6151ff519287ad9c7d50457f0de8f5 | 56cfdad5c42629a26a2feb8013e196df0127323212a131ad24467a98cb436370 | 0 |
+| M072756 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonoidAlgebraExistsRightInvOfMapField | no | f5b4af9cb8fa95e1977506baf6ea0f7ae937eb35b29efb52e1c76f955c2b59fa | f5b4af9cb8fa95e1977506baf6ea0f7ae937eb35b29efb52e1c76f955c2b59fa | e543ce2793b7ed8cfeb710a420b38e83be5ff51cc56dc5a2fdfac35f37a0afa3 | 0 |
+| M072778 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MulDiagOfTriangular | no | 59030ecef99ddd0ab87bf68a26417d52a161f785e0e7009a158805e6b243124e | 59030ecef99ddd0ab87bf68a26417d52a161f785e0e7009a158805e6b243124e | 652943bf9733dd505dc9e6b9e6f9b5b34fecd01f71c25b79968e098632d9c222 | 0 |
+| M072785 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MulVecEqZeroOfSubalgebra | no | 791909ca9d8f02e14051b0d04a07cf250bbcdd25e2e204706828f3b0f6909650 | 791909ca9d8f02e14051b0d04a07cf250bbcdd25e2e204706828f3b0f6909650 | 705ae9861d3e94994432a30372ed741da1a212bd80ff251e755d575ee280db17 | 0 |
+| M072791 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MultisetEqOfProdAddEq | no | af33430d777027a7c37eb0e9c9e831d0dbb92a16f42e2798dff0b60c79a77a01 | af33430d777027a7c37eb0e9c9e831d0dbb92a16f42e2798dff0b60c79a77a01 | b6486b2c78a30d91c672390155e9497f04368f487ec393601e64e18d1c60d6ef | 0 |
+| M072792 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MultisetManySeparatedPoints | no | cecffc2f6af701e3b6bf5a41ddf5b6a6d5eef19cb650b38a863a688b7435f2c7 | cecffc2f6af701e3b6bf5a41ddf5b6a6d5eef19cb650b38a863a688b7435f2c7 | 1bbe2bbb7f0668772dc0d1a088968933a5b633707ef6da91e928209b56ad437e | 0 |
+| M072803 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatCardAddMonoidHomZmodLe | no | 1c1a94c69ac65f56a443c27410ba1442b58b853603f2401af5179bb652959bc6 | 1c1a94c69ac65f56a443c27410ba1442b58b853603f2401af5179bb652959bc6 | 5ef151f389c58b737ea41807c9c7817c3c20510aed2a55671726dbf514c302e1 | 0 |
+| M072810 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatCastNotMemOfPrimeNe | no | 892d9dcab610960f7d4278f6a32fcf68769eaa15470ac6d941276bffb051982a | 892d9dcab610960f7d4278f6a32fcf68769eaa15470ac6d941276bffb051982a | b69bc407fb20e59ccc734e30496247c04443bc70f480ca018f194b7c8e78ed33 | 0 |
+| M072811 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatCastPowMulValuationLeOneOfNotPowSuccDvdDiffer | no | 46c1c97b8b2b0c1c049587915ef691604ac338633af8daa4749968ea4c05eaef | 46c1c97b8b2b0c1c049587915ef691604ac338633af8daa4749968ea4c05eaef | f77870eed34fa860afe79a229533468b7604115418d53dbb289c6fa13e63b9fb | 0 |
+| M072813 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatDegreeLeAndCoeffProdPow | no | 65ad65621733faabb5cf0dec3d0851aa2ac79eb0573fca21d2db83f357536ff4 | 65ad65621733faabb5cf0dec3d0851aa2ac79eb0573fca21d2db83f357536ff4 | dbb95639a09aa2674f40d3152f909caec2b3735601e83c7dfd92ce3dd0465ab6 | 0 |
+| M072826 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NcardPrimesOverEqFinrankOfTrivialFrobenius | no | af5794ca178be33b6ac07b35dfdb2627d16d8a92242dafc4dd62dc0a04a07a0a | af5794ca178be33b6ac07b35dfdb2627d16d8a92242dafc4dd62dc0a04a07a0a | 1cbec8ca6c50c21aacc947a9952884dd7fc753961ada64fbfdac808775d8d9cd | 0 |
+| M072835 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NewtonPolygonDominantIndexXSubCMul | no | 0674dc86cb7e28d501bdcd8716b2227a35a4791e103720a8389b90409d4d3d7a | 0674dc86cb7e28d501bdcd8716b2227a35a4791e103720a8389b90409d4d3d7a | 1753aa7410e47ab49dec7ab9931bd9fc1c6f0a90db16e8c5cf5fba1713a284d2 | 0 |
+| M072837 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NewtonPolygonLastDominantIndexMulXSubC | no | 5e50dc46f9f2da47441d903005ed3abef3e9422179468c60bef9758c66016c72 | 5e50dc46f9f2da47441d903005ed3abef3e9422179468c60bef9758c66016c72 | ac61b619de3252f7bca7d62ee87fd5b6331b1dfced3db05a542434aafa5d12ec | 0 |
+| M072879 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyEquivOfCharacterEq | no | e6d33e2e2fac703e52e09c2c770a386b79e4dd2307b6e753803d493c631dd11f | e6d33e2e2fac703e52e09c2c770a386b79e4dd2307b6e753803d493c631dd11f | db355fd32ee67acc6801725c8832f0ac1a62bdfda228d70715dfd261af86524e | 0 |
+| M072889 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyLinearEquivOfCharpolyEq | no | 1df01169f052eb10ee329943685b4b24a8e99a4e4e37255bafc57215d7d060b8 | 1df01169f052eb10ee329943685b4b24a8e99a4e4e37255bafc57215d7d060b8 | a33ac0cffd7b90722dde008d8af8f44cb88eb2832fefc16623ca2edbc04d48be | 0 |
+| M072931 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormEqMulNormIdempotentCorner | no | 4081b24f75dc2f32a8cc27c6d3ec26b4b7786ccacbdbe1d41ec2c11dd6dcf34e | 4081b24f75dc2f32a8cc27c6d3ec26b4b7786ccacbdbe1d41ec2c11dd6dcf34e | 95e201dbfacff450fa5ddf503c1f3007fb28dea88d45f7463d887683a8514e59 | 0 |
+| M072938 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormEvalLeSumNormCoeff | yes | c732318e816c3cbbcd51f58dc1b5249176dd232fa3296e324613c8354bbb2c95 | 0d505d78884a3a6bbe6bc5f2dd636eafd2c1eaaf73e955590acfe99ee9573e2f | 01220025202f5582d4a5b24e6d4bdce54c6b2f64b3d1fc1b8c2d9f5fcc889a62 | 0 |
+| M072948 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormHasSumEqOfDominant | yes | 4ab72aeaeb811b1b80e7520cd2a95143240d73bb5dc20f785f56705949fb69fd | 6320b2bddb816ecd5baa7e3191556520dfd9355f1b0b4398a3358fe9be3ffc42 | e65a8f46bc10fb808a8a3b709902c60221cd299afc5ee7b1dc90d805a47bf657 | 0 |
+| M072955 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormIntegralStarMulSqLeMul | no | ec211c89fb713d149e5ed58511b98a9c43cb51ba80bee8896c86417f00330076 | ec211c89fb713d149e5ed58511b98a9c43cb51ba80bee8896c86417f00330076 | 7f9f1c33686246930109bb1b68f820da8776d68dc74eb5c09458c7cbcc378efe | 0 |
+| M072973 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormNatCastEqOneOfNotDvd | no | c43fbb6338dfd750c895c8f9383ba9dd522834b4b283b1e05cd011fb4115e619 | c43fbb6338dfd750c895c8f9383ba9dd522834b4b283b1e05cd011fb4115e619 | f75f2a06be60815dd21122fe9a273f90a912ea7ac35b5e5a7b0efc841e6527eb | 0 |
+| M072974 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormOneAddEqOne | yes | a679bd2ec56258856bcc33c8d83e93e68285fa29e2473a844ab31089daae14f8 | cb36a8f3e4a1eb49f2e28d09a99e42b25e2251914c916b10089faf9925bbc639 | 25caf4fd994cf00053771a2d76462fc666dd5fa8e844da2ccd612ef176c99e92 | 0 |
+| M072976 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPowPrimePowSubOne | no | 8dd63b87de761aa2d0fdff195cf8717060834d13fdade5db8c94b7219710b5b7 | 8dd63b87de761aa2d0fdff195cf8717060834d13fdade5db8c94b7219710b5b7 | e4f9ce5ded8444e80e6facda55aa28f3a2210357d89962b4ff543fb26ad5f17c | 0 |
+| M072980 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPowSubOneLe | no | 661bccc9423f5c777e063a8a7223bfe4f3fd28e6e340f0f8be338abf1fde9e05 | 661bccc9423f5c777e063a8a7223bfe4f3fd28e6e340f0f8be338abf1fde9e05 | 282be361822fb4fc0efab36555c38431ee99d7a54bb77d272b55fe14cb00088c | 0 |
+| M073006 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormZpowSubOneLe | no | c3b29b838692a8d0c971ce9272fc1687c4fda45783a742530b4a8afb1a44fdcd | c3b29b838692a8d0c971ce9272fc1687c4fda45783a742530b4a8afb1a44fdcd | 60cfe1af4a1ac128a719fba932fc52c3d8dee9bb6b4ef549dc73887b578f1ad5 | 0 |
+| M073027 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotDvdCoeffAevalOneAddXPowSubOne | yes | afd38a8eaae43e4451d6692e9dfe8971a9ca8f8037162996582e93c8edde07dc | 136417bf241923fa79d2465b02743740fce010538a059f22ef6e3f33f2ece499 | fd7eff58568b46db3d2d91a685254a61ee2f14eee43b96dbaaa90b6c385dd985 | 0 |
+| M073035 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotMemSqOfDerivative | no | c29e84fc59f7036741a3483212d00fed56873c57602b31f8e566242ad5336d96 | c29e84fc59f7036741a3483212d00fed56873c57602b31f8e566242ad5336d96 | 74124ee49e701e639e21b4c84ade5a25e4b0dcd97bab01989bc6e35370265592 | 0 |
+| M073037 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotSqMulUnit | no | ed2c949b888498fba0e7cb604a3ec4558bca43b68ad5791f4e6c9b71825b28be | ed2c949b888498fba0e7cb604a3ec4558bca43b68ad5791f4e6c9b71825b28be | 1386d5570736da508b7c7516a1d89eb1dd8089de93e39c226d26859bcb2d93d8 | 0 |
+| M073039 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotXPowSuccDvdDetOfFirstOrderKernelEqZero | yes | bcef1f57eff9bead4490a17f6daf49231c09df0e4a71e9f497a7a9fb38233180 | 082d8604cae11dd49fa758ff4f9aafef8d65c61d969bf3be7794e6f4f2b7277c | 1f1814cf46531c62412ee5d53542900a8d54cedc645c0287863ca578719964de | 0 |
+| M073044 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NumericalConditionsTheoremTLargePrime | no | 010f51a17dea74621d10bb7d2a313f5994a493de735d16ec8bcf839da03e0272 | 010f51a17dea74621d10bb7d2a313f5994a493de735d16ec8bcf839da03e0272 | 15d2647f998ef402ff3821f95f84305f403f0edc68e7a50644fa5e3d6220c496 | 0 |
+| M073054 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddPowLe | no | ef50e42d933163397f7b9982351ad46fa74bb448a42fc09695fee18a8c444844 | ef50e42d933163397f7b9982351ad46fa74bb448a42fc09695fee18a8c444844 | 950f17e69ece7e28a16cfd1054a559daaeb5d188df3b19efce28984eaaffa93c | 0 |
+| M073055 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddPowOfMulSelfEqZero | no | 048e4ce2f1b51fbc3e7cc36da6d472141acad4820265379ac908b160cee40561 | 048e4ce2f1b51fbc3e7cc36da6d472141acad4820265379ac908b160cee40561 | 225aa601ae5b90cb5850761838d33ff407a6113cb23361e1d490159310a90de3 | 0 |
+| M073057 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddXMulDerivativeBin | yes | 6171e8f849ea5a80a3c7cd3e9f8b8581bb11caadf23dc08f446362bd696fea87 | 589d9961fb65fcbeef848dae0f85ba6a24c2188d187ed68d425ea6e0361dd6fd | 8bef7b93e376abde6c9e3f8ee8c3bb145507aaa63a038584cf42e8595dab0cd1 | 0 |
+| M073059 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddXPowPrimePowSubOneMemSpan | yes | 89448a700dc25075baa9cad8c0d4af47ba805927166479f221346afcdc5cbfdb | 931ca74d153e78d4524ba7d7b821215720934fa88b282af2a745f866c5cd1a63 | f10d2065d859cbd950662a2a87c9f3c750134d097e800880b6ab0237c83b88e7 | 0 |
+| M073068 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneSubSumLeProdOneSubRange | no | 44d523606c2170c672a5d6452d1ba6e6bbb0f30b1ae806f04c71d98507cd0371 | 44d523606c2170c672a5d6452d1ba6e6bbb0f30b1ae806f04c71d98507cd0371 | 0e08f8fa997ad86b429b128914e954cbe72ec10d14df027222692ea2453a8700 | 0 |
+| M073101 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PadicIntContinuousHomNormalizeOne | no | 4c313e36b8b3cf9cd92d04d4a931479bfbc2bc8f1bfea44490375231f7d34a5c | 4c313e36b8b3cf9cd92d04d4a931479bfbc2bc8f1bfea44490375231f7d34a5c | 1cc096db27e40eefc5ee9991e8053f6779334fadc2bb87ee939550a652c345bf | 0 |
+| M073293 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowSmulMemOfLe | no | c9e7858c991865a5fc97a2ed55e8c7e72233943f8dcf0bb89954265564c61cbe | c9e7858c991865a5fc97a2ed55e8c7e72233943f8dcf0bb89954265564c61cbe | eaafce5a52a2e6aabcb46bc6c0780862e20e8b942d59f5f12c9c46843f593eb3 | 0 |
+| M073295 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowSubDvdChoosePrimePowOfLt | no | 59ece576fa39a59df62ee0e8d03baec692bab6fd6ff84058bf811d6ae5c2309a | 59ece576fa39a59df62ee0e8d03baec692bab6fd6ff84058bf811d6ae5c2309a | fda621d01a9d4a7fd349d30e3cda85bac61eb60ebafedf380566344b1bb9eff8 | 0 |
+| M073297 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowSubOneLe | no | 5423fe48985fda0a290ebaee6e7cb0c5c0fe4807ee5fcf63258387f67662be02 | 5423fe48985fda0a290ebaee6e7cb0c5c0fe4807ee5fcf63258387f67662be02 | cc804a7e12a87398650d5bf0c2831eadd54e0ab38380797608d6e32c9126599b | 0 |
+| M073299 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowerSeriesEqCOfSubstFixedNotRootOfUnity | no | 193c5dfd43a9bffc3765d84465c7a3d842f207ddd06080a8ae9810d0bd02e69c | 193c5dfd43a9bffc3765d84465c7a3d842f207ddd06080a8ae9810d0bd02e69c | 711e4257f9b5e19f0b494560583143d86b0fc53140a0cb727cebead28bf97d40 | 0 |
+| M073301 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowerSeriesExistsUniqueDecompOverFrobeniusLikeEn | no | c17dd96f77011b04051ded269f60b951fc912822772f2fa3f81a8d237f2a8a2a | c17dd96f77011b04051ded269f60b951fc912822772f2fa3f81a8d237f2a8a2a | fff2457804e799cf4e026838114b08bba4779587981b21fdb6ebe7c4565dea19 | 0 |
+| M073361 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ProdOneSubBoundedBelowOfSummable | yes | 259d3f28f67a8355a30279c871604fc5823fb3eac267e2bbccb77587ed4c70d3 | 3dee3830426c1434857b0a124814d7278d3c68f07abeb7c44727f068c797a153 | ce6592d851451b23a0135a6840e703dc4f68ae535787677eb3c5b742ea05f044 | 0 |
+| M073378 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ProjectiveOfFreeLatticeOverFiniteFreeRing | no | 4856d0cf78afb1e6aeca2b5466b8172e8cd4fde55da4f3e6a45a4231a1d0aa5d | 4856d0cf78afb1e6aeca2b5466b8172e8cd4fde55da4f3e6a45a4231a1d0aa5d | 34896f8b78301369eec6416a635b009a455d297819b9c0f107dcbbfd4ba00f02 | 0 |
+| M073417 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotPowMaximalCharPLocalCard | no | f0a172fa529f130692ec4da73831c84fe25691bcd532f362b1912f605c20d254 | f0a172fa529f130692ec4da73831c84fe25691bcd532f362b1912f605c20d254 | 8fb2f4aaab78c0e98d70f533bd6514b9e39bf8197e83b6f06109afc92e48bfaf | 0 |
+| M073435 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientEquivRestrictedComponentFamilies | no | 9e8766cede32b0c01c4959ed45b57123080a0804ca11c1cd56f6bebdd5699766 | 9e8766cede32b0c01c4959ed45b57123080a0804ca11c1cd56f6bebdd5699766 | 7b3f656e3da79efc6e1b4abc3bb360057e3a9b6cb4a70178542ce713457f8f73 | 0 |
+| M073443 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RTensorPairingEqZeroOfFlipInjective | no | 2438db085ae8de81dacca24dc18921f8d2dfdfdf47ac6cc6fc9948d6250d0fce | 2438db085ae8de81dacca24dc18921f8d2dfdfdf47ac6cc6fc9948d6250d0fce | 4ca8ec62bb8646880060aac37dc93f265e1a32fd500f4498033ea3959a086130 | 0 |
+| M073629 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RelMap | no | cd6387a40989f3a7223a4b339686fcdc0ba9dedbe1d6821ca9577c47aebb1aa6 | cd6387a40989f3a7223a4b339686fcdc0ba9dedbe1d6821ca9577c47aebb1aa6 | ce02b9baf1e59c7e33be4dec31c417eb7c1d0269dea8104e99d5f18b5861d2b9 | 0 |
+| M073680 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ResidueTopFactorThroughBottom | no | 8e5949cac66b8b80e75e78a95c2445207a31d5420fc4ab92a3afd1d3efcd48bd | 8e5949cac66b8b80e75e78a95c2445207a31d5420fc4ab92a3afd1d3efcd48bd | 62474399dcba8b3e991842f484e9a3600d012941b273dce9538d488420e51126 | 0 |
+| M073702 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RightInvariantMulEqFinprodComponents | no | 435358c5635f094680291d55c08c38740f9786e97dd0f3c78fcb97877e027169 | 435358c5635f094680291d55c08c38740f9786e97dd0f3c78fcb97877e027169 | 339c5ae03a4f3a00a8028ad910b152b25ee379d10e7ea85d79af15b5a2113b85 | 0 |
+| M073708 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingHomApplyEqPow | yes | deb89aa1ed58c610b569a79a45906be27bb783cbd769b8c0ddfa21fdf4a525b8 | 0760c5e40fbdfc54ae100b248bcfdc85f725c0ddf9008a2d03b9556981f6b9d1 | 9021e1d21c842e8ceac53047480fe4c7274cf1c79b6a91dbd15dc1e9ad783375 | 0 |
+| M073713 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingHomEqOfPerfectOfDvdSubAdicSeparated | no | eab34c5eb4ac130d355b6e6f52ef693fa9ab28393e684555d5f4f379774b2ffc | eab34c5eb4ac130d355b6e6f52ef693fa9ab28393e684555d5f4f379774b2ffc | 489124beecea2d3a6a7ab3dd614cf53695f56d352f07503c486eeb25742d1c41 | 0 |
+| M073717 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingHomIsPushoutOfPiComponents | no | c63ff569aea7d51c39b19437515da5036ce6ae7560335b46a636f20940e5dd13 | c63ff569aea7d51c39b19437515da5036ce6ae7560335b46a636f20940e5dd13 | b01ba485bb4f06aefcbd8df76944a58afd6074153ac1b593b627778ab54b5271 | 0 |
+| M073732 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RootsOfUnityInj | no | 779592814185dee9bc5c2199d9b018425da3d29206aacd7ecd3f85d78aeb01b0 | 779592814185dee9bc5c2199d9b018425da3d29206aacd7ecd3f85d78aeb01b0 | 6af34b15c45ab3260403f3c10a0c41bb9ae3273aa83fdfbb6abeb9e93e991db7 | 0 |
+| M073785 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ScalarWeightSum | no | 2e64b73ec9cd8bcd44c83aa6550afdaeaef5ec122fb9e09afee1ccdce6840dca | 2e64b73ec9cd8bcd44c83aa6550afdaeaef5ec122fb9e09afee1ccdce6840dca | ab778cd370fc9185f88c1fedab524816c1c0941d0ba1633d3edaca2322d47d90 | 0 |
+| M073809 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SchurEquivariantMapsProportional | no | 27345bca280c8889a6416c2d4183fafa1bbfbed1cbce8e9da4dc2719b56785fb | 27345bca280c8889a6416c2d4183fafa1bbfbed1cbce8e9da4dc2719b56785fb | 04e1b3c4dbd71f7cf6edd7377a2f54c831c4e7fc923ea288ec9b6487b8a210ce | 0 |
+| M073816 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SchurIsotypicSplittingInnerProduct | no | d3446049356e9a010e3c399258955dcea9b77829c16d60b71684b8e70d4b0d6c | d3446049356e9a010e3c399258955dcea9b77829c16d60b71684b8e70d4b0d6c | 765651ae54565de662e9f15c859e0e5029ea31544ef9eb129a8dfd2c0e6f242c | 0 |
+| M074065 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SmodEqIffDvd | no | aebf6ee2b3135b81d341fb39d43ca3fb682899dc0f40b8b49839801d46f27ef5 | aebf6ee2b3135b81d341fb39d43ca3fb682899dc0f40b8b49839801d46f27ef5 | aa045c9a23153b194190e60d95b3be27b44c2d0f5e5a982082ab89af67cd2e90 | 0 |
+| M074072 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SmulPowMemSpanPowSmulTop | no | b3f02cdcd43d44a7d49a36707c4d19e2b2a4f724b8d013f5fae93a357baa547e | b3f02cdcd43d44a7d49a36707c4d19e2b2a4f724b8d013f5fae93a357baa547e | 59b5a05bd32c92a827e695d690c463c3c4665b482c90261997e4b6314e1d2aaa | 0 |
+| M074081 | Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanEqTopOfIrreducibleOverAlgClosed | no | dcb3795cef13d5e85b40c12533d4df1d54591bd88b92d14e00d176a32cac7d11 | dcb3795cef13d5e85b40c12533d4df1d54591bd88b92d14e00d176a32cac7d11 | a30a54e8ab7e80bc41382066f37a6e0423778f9500d5151a7d36a877185ac32e | 0 |
+
+====================================================================================================
+M072545  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MatrixRegular
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MatrixRegular:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MatrixRegular (125s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:77:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:78:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:82:10: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:85:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:100:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:105:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:147:20: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:150:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:158:29: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:158:51: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:169:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:178:12: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:186:29: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:186:51: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:141:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:148:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:176:61: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:141:55: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:148:51: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:176:61: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:197:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:245:29: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:245:51: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MatrixRegular.lean:249:6: Unused tactic linter: `try` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072550  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MaxIdealExactPowDvdSpanPrime
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MaxIdealExactPowDvdSpanPrime:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MaxIdealExactPowDvdSpanPrime (25s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MaxIdealExactPowDvdSpanPrime.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072557  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MaximalIsotropicDoubled
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MaximalIsotropicDoubled:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MaximalIsotropicDoubled (70s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MaximalIsotropicDoubled.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MaximalIsotropicDoubled.lean:15:11: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MaximalIsotropicDoubled.lean:24:11: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072663  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSmulTopOfEntries
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSmulTopOfEntries:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSmulTopOfEntries (25s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MemSmulTopOfEntries.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MemSmulTopOfEntries.lean:48:9: `Submodule.le_of_le_smul_of_le_jacobson_bot` has been deprecated: Use `Submodule.le_of_le_smul_of_le_jacobson` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_3} {M : Type u_4} [inst : CommRing R] [inst_1 : AddCommGroup M] [inst_2 : Module R M] {I : Ideal R}
+    {N N' : Submodule R M}, N'.FG → I ≤ Ring.jacobson R → N' ≤ N ⊔ I • N' → N' ≤ N
+instead of
+  ∀ {R : Type u_3} {M : Type u_4} [inst : CommRing R] [inst_1 : AddCommGroup M] [inst_2 : Module R M] {I : Ideal R}
+    {N N' : Submodule R M}, N'.FG → I ≤ ⊥.jacobson → N' ≤ N ⊔ I • N' → N' ≤ N
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072667  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSpanIndicatorLowerSetsFinitePoset
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSpanIndicatorLowerSetsFinitePoset:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSpanIndicatorLowerSetsFinitePoset (54s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MemSpanIndicatorLowerSetsFinitePoset.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MemSpanIndicatorLowerSetsFinitePoset.lean:26:72: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MemSpanIndicatorLowerSetsFinitePoset.lean:47:69: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MemSpanIndicatorLowerSetsFinitePoset.lean:52:72: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MemSpanIndicatorLowerSetsFinitePoset.lean:54:20: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MemSpanIndicatorLowerSetsFinitePoset.lean:31:40: This simp argument is unused:
+  h1
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Option.some.injEq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072668  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSpanKilledUnionAverages
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSpanKilledUnionAverages:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSpanKilledUnionAverages (23s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MemSpanKilledUnionAverages.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072737  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonicDvdXPowCardSubOneExistsRoot
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonicDvdXPowCardSubOneExistsRoot:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonicDvdXPowCardSubOneExistsRoot (19s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MonicDvdXPowCardSubOneExistsRoot.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MonicDvdXPowCardSubOneExistsRoot.lean:12:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MonicDvdXPowCardSubOneExistsRoot.lean:28:4: `FiniteField.X_pow_card_sub_X_ne_zero` has been deprecated: Use `Polynomial.X_pow_sub_X_ne_zero` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.X_pow_card_sub_X_ne_zero` to `X_pow_sub_X_ne_zero x`).
+
+Hint: Replace the deprecated name:
+  F̵i̵n̵i̵t̵e̵F̵i̵e̵l̵d̵.̵X̵_̵p̵o̵w̵_̵c̵a̵r̵d̵_̵s̵u̵b̵_̵X̵_̵n̵e̵_̵z̵e̵r̵o̵X̲_̲p̲o̲w̲_̲s̲u̲b̲_̲X̲_̲n̲e̲_̲z̲e̲r̲o̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MonicDvdXPowCardSubOneExistsRoot.lean:31:6: `FiniteField.X_pow_card_sub_X_natDegree_eq` has been deprecated: Use `Polynomial.natDegree_X_pow_sub_X` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.X_pow_card_sub_X_natDegree_eq` to `natDegree_X_pow_sub_X x`).
+
+Hint: Replace the deprecated name:
+  F̵i̵n̵i̵t̵e̵F̵i̵e̵l̵d̵.̵X̵_̵p̵o̵w̵_̵c̵a̵r̵d̵_̵s̵u̵b̵_̵X̵_̵n̵a̵t̵D̵e̵g̵r̵e̵e̵_̵e̵q̵n̲a̲t̲D̲e̲g̲r̲e̲e̲_̲X̲_̲p̲o̲w̲_̲s̲u̲b̲_̲X̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072756  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonoidAlgebraExistsRightInvOfMapField
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonoidAlgebraExistsRightInvOfMapField:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonoidAlgebraExistsRightInvOfMapField (20s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MonoidAlgebraExistsRightInvOfMapField.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072778  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MulDiagOfTriangular
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MulDiagOfTriangular:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MulDiagOfTriangular (16s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MulDiagOfTriangular.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072785  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MulVecEqZeroOfSubalgebra
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MulVecEqZeroOfSubalgebra:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MulVecEqZeroOfSubalgebra (28s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MulVecEqZeroOfSubalgebra.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072791  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MultisetEqOfProdAddEq
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MultisetEqOfProdAddEq:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MultisetEqOfProdAddEq (17s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MultisetEqOfProdAddEq.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072792  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MultisetManySeparatedPoints
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MultisetManySeparatedPoints:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MultisetManySeparatedPoints (18s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MultisetManySeparatedPoints.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MultisetManySeparatedPoints.lean:19:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MultisetManySeparatedPoints.lean:54:16: This simp argument is unused:
+  map_sum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072803  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatCardAddMonoidHomZmodLe
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatCardAddMonoidHomZmodLe:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatCardAddMonoidHomZmodLe (21s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NatCardAddMonoidHomZmodLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072810  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatCastNotMemOfPrimeNe
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatCastNotMemOfPrimeNe:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatCastNotMemOfPrimeNe (58s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NatCastNotMemOfPrimeNe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072811  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatCastPowMulValuationLeOneOfNotPowSuccDvdDiffer
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatCastPowMulValuationLeOneOfNotPowSuccDvdDiffer:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatCastPowMulValuationLeOneOfNotPowSuccDvdDiffer (35s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NatCastPowMulValuationLeOneOfNotPowSuccDvdDiffer.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NatCastPowMulValuationLeOneOfNotPowSuccDvdDiffer.lean:16:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072813  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatDegreeLeAndCoeffProdPow
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatDegreeLeAndCoeffProdPow:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatDegreeLeAndCoeffProdPow (71s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NatDegreeLeAndCoeffProdPow.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072826  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NcardPrimesOverEqFinrankOfTrivialFrobenius
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NcardPrimesOverEqFinrankOfTrivialFrobenius:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NcardPrimesOverEqFinrankOfTrivialFrobenius (59s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NcardPrimesOverEqFinrankOfTrivialFrobenius.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NcardPrimesOverEqFinrankOfTrivialFrobenius.lean:9:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NcardPrimesOverEqFinrankOfTrivialFrobenius.lean:38:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NcardPrimesOverEqFinrankOfTrivialFrobenius.lean:47:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NcardPrimesOverEqFinrankOfTrivialFrobenius.lean:48:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NcardPrimesOverEqFinrankOfTrivialFrobenius.lean:50:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NcardPrimesOverEqFinrankOfTrivialFrobenius.lean:66:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NcardPrimesOverEqFinrankOfTrivialFrobenius.lean:67:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NcardPrimesOverEqFinrankOfTrivialFrobenius.lean:74:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NcardPrimesOverEqFinrankOfTrivialFrobenius.lean:78:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NcardPrimesOverEqFinrankOfTrivialFrobenius.lean:79:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NcardPrimesOverEqFinrankOfTrivialFrobenius.lean:86:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NcardPrimesOverEqFinrankOfTrivialFrobenius.lean:87:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072835  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NewtonPolygonDominantIndexXSubCMul
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NewtonPolygonDominantIndexXSubCMul:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NewtonPolygonDominantIndexXSubCMul (39s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NewtonPolygonDominantIndexXSubCMul.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072837  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NewtonPolygonLastDominantIndexMulXSubC
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NewtonPolygonLastDominantIndexMulXSubC:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NewtonPolygonLastDominantIndexMulXSubC (49s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NewtonPolygonLastDominantIndexMulXSubC.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072879  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyEquivOfCharacterEq
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyEquivOfCharacterEq:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyEquivOfCharacterEq (26s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NonemptyEquivOfCharacterEq.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072889  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyLinearEquivOfCharpolyEq
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyLinearEquivOfCharpolyEq:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyLinearEquivOfCharpolyEq (26s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NonemptyLinearEquivOfCharpolyEq.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NonemptyLinearEquivOfCharpolyEq.lean:60:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NonemptyLinearEquivOfCharpolyEq.lean:90:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NonemptyLinearEquivOfCharpolyEq.lean:91:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NonemptyLinearEquivOfCharpolyEq.lean:92:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NonemptyLinearEquivOfCharpolyEq.lean:93:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NonemptyLinearEquivOfCharpolyEq.lean:115:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NonemptyLinearEquivOfCharpolyEq.lean:116:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NonemptyLinearEquivOfCharpolyEq.lean:117:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NonemptyLinearEquivOfCharpolyEq.lean:126:6: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NonemptyLinearEquivOfCharpolyEq.lean:127:6: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NonemptyLinearEquivOfCharpolyEq.lean:130:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NonemptyLinearEquivOfCharpolyEq.lean:134:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NonemptyLinearEquivOfCharpolyEq.lean:144:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NonemptyLinearEquivOfCharpolyEq.lean:145:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072931  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormEqMulNormIdempotentCorner
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormEqMulNormIdempotentCorner:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormEqMulNormIdempotentCorner (21s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormEqMulNormIdempotentCorner.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072938  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormEvalLeSumNormCoeff
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormEvalLeSumNormCoeff:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormEvalLeSumNormCoeff (16s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormEvalLeSumNormCoeff.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072948  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormHasSumEqOfDominant
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormHasSumEqOfDominant:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormHasSumEqOfDominant (19s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormHasSumEqOfDominant.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormHasSumEqOfDominant.lean:34:23: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072955  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormIntegralStarMulSqLeMul
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormIntegralStarMulSqLeMul:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormIntegralStarMulSqLeMul (23s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormIntegralStarMulSqLeMul.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072973  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormNatCastEqOneOfNotDvd
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormNatCastEqOneOfNotDvd:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormNatCastEqOneOfNotDvd (69s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormNatCastEqOneOfNotDvd.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072974  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormOneAddEqOne
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormOneAddEqOne:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormOneAddEqOne (27s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormOneAddEqOne.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormOneAddEqOne.lean:97:214: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormOneAddEqOne.lean:97:259: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormOneAddEqOne.lean:97:389: Variable name `inst_3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormOneAddEqOne.lean:97:410: Variable name `inst_4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072976  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPowPrimePowSubOne
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPowPrimePowSubOne:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPowPrimePowSubOne (39s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormPowPrimePowSubOne.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M072980  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPowSubOneLe
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPowSubOneLe:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPowSubOneLe (23s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormPowSubOneLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073006  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormZpowSubOneLe
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormZpowSubOneLe:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormZpowSubOneLe (94s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormZpowSubOneLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073027  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotDvdCoeffAevalOneAddXPowSubOne
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotDvdCoeffAevalOneAddXPowSubOne:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotDvdCoeffAevalOneAddXPowSubOne (45s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NotDvdCoeffAevalOneAddXPowSubOne.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NotDvdCoeffAevalOneAddXPowSubOne.lean:33:24: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NotDvdCoeffAevalOneAddXPowSubOne.lean:32:10: This simp argument is unused:
+  h0
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hl.ne_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NotDvdCoeffAevalOneAddXPowSubOne.lean:74:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NotDvdCoeffAevalOneAddXPowSubOne.lean:81:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NotDvdCoeffAevalOneAddXPowSubOne.lean:38:8: Overlapping instance parameters in `not_dvd_coeff_aeval_oneAddX_pow_sub_one`:
+
+⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
+💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073035  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotMemSqOfDerivative
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotMemSqOfDerivative:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotMemSqOfDerivative (22s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NotMemSqOfDerivative.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NotMemSqOfDerivative.lean:29:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073037  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotSqMulUnit
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotSqMulUnit:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotSqMulUnit (22s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NotSqMulUnit.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NotSqMulUnit.lean:12:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NotSqMulUnit.lean:15:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NotSqMulUnit.lean:16:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NotSqMulUnit.lean:20:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NotSqMulUnit.lean:33:28: This simp argument is unused:
+  eq_intCast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_natCast, Int.cast_natCast]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NotSqMulUnit.lean:33:40: This simp argument is unused:
+  Int.cast_natCast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_natCast, eq_intCast]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073039  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotXPowSuccDvdDetOfFirstOrderKernelEqZero
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotXPowSuccDvdDetOfFirstOrderKernelEqZero:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotXPowSuccDvdDetOfFirstOrderKernelEqZero (30s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NotXPowSuccDvdDetOfFirstOrderKernelEqZero.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NotXPowSuccDvdDetOfFirstOrderKernelEqZero.lean:66:36: This simp argument is unused:
+  Polynomial.finsetSum_coeff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hΘ, hA, Matrix.mul_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NotXPowSuccDvdDetOfFirstOrderKernelEqZero.lean:69:36: This simp argument is unused:
+  Polynomial.finsetSum_coeff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hΘ, hB, Matrix.mul_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073044  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NumericalConditionsTheoremTLargePrime
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NumericalConditionsTheoremTLargePrime:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NumericalConditionsTheoremTLargePrime (67s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NumericalConditionsTheoremTLargePrime.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073054  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddPowLe
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddPowLe:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddPowLe (26s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/OneAddPowLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073055  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddPowOfMulSelfEqZero
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddPowOfMulSelfEqZero:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddPowOfMulSelfEqZero (90s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/OneAddPowOfMulSelfEqZero.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/OneAddPowOfMulSelfEqZero.lean:6:18: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073057  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddXMulDerivativeBin
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddXMulDerivativeBin:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddXMulDerivativeBin (35s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/OneAddXMulDerivativeBin.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/OneAddXMulDerivativeBin.lean:339:66: `Ideal.mem_jacobson_bot` has been deprecated: Use `Ring.mem_jacobson_iff` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u} [inst : CommRing R] {x : R}, x ∈ Ring.jacobson R ↔ ∀ (y : R), IsUnit (x * y + 1)
+instead of
+  ∀ {R : Type u} [inst : CommRing R] {x : R}, x ∈ ⊥.jacobson ↔ ∀ (y : R), IsUnit (x * y + 1)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mem_jacobson_bot` to `Ring.mem_jacobson_iff x`).
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073059  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddXPowPrimePowSubOneMemSpan
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddXPowPrimePowSubOneMemSpan:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddXPowPrimePowSubOneMemSpan (89s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/OneAddXPowPrimePowSubOneMemSpan.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/OneAddXPowPrimePowSubOneMemSpan.lean:7:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/OneAddXPowPrimePowSubOneMemSpan.lean:18:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/OneAddXPowPrimePowSubOneMemSpan.lean:26:6: `padicValNat_dvd_iff_le` has been deprecated: Use `multiplicity_dvd_iff_le` instead
+
+Hint: Replace the deprecated name:
+  p̵a̵d̵i̵c̵V̵a̵l̵N̵a̵t̵_̵d̵v̵d̵_̵i̵f̵f̵_̵l̵e̵m̲u̲l̲t̲i̲p̲l̲i̲c̲i̲t̲y̲_̲d̲v̲d̲_̲i̲f̲f̲_̲l̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/OneAddXPowPrimePowSubOneMemSpan.lean:26:34: `padicValNat.mul` has been deprecated: Use `Nat.multiplicity_mul` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul` to `Nat.multiplicity_mul x`).
+
+Hint: Replace the deprecated name:
+  p̵a̵d̵i̵c̵V̵a̵l̵N̵a̵t̵.̵m̵u̵l̵N̲a̲t̲.̲m̲u̲l̲t̲i̲p̲l̲i̲c̲i̲t̲y̲_̲m̲u̲l̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/OneAddXPowPrimePowSubOneMemSpan.lean:27:9: `padicValNat_dvd_iff_le` has been deprecated: Use `multiplicity_dvd_iff_le` instead
+
+Hint: Replace the deprecated name:
+  p̵a̵d̵i̵c̵V̵a̵l̵N̵a̵t̵_̵d̵v̵d̵_̵i̵f̵f̵_̵l̵e̵m̲u̲l̲t̲i̲p̲l̲i̲c̲i̲t̲y̲_̲d̲v̲d̲_̲i̲f̲f̲_̲l̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/OneAddXPowPrimePowSubOneMemSpan.lean:46:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073068  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneSubSumLeProdOneSubRange
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneSubSumLeProdOneSubRange:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneSubSumLeProdOneSubRange (47s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/OneSubSumLeProdOneSubRange.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073101  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PadicIntContinuousHomNormalizeOne
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PadicIntContinuousHomNormalizeOne:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PadicIntContinuousHomNormalizeOne (81s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PadicIntContinuousHomNormalizeOne.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073293  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowSmulMemOfLe
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowSmulMemOfLe:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowSmulMemOfLe (25s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowSmulMemOfLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowSmulMemOfLe.lean:40:32: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowSmulMemOfLe.lean:40:50: Variable name `inst_1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowSmulMemOfLe.lean:40:72: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowSmulMemOfLe.lean:40:129: Variable name `inst_4` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_4
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowSmulMemOfLe.lean:40:155: Variable name `inst_5` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_5
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowSmulMemOfLe.lean:40:178: Variable name `inst_6` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_6
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073295  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowSubDvdChoosePrimePowOfLt
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowSubDvdChoosePrimePowOfLt:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowSubDvdChoosePrimePowOfLt (20s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowSubDvdChoosePrimePowOfLt.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073297  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowSubOneLe
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowSubOneLe:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowSubOneLe (20s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowSubOneLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowSubOneLe.lean:20:26: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073299  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowerSeriesEqCOfSubstFixedNotRootOfUnity
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowerSeriesEqCOfSubstFixedNotRootOfUnity:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowerSeriesEqCOfSubstFixedNotRootOfUnity (20s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowerSeriesEqCOfSubstFixedNotRootOfUnity.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowerSeriesEqCOfSubstFixedNotRootOfUnity.lean:24:37: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowerSeriesEqCOfSubstFixedNotRootOfUnity.lean:31:37: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowerSeriesEqCOfSubstFixedNotRootOfUnity.lean:53:17: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073301  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowerSeriesExistsUniqueDecompOverFrobeniusLikeEn
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowerSeriesExistsUniqueDecompOverFrobeniusLikeEn:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowerSeriesExistsUniqueDecompOverFrobeniusLikeEn (20s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowerSeriesExistsUniqueDecompOverFrobeniusLikeEn.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowerSeriesExistsUniqueDecompOverFrobeniusLikeEn.lean:13:28: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowerSeriesExistsUniqueDecompOverFrobeniusLikeEn.lean:34:33: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/PowerSeriesExistsUniqueDecompOverFrobeniusLikeEn.lean:37:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073361  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ProdOneSubBoundedBelowOfSummable
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ProdOneSubBoundedBelowOfSummable:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ProdOneSubBoundedBelowOfSummable (17s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ProdOneSubBoundedBelowOfSummable.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073378  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ProjectiveOfFreeLatticeOverFiniteFreeRing
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ProjectiveOfFreeLatticeOverFiniteFreeRing:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ProjectiveOfFreeLatticeOverFiniteFreeRing (23s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ProjectiveOfFreeLatticeOverFiniteFreeRing.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ProjectiveOfFreeLatticeOverFiniteFreeRing.lean:8:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073417  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotPowMaximalCharPLocalCard
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotPowMaximalCharPLocalCard:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotPowMaximalCharPLocalCard (26s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/QuotPowMaximalCharPLocalCard.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/QuotPowMaximalCharPLocalCard.lean:46:28: `SetLike.exists_of_lt` has been deprecated: Use `IsConcreteLE.exists_of_lt` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.exists_of_lt` to `IsConcreteLE.exists_of_lt x`).
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵L̵i̵k̵e̵.̵e̵x̵i̵s̵t̵s̵_̵o̵f̵_̵l̵t̵I̲s̲C̲o̲n̲c̲r̲e̲t̲e̲L̲E̲.̲e̲x̲i̲s̲t̲s̲_̲o̲f̲_̲l̲t̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073435  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientEquivRestrictedComponentFamilies
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientEquivRestrictedComponentFamilies:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientEquivRestrictedComponentFamilies (17s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/QuotientEquivRestrictedComponentFamilies.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/QuotientEquivRestrictedComponentFamilies.lean:24:15: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/QuotientEquivRestrictedComponentFamilies.lean:71:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/QuotientEquivRestrictedComponentFamilies.lean:73:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/QuotientEquivRestrictedComponentFamilies.lean:74:54: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073443  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RTensorPairingEqZeroOfFlipInjective
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RTensorPairingEqZeroOfFlipInjective:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RTensorPairingEqZeroOfFlipInjective (19s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RTensorPairingEqZeroOfFlipInjective.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RTensorPairingEqZeroOfFlipInjective.lean:16:22: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073629  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RelMap
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RelMap:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RelMap (21s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RelMap.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073680  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ResidueTopFactorThroughBottom
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ResidueTopFactorThroughBottom:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ResidueTopFactorThroughBottom (21s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ResidueTopFactorThroughBottom.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073702  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RightInvariantMulEqFinprodComponents
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RightInvariantMulEqFinprodComponents:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RightInvariantMulEqFinprodComponents (27s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RightInvariantMulEqFinprodComponents.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RightInvariantMulEqFinprodComponents.lean:41:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RightInvariantMulEqFinprodComponents.lean:63:40: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073708  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingHomApplyEqPow
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingHomApplyEqPow:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingHomApplyEqPow (62s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingHomApplyEqPow.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingHomApplyEqPow.lean:13:41: `FiniteField.X_pow_card_sub_X_ne_zero` has been deprecated: Use `Polynomial.X_pow_sub_X_ne_zero` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.X_pow_card_sub_X_ne_zero` to `X_pow_sub_X_ne_zero x`).
+
+Hint: Replace the deprecated name:
+  F̵i̵n̵i̵t̵e̵F̵i̵e̵l̵d̵.̵X̵_̵p̵o̵w̵_̵c̵a̵r̵d̵_̵s̵u̵b̵_̵X̵_̵n̵e̵_̵z̵e̵r̵o̵X̲_̲p̲o̲w̲_̲s̲u̲b̲_̲X̲_̲n̲e̲_̲z̲e̲r̲o̲
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingHomApplyEqPow.lean:28:15: `FiniteField.X_pow_card_sub_X_natDegree_eq` has been deprecated: Use `Polynomial.natDegree_X_pow_sub_X` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.X_pow_card_sub_X_natDegree_eq` to `natDegree_X_pow_sub_X x`).
+
+Hint: Replace the deprecated name:
+  F̵i̵n̵i̵t̵e̵F̵i̵e̵l̵d̵.̵X̵_̵p̵o̵w̵_̵c̵a̵r̵d̵_̵s̵u̵b̵_̵X̵_̵n̵a̵t̵D̵e̵g̵r̵e̵e̵_̵e̵q̵n̲a̲t̲D̲e̲g̲r̲e̲e̲_̲X̲_̲p̲o̲w̲_̲s̲u̲b̲_̲X̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073713  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingHomEqOfPerfectOfDvdSubAdicSeparated
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingHomEqOfPerfectOfDvdSubAdicSeparated:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingHomEqOfPerfectOfDvdSubAdicSeparated (24s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingHomEqOfPerfectOfDvdSubAdicSeparated.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073717  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingHomIsPushoutOfPiComponents
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingHomIsPushoutOfPiComponents:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingHomIsPushoutOfPiComponents (52s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingHomIsPushoutOfPiComponents.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingHomIsPushoutOfPiComponents.lean:49:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingHomIsPushoutOfPiComponents.lean:50:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingHomIsPushoutOfPiComponents.lean:51:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingHomIsPushoutOfPiComponents.lean:52:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingHomIsPushoutOfPiComponents.lean:53:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingHomIsPushoutOfPiComponents.lean:54:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingHomIsPushoutOfPiComponents.lean:55:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingHomIsPushoutOfPiComponents.lean:56:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingHomIsPushoutOfPiComponents.lean:57:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingHomIsPushoutOfPiComponents.lean:58:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingHomIsPushoutOfPiComponents.lean:59:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingHomIsPushoutOfPiComponents.lean:60:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RingHomIsPushoutOfPiComponents.lean:61:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073732  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RootsOfUnityInj
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RootsOfUnityInj:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RootsOfUnityInj (45s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RootsOfUnityInj.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RootsOfUnityInj.lean:31:31: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/RootsOfUnityInj.lean:31:64: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073785  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ScalarWeightSum
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ScalarWeightSum:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ScalarWeightSum (42s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/ScalarWeightSum.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073809  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SchurEquivariantMapsProportional
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SchurEquivariantMapsProportional:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SchurEquivariantMapsProportional (19s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SchurEquivariantMapsProportional.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M073816  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SchurIsotypicSplittingInnerProduct
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SchurIsotypicSplittingInnerProduct:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SchurIsotypicSplittingInnerProduct (21s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SchurIsotypicSplittingInnerProduct.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SchurIsotypicSplittingInnerProduct.lean:11:8: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SchurIsotypicSplittingInnerProduct.lean:11:66: `Module.End.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : One F} [self : IsOneApplyEqSelf F]
+    (x : α), 1 x = x
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M] (x : M), 1 x = x
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SchurIsotypicSplittingInnerProduct.lean:37:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M074065  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SmodEqIffDvd
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SmodEqIffDvd:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SmodEqIffDvd (20s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SmodEqIffDvd.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M074072  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SmulPowMemSpanPowSmulTop
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SmulPowMemSpanPowSmulTop:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SmulPowMemSpanPowSmulTop (24s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SmulPowMemSpanPowSmulTop.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M074081  Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanEqTopOfIrreducibleOverAlgClosed
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanEqTopOfIrreducibleOverAlgClosed:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanEqTopOfIrreducibleOverAlgClosed (21s)
+warning: src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SpanEqTopOfIrreducibleOverAlgClosed.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
