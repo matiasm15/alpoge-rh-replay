@@ -1,0 +1,1403 @@
+P0065 port build transcript
+platform: Linux x86_64
+lean: leanprover/lean4:v4.36.0 -> Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+archive: 14 parts from https://alpo.ge/lean.tar.gz.partNN, all matching parts.sha256
+lakefile.toml: the archive's name, srcDir, moreLeanArgs, leanOptions and Mathlib require (rev changed to the target),
+               with only the `Development` lean_lib (as in the archive) and no defaultTargets
+tree: the 64 pinned packet sources, each matching tracker/modules.jsonl.gz, plus port/patches/<ID>.patch
+      applied with `git apply --whitespace=error-all` where present (15 modules); the other 49 are unchanged
+command per module: lake build +<Module>:olean (fresh .lake/build)
+
+| ID | module | patch | source sha256 (pinned) | built file sha256 | olean sha256 | exit |
+| M137494 | Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LocalInvariantNeighborhoods.SmallSub | no | f4fdb7e3fef17c04bec159cf472b1e5db769cecc46cf20f4f1e86c37a627e730 | f4fdb7e3fef17c04bec159cf472b1e5db769cecc46cf20f4f1e86c37a627e730 | 579dc2afc0ba96dca3b971ed2646acecfaa3d7bfc2a2e0c840cd8e65cc1aa15b | 0 |
+| M137503 | Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LocalOperatorBlocks.IntgPowQuad | no | 3d1729ce66818bde4d8739b3b3b71a831f0a2c5d7552d8fb11cf6c4e77d23cc6 | 3d1729ce66818bde4d8739b3b3b71a831f0a2c5d7552d8fb11cf6c4e77d23cc6 | 44153bc08e755f241d837044b7336f86d181aa943635f342299fa3fee07e3835 | 0 |
+| M137565 | Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ParabolicBlockForms.UpperBlockRankOneUpdate | no | 782e001b81b67b1fcf13f5526c475b1f12a0d728160263d8d037173d59f56519 | 782e001b81b67b1fcf13f5526c475b1f12a0d728160263d8d037173d59f56519 | 89690b9ed42cbc0bb56eb8717bba338f847f00556dd4857e88c0e5ba79c30f41 | 0 |
+| M137568 | Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.PolynomialGaussianIntegrals.IntegrableRexpLin | no | dd38a2e96a88b2d2a958925c89960bd572b47de92e290b913b629d454e73a2e1 | dd38a2e96a88b2d2a958925c89960bd572b47de92e290b913b629d454e73a2e1 | ac9aa93f717bdba85f22e9d0a1786356fa48e747cc20d0f072b2ee20c83591f1 | 0 |
+| M137570 | Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.PolynomialGaussianIntegrals.IteratedDerivPolyRealZero | no | 4653e8b30d21dd345310167c719088522d698042bc62f779ab861c291afdd40c | 4653e8b30d21dd345310167c719088522d698042bc62f779ab861c291afdd40c | 4b87ea19ca35cc6dba87212cb280f9a165e1d67d162ef1627a2b797f6c9efece | 0 |
+| M137571 | Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.PolynomialGaussianIntegrals.IteratedDerivScale | no | c70e40a3fe2c9224a4fa7d975e15b4643d1c4fa50f293ccc78b0550e2dbec54b | c70e40a3fe2c9224a4fa7d975e15b4643d1c4fa50f293ccc78b0550e2dbec54b | 51c20a0b6feaf1b0b8ce418c017f360c8b171717867489ebdc1be1e8fe8dd59d | 0 |
+| M137650 | Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.SiegelWeilActions.Exch | no | a58782297be263b956dcca8d5c40a45d7913527dfceb5dfe92364d2f02e27154 | a58782297be263b956dcca8d5c40a45d7913527dfceb5dfe92364d2f02e27154 | 064d43a63658cec8b7cc7d4d65581c50ddc938448168942afea4e1b751603350 | 0 |
+| M137664 | Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.SiegelWeilActions.IsFirstChernFamily | yes | fcb1491627f90fdcd71052975328918d3dfe12f343c8799c56392054e6c60c21 | 3bda299660a3ce1e617385eef398eaa071860dcd2becf55e7436b8be330bcf50 | 0f17a29634514699eed2dc6fd391b0a5eaaeac41afb1a0d5b8f3b2541fc0a58c | 0 |
+| M137737 | Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnfoldingCompactness.AbsUnfA | no | 12503b268eb43bbbc3c032722499e89f1536c972ad564596ad200e8c8bebd10c | 12503b268eb43bbbc3c032722499e89f1536c972ad564596ad200e8c8bebd10c | 6a633484aeca8beb382bb73c19e52e873c4ff3a44b59bce8d8deb5ae70525d84 | 0 |
+| M137741 | Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnfoldingCompactness.ExistsBetaPf | no | 79a11b8b298165e099c453b014a024b2b37eee6299fe1caaa5bf674bfacd641b | 79a11b8b298165e099c453b014a024b2b37eee6299fe1caaa5bf674bfacd641b | 08c9bb67a801ecd5b6edfddbe412021e27f68284b99fc3ab633cbe2e9225e6f4 | 0 |
+| M137792 | Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.WhittakerCovolume.CovolUnique | no | 3dfbfa6c42a709f59c63a23b595f1ca3e1dc1e0745c55d859327801994fb1bbd | 3dfbfa6c42a709f59c63a23b595f1ca3e1dc1e0745c55d859327801994fb1bbd | a196e86e2b3254874fde90a9aabf55dd306eb8efb1b1ca3920aa5ecebcc4a416 | 0 |
+| M137841 | Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ZetaEulerProducts.FinMod | no | ff005ddea9f721a93b21e30ece1d03f54563fac40c8d8a6f73b876f45cc78856 | ff005ddea9f721a93b21e30ece1d03f54563fac40c8d8a6f73b876f45cc78856 | b7b0148a9da7a5273fefee7aeee06c71a3367f834a697132e78d77d646ec630f | 0 |
+| M137843 | Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ZetaEulerProducts.MeromorphicAtProd | no | 8f3dcb4f755d68a52508f40998892bbcf4ced5685adf1ba8e4db3e2ec81018ed | 8f3dcb4f755d68a52508f40998892bbcf4ced5685adf1ba8e4db3e2ec81018ed | 01bda4bf0e165adafae904b6760093dc192e16512b04f05a425a2299f74bd3c4 | 0 |
+| M137879 | Development.WeilBound.CoreStatements.AutomorphicKernels.UnitaryDualGL.GenericUnitaryDual.PComb | no | 7f057cb872f001bdc05203e954bafe2ceb0d99df762e3659a4571326d9a3e636 | 7f057cb872f001bdc05203e954bafe2ceb0d99df762e3659a4571326d9a3e636 | de227ae0d97629a962dc564dc3ea2404090a7b1b69de7347767b4a625472de53 | 0 |
+| M137896 | Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.LocalDefs | no | 6b7cfcba685b6ff2794df4c14cec8f2bcd814e75cc912cb3f22c4836f606e48e | 6b7cfcba685b6ff2794df4c14cec8f2bcd814e75cc912cb3f22c4836f606e48e | dbd41be25074d6b45140cd255afacc491cb9ca1bbc215d07291bc428bdc129d9 | 0 |
+| M137997 | Development.WeilBound.CoreStatements.CentralCharts.TraceMulReNonneg | yes | df942c12bafe2a38ec43353d62dba2fc9471c8a7aa8a3acad4f6f6a759743c57 | a076755b91ac7fb1bace4c71958646c2d03d67e5b4f95a97b6a0bc3ed6fb3713 | cbacfa0dab9dedcf9e21d73ecfb1e45f2e6a5c4636ea3a81fcd8703f99984406 | 0 |
+| M138011 | Development.WeilBound.CoreStatements.CommonZeroEvaluation.EventuallyRoot | yes | 93ebb7a2af440805d2b74f50094d4a634405d8bc420046622600b3bcb0d33bff | 62d2d13f863d8acd386d6b3d3137e286233b112a36350966e793622eab7dce69 | 5d40efa71fcb9ecdf6f92f0f3485e47dffc8308ac20ad541eb1ddb003ef67244 | 0 |
+| M138015 | Development.WeilBound.CoreStatements.CommonZeroEvaluation.ExistsRootAdicComplete | no | c07360cf36c91816fd61b9e9f8dfaddfa1413aebe77b0f76f4c32d3b6eb481c0 | c07360cf36c91816fd61b9e9f8dfaddfa1413aebe77b0f76f4c32d3b6eb481c0 | fc5db6cde99f19c6a85046d4607fee2486c11fbc861f98e4d2db0c30603e10d3 | 0 |
+| M138027 | Development.WeilBound.CoreStatements.CommonZeroEvaluation.PolynomialFractionFieldDegree | no | d3d06dfd9efc6f36127333ff0038fa65080224785a824e00922280ceec232b13 | d3d06dfd9efc6f36127333ff0038fa65080224785a824e00922280ceec232b13 | 965e369ae85099c73f9c22d0bc5fe5342379598354cd7ab539249031dd554a8f | 0 |
+| M138180 | Development.WeilBound.CoreStatements.FlagImmersions.MapProdLinear | no | 2d81f31a088b19582bf8f6f0ff5a2b660d66a8d8c317ea9426d6f7a1bde6a4c6 | 2d81f31a088b19582bf8f6f0ff5a2b660d66a8d8c317ea9426d6f7a1bde6a4c6 | ae42cb925e7f44f70fbf256f9ba73d690f51e7117685d24d4d952f6f6040a136 | 0 |
+| M138225 | Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreCasA | no | 94c3e4f82bac58f001ad8783c8f80dc503abbee852e58de6120de426919f38f2 | 94c3e4f82bac58f001ad8783c8f80dc503abbee852e58de6120de426919f38f2 | 20d98ee6a1ff7f10a51f7942cd03f9cc29b31dd04747d694b5d6699edf283280 | 0 |
+| M138226 | Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreCasB | no | 2808b33a0cf7898d7d086fc8f1bc76c77b2bce1354ec6ee033e2f94d0190422a | 2808b33a0cf7898d7d086fc8f1bc76c77b2bce1354ec6ee033e2f94d0190422a | 8d88d0537f5c2cf1f376f930b12ea382ea292c6be8eb956117a32fef26a73d47 | 0 |
+| M138227 | Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreCasC | no | 6d531072e7b6e394e05a7a7a30f07030e8992602df4608157e554b77d527774e | 6d531072e7b6e394e05a7a7a30f07030e8992602df4608157e554b77d527774e | dd6dc2a2b0135a668caa59404908c512ba21f3d8869fa169414f36f3ad1c0bad | 0 |
+| M138259 | Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.RLLieD | yes | 2824772263f7731792b27cfb6418a2984b7c5dda2a483bef48331ae3facb20dd | a7305888c164abbdc29b7b3f7ba0b87f08632b8c970ceca970f177c04d972e74 | 1ca7eb74f1aa17c5b7f5b40b82fc4fb3054cd9e0076dfaa644e9d929b31e66bf | 0 |
+| M138296 | Development.WeilBound.CoreStatements.HodgeTatePoints.CgSplit | no | 02b3adebcb105783b1435e6e10d85abef5e7ef27fc38967eec4bf6bb084dc1a0 | 02b3adebcb105783b1435e6e10d85abef5e7ef27fc38967eec4bf6bb084dc1a0 | 8eb0bf427413d58636fbc3c5dc1318311749423535e77d3994d1bb19fd57189b | 0 |
+| M138319 | Development.WeilBound.CoreStatements.HodgeTatePoints.DvrOfHeightOne | yes | bdbfd6cc891b582103219593dcef5cace9ac0cc7df627ba3102e9d99cac25cd7 | 2f618109f5e317d4e808e3b166abde4f0c1f98dc76cc03b29b3805b1bea3aee7 | deed931828b5732205285dac39a46eb0ec0313625f6c5370d37b7e3fd36b5abc | 0 |
+| M138323 | Development.WeilBound.CoreStatements.HodgeTatePoints.EqOfProdEq | yes | 92e5c0c56cffd04d46e617ca6e6e91f2954e5e157aacd94368b6002ab9a4dc41 | 858f3ebb81b2e0387bdce910f3fef3897264edc82b79012cde4b59cc0553333c | 90cf93bda766387484c1df0ecae48fc8e3c34de6faee0f61c44ad7b45d8877c0 | 0 |
+| M138393 | Development.WeilBound.CoreStatements.HodgeTatePoints.HtatHensA | yes | 0571985125843bf103857b26d0766de8098858dd20954bd8b12485a8c45bba46 | dc2c01290c9154d192a050f9ed9275522004145301eba6f6edfbf307924e5dce | 0271c5e705f9928ce1ca56a3a4332bf5de2b7701c5a595a63baae119ec3a46c4 | 0 |
+| M138410 | Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLieA | no | 59170b2c873aafcbc7fe8c856968e481141522ff3f5ead466ee26fcca4876a09 | 59170b2c873aafcbc7fe8c856968e481141522ff3f5ead466ee26fcca4876a09 | 176cf6ba59f647cdc6dc55106408293ae7a357065eba1c696b95c9d7c339a1c2 | 0 |
+| M138437 | Development.WeilBound.CoreStatements.HodgeTatePoints.KftwoHostA | yes | 5238f96932ec0c836d82d23ef6941339b20f91b516d014bd1adfa943581d0ad0 | d624ce76c2a995bc5c9d3420c096f0287bfb1161b9115d0e942b73418c1d29a4 | 7007e6c2db887f1c4b181b9d9a3b53491ce17aa435bbb4cdf989124dd7b8128b | 0 |
+| M138478 | Development.WeilBound.CoreStatements.HodgeTatePoints.MulEqSmulOneSymm | no | b1eb48d46990850ceed98ac75ec32c8cce37df57f3312fc52bcf20159c32d7f1 | b1eb48d46990850ceed98ac75ec32c8cce37df57f3312fc52bcf20159c32d7f1 | 9471383d55310b3928cbcb4cc0642628bd59ea8d53fe7c2bb6e2664b90649f42 | 0 |
+| M138481 | Development.WeilBound.CoreStatements.HodgeTatePoints.PdvrExt | yes | 750dd7ec8df8f51fd18dbf228ff30c308496c18c419b4b3914a7f9105985e2ba | 6d5649f136f8d4623d94e35d867871ec9257f6d36f3c367434c9f3861beb21fe | 6db24cb2d5beeb1c7bf02d076929753845dec9eec29da9459ec2d55f19ae06bc | 0 |
+| M138487 | Development.WeilBound.CoreStatements.HodgeTatePoints.PmonoCount | no | c90f88fecf8d813ba08c885edc426fb406fbd0086e84d05e5395824ffb67ad89 | c90f88fecf8d813ba08c885edc426fb406fbd0086e84d05e5395824ffb67ad89 | 3a75fa21c5e39cb6c2db9fbe01c05797f849d13d94960f5caa3ccde0498e81c8 | 0 |
+| M138505 | Development.WeilBound.CoreStatements.HodgeTatePoints.RaCarry | yes | a52fafec3da1e1bef1f965168c12e4f83b3e11a793b910bd963dc4549ed0b0c3 | 7a8a91ff5a64e0d868da0246d3a5cca341571f1fb1e3f6c25e7febc4ce40fdc8 | 9bc34f9ad9f1c94d786dec991dd697b93f5abf46c5e967d5d6a0d905887a1cd8 | 0 |
+| M138510 | Development.WeilBound.CoreStatements.HodgeTatePoints.RaTlog | no | 5c76f2fa40ff6be1d394677f3850eb27835d07846cdd16eaa2417ba73e2b75a2 | 5c76f2fa40ff6be1d394677f3850eb27835d07846cdd16eaa2417ba73e2b75a2 | 0d80d35aa5c9e6157e2b498887539ee03f1c343ee97388177f241b0683d668b8 | 0 |
+| M138541 | Development.WeilBound.CoreStatements.HodgeTatePoints.SiuaNum | yes | 02dae6ddb6608fd3e06f5f6e0e3d32886b5ca33b6814c9af6e95b9f8c953ab0e | 90183df971f3a4b5bb1d7dda8a03d5977ca5de181b1e8dac18efb50d25620020 | 63c0adeb261576cfea78596a21df3ef18b7ad422c05b052eb13c9a76e97eacbb | 0 |
+| M138584 | Development.WeilBound.CoreStatements.HomogeneousNonvanishing.ExtendsToFractionField | no | c4e3a97d4e81bcc6265904e71da12a2b9813f46e9f141efe82ada001424ac250 | c4e3a97d4e81bcc6265904e71da12a2b9813f46e9f141efe82ada001424ac250 | 14038323697aba73693e5499d1b55834dc51d06f6780a74e2affbaeeb2029ae4 | 0 |
+| M138590 | Development.WeilBound.CoreStatements.HomogeneousNonvanishing.GermVanishesOfGenericVanishing | no | ec187f7359b767a77c40479dd521687e92e0abe5c08fda4541287acf3588e9ac | ec187f7359b767a77c40479dd521687e92e0abe5c08fda4541287acf3588e9ac | 773871e3f89b7165e96c2fe99fd3945d248773b920ea00c10677e5473f406c99 | 0 |
+| M138634 | Development.WeilBound.CoreStatements.HomogeneousNonvanishing.SpectralNormIntegrality.SpecInt | no | 6fca1acc23b2cd8d8ceba9bde057dbc1694cae6b3c1ee08e888d7de3230ea431 | 6fca1acc23b2cd8d8ceba9bde057dbc1694cae6b3c1ee08e888d7de3230ea431 | c878c8d757b2a865ac47c4785091169c9ed3346eca596862db7e4b156e9311aa | 0 |
+| M138635 | Development.WeilBound.CoreStatements.HomogeneousNonvanishing.SubfieldClosureEqTopOfEpi | no | 960ff8b6a15fe5a6582135eecdd6c6564cf95218692c5512e324da20d94e536c | 960ff8b6a15fe5a6582135eecdd6c6564cf95218692c5512e324da20d94e536c | 88063423527d25e3c6dd0e30f99956af03e680c8b2a08894d13f0e2db87c7ca0 | 0 |
+| M138642 | Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGDiff | no | 3ac5882a98af34911539f0d4da3a89f27db2cff588d36e211e28dc0e2f55ee2a | 3ac5882a98af34911539f0d4da3a89f27db2cff588d36e211e28dc0e2f55ee2a | b48ad1510539b3b7a339fc56489e2f41909515140f4ab6d6ab4cd609227b9963 | 0 |
+| M138643 | Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGFree | yes | 0160b905ac3bb91cabf11be7f2fa66fbfcdb123af165b685a14c5f97c6edb946 | 15b77c016df749449243b4f36b408ece40fe81358fa862fd4792c44f832ebcb7 | 4aa2661a5a492e5624caf714952c101c77e41a0bb76d24fdd68bddbd9cb55db8 | 0 |
+| M138644 | Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGHerm | no | 298c638b4efd2848ce0314ac00e7069439261b1b50723a474671c4b08085376e | 298c638b4efd2848ce0314ac00e7069439261b1b50723a474671c4b08085376e | 89ce5b89ca9b08d1a67a34fc7881d1d2cbd2136e5138256c534853b9d0e19b8c | 0 |
+| M138682 | Development.WeilBound.CoreStatements.IdealCycleValues.FlatColon | yes | bbbb9bf3530fba0935609a2e04b0056918c5f7e310670f384d43068d1ba481a1 | c3a07db3c63a61109c5b57d4ffc8fd9f882051f61f751502166995d8bb92f47a | 833ef85c8d8de446ddd0e5e608e8024048c4c3e561018f3b6c124f3c3e7681fb | 0 |
+| M138691 | Development.WeilBound.CoreStatements.IdealCycleValues.LengthLocQuot | no | 273cb443feb242caafc36b1b8af11135c20927d933ecaf3f2d7301f2f083aed0 | 273cb443feb242caafc36b1b8af11135c20927d933ecaf3f2d7301f2f083aed0 | 84ef0c7387491e80be7865c02ab7666ed6afccfc1b8acdd72117b8925b277f52 | 0 |
+| M138693 | Development.WeilBound.CoreStatements.IdealCycleValues.ProdMapToMultiset | no | d3f53af2687abfc6a4737b7c7bf0f9fa73fe0e7847468bddf87b5db9974d44a0 | d3f53af2687abfc6a4737b7c7bf0f9fa73fe0e7847468bddf87b5db9974d44a0 | 2d4ba5e6f340d8524a796d8dd5051c30921b29ee4959c05595bfa158fc4fa635 | 0 |
+| M138771 | Development.WeilBound.CoreStatements.MinimalPrimeDimensions.MemOfForallValuationSubring | no | f3605a102adb95499abbb5a0d1179d4b86c0484d17b9a259ff6f57a4c662db33 | f3605a102adb95499abbb5a0d1179d4b86c0484d17b9a259ff6f57a4c662db33 | 215f5d604959d7358b957b13e3b545e4732fa0fa2fa4124b74dfd65fc529c0a9 | 0 |
+| M138825 | Development.WeilBound.CoreStatements.PadicHodgeComparison.CocharacterLieDivisors.MeetsOpenCosets | no | a8b28eb1f6c5fe73ee86562008282cb749b21cabe03275348d6b15f49d75136f | a8b28eb1f6c5fe73ee86562008282cb749b21cabe03275348d6b15f49d75136f | 5598e32d67d3598712ee380ff43f7c8e4dfe082369eaa3ce0f075b491bdc66f3 | 0 |
+| M138835 | Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.AcrisKummerUnits.Splits | no | 7f58506bb9da0777912d3bb21499190f54b4d05ff134eacae92672f3a7062417 | 7f58506bb9da0777912d3bb21499190f54b4d05ff134eacae92672f3a7062417 | ae7e7cf593d418a542536ec29b2c6e28c1f334d401412d2d2a4559efc96f6cc1 | 0 |
+| M138849 | Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdicTorsionCup.PowNsmulEqZero | no | 978718d9c6dac10c23cafe0b756787a59436b8a7218182d741dbe33e08448e6f | 978718d9c6dac10c23cafe0b756787a59436b8a7218182d741dbe33e08448e6f | e482d6b25842461d7ae97bc3b2e0838584b6567676d5c4e8f79cbd318bf7927f | 0 |
+| M138854 | Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdmissibleMinors.ConnAbs | no | ff82e5297cd51c6267ffdba7b853e983e0e498306c41e8f03f8dfc27ca2b86df | ff82e5297cd51c6267ffdba7b853e983e0e498306c41e8f03f8dfc27ca2b86df | eaa066cffc9095925ad02f444d9ae1335007ceb46144bc54bb1789f16c8c111f | 0 |
+| M138855 | Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdmissibleMinors.ExistsWeightBasisFiltration | yes | 0fcff77920bc6902ebf5b0628f2a01d19fb19834762be09b609f8660974f5c25 | a12dbf4ed73fce88e5d557ce6bd2e4b1f58ad985017ab4be11dc7a29c04ced32 | b2fdb28619bb27636534a63ab684025fbf22b971ea949a83e84ab2872b88fa15 | 0 |
+| M138859 | Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdmissibleMinors.RedAbs | no | 200f3e7b49002124da5fdacd46e3970b8095e7b01559e70e925aa346a9d94a39 | 200f3e7b49002124da5fdacd46e3970b8095e7b01559e70e925aa346a9d94a39 | 933d2103c4955cd4698890a9b416665d95b63ef89b727d880e30bd9a6ed91dd7 | 0 |
+| M138902 | Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.GammaIndependence.HomApply | no | a280f0ee3a6672f573a88e920efd096e9d24b84d9a7a46037215930f2cf79105 | a280f0ee3a6672f573a88e920efd096e9d24b84d9a7a46037215930f2cf79105 | 3bf47cc11e8fe2af5805c5bc6e35f0a71301796fa1208719cf3d4f77fb0361cf | 0 |
+| M138904 | Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.GammaIndependence.PhiAbs | no | fa517efe33fcc81b44a9e713e0b2b2c23f2b7ecd4fea679e978d850bff1f7f75 | fa517efe33fcc81b44a9e713e0b2b2c23f2b7ecd4fea679e978d850bff1f7f75 | e5c4b7f48482cd51ebc891e0b9f1aeac33f3839004df889fc630304df4114535 | 0 |
+| M138929 | Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.SmoothGaloisGeometry.IsOpenStabilizer | no | 36d18c8190681d074da60b925c8b2e103437013d5faaaa4a56490439875a627e | 36d18c8190681d074da60b925c8b2e103437013d5faaaa4a56490439875a627e | f77b4a0186ee73235bed2fdb65744e5526425f91e8c02c2d618c2be9ca487fb6 | 0 |
+| M138932 | Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.SmoothGaloisGeometry.RelDim | no | ee22d284f4b12ec3596db56fa0f331806d01134113cb81510132ac0b48e34f08 | ee22d284f4b12ec3596db56fa0f331806d01134113cb81510132ac0b48e34f08 | bb9da23e69bf62a6f3eb12965f85360b468c111bf3a18feb1f19cc847f9f8ccd | 0 |
+| M138939 | Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.TiltSectionUnits.ResAbs | no | 4f46220d036de225d64798d58855795ed88ee2ac1ec7b1ab1178d4deef6452f5 | 4f46220d036de225d64798d58855795ed88ee2ac1ec7b1ab1178d4deef6452f5 | 765eb37a801d4fe52c3de4ef60d7ca35e3b3b29aadb895490188cb1088eda3ab | 0 |
+| M139028 | Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.Same | no | 35653d018a28d4045e5f05062d93c3807dc504c2545b45e560ca087b485f3174 | 35653d018a28d4045e5f05062d93c3807dc504c2545b45e560ca087b485f3174 | 25ac10f8bfc6142043b27ad72838d1342aae3f859e2348435aa85a1045a72816 | 0 |
+| M139059 | Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.ExistsIntegralNbhd | no | 1ccc692bcf83bc874be65677401712741dc50ae267cb5e6fa98a5dba3b96b069 | 1ccc692bcf83bc874be65677401712741dc50ae267cb5e6fa98a5dba3b96b069 | 7333036b0a7c6cb480f9f4af958ae5d4788fda49bba7d940de46c13d3fb29d1c | 0 |
+| M139060 | Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.ExistsTmulOneEqOfIsIntegral | yes | 97d0a7a038bc839a0b9cd9492b2d0dcb07abb38b73c562dbf25799dc8274d1e4 | c3d824d1081dbe2074ffca29994a19bf47dd2e278b0c1b32b1d79b843d6c161c | 721764eb48e6298adeb78c93dfa3013cd1d4aa04eea697ad94e7bbf5b62e3fbb | 0 |
+| M139065 | Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.IrreducibleSpaceOfConnectedOfLocally | no | 3aa441e072332c8751621277cbc50b0fbf107791393859ce9365e7e00c1996b6 | 3aa441e072332c8751621277cbc50b0fbf107791393859ce9365e7e00c1996b6 | 3e509f48f2724ba2d5bbe416462748d6278df404a1022a230236a135ab4f4acb | 0 |
+| M139092 | Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.SeamDefs | no | f6ca34b4e89424ef2d078a23e6df352d682f81ae1809b90fb8fd8b15ee36727b | f6ca34b4e89424ef2d078a23e6df352d682f81ae1809b90fb8fd8b15ee36727b | 6c2a90e1d80218fed1b854af57391757f0a17c8c83e1e8c26df63dcf22955a9f | 0 |
+| M139122 | Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.FrobeniusWittActions.PsiApply | no | f5659193b23984ec49e674f6587db78210397e266989e4cdd72e2c47f34b2d2b | f5659193b23984ec49e674f6587db78210397e266989e4cdd72e2c47f34b2d2b | fd46fbc029b00c97e94ebc9509b6abed3c9a249f45b9fa916b7f2013e0013637 | 0 |
+
+====================================================================================================
+M137494  Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LocalInvariantNeighborhoods.SmallSub
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LocalInvariantNeighborhoods.SmallSub:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LocalInvariantNeighborhoods.SmallSub (30s)
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/LocalInvariantNeighborhoods/SmallSub.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M137503  Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LocalOperatorBlocks.IntgPowQuad
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LocalOperatorBlocks.IntgPowQuad:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.LocalOperatorBlocks.IntgPowQuad (61s)
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/LocalOperatorBlocks/IntgPowQuad.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/LocalOperatorBlocks/IntgPowQuad.lean:24:74: Unused tactic linter: `try` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/LocalOperatorBlocks/IntgPowQuad.lean:26:74: Unused tactic linter: `try` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M137565  Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ParabolicBlockForms.UpperBlockRankOneUpdate
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ParabolicBlockForms.UpperBlockRankOneUpdate:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ParabolicBlockForms.UpperBlockRankOneUpdate (21s)
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/ParabolicBlockForms/UpperBlockRankOneUpdate.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M137568  Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.PolynomialGaussianIntegrals.IntegrableRexpLin
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.PolynomialGaussianIntegrals.IntegrableRexpLin:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.PolynomialGaussianIntegrals.IntegrableRexpLin (63s)
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/PolynomialGaussianIntegrals/IntegrableRexpLin.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M137570  Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.PolynomialGaussianIntegrals.IteratedDerivPolyRealZero
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.PolynomialGaussianIntegrals.IteratedDerivPolyRealZero:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.PolynomialGaussianIntegrals.IteratedDerivPolyRealZero (32s)
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/PolynomialGaussianIntegrals/IteratedDerivPolyRealZero.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M137571  Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.PolynomialGaussianIntegrals.IteratedDerivScale
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.PolynomialGaussianIntegrals.IteratedDerivScale:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.PolynomialGaussianIntegrals.IteratedDerivScale (26s)
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/PolynomialGaussianIntegrals/IteratedDerivScale.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M137650  Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.SiegelWeilActions.Exch
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.SiegelWeilActions.Exch:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.SiegelWeilActions.Exch (48s)
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilActions/Exch.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilActions/Exch.lean:22:8: `MeasureTheory.hasFiniteIntegral_iff_enorm` has been deprecated: Use `MeasureTheory.hasFiniteIntegral_iff_eNorm` instead
+
+Hint: Replace the deprecated name:
+  hasFiniteIntegral_iff_en̵N̲orm
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilActions/Exch.lean:24:34: `enorm_tsum_le_tsum_enorm` has been deprecated: Use `eNorm_tsum_le_tsum_eNorm` instead
+
+Hint: Replace the deprecated name:
+  en̵N̲orm_tsum_le_tsum_en̵N̲orm
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilActions/Exch.lean:26:62: `MeasureTheory.AEStronglyMeasurable.enorm` has been deprecated: Use `MeasureTheory.AEStronglyMeasurable.eNorm` instead
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilActions/Exch.lean:30:14: `MeasureTheory.ofReal_integral_norm_eq_lintegral_enorm` has been deprecated: Use `MeasureTheory.ofReal_integral_norm_eq_lintegral_eNorm` instead
+
+Hint: Replace the deprecated name:
+  ofReal_integral_norm_eq_lintegral_en̵N̲orm
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M137664  Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.SiegelWeilActions.IsFirstChernFamily
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.SiegelWeilActions.IsFirstChernFamily:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.SiegelWeilActions.IsFirstChernFamily (22s)
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilActions/IsFirstChernFamily.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilActions/IsFirstChernFamily.lean:21:14: `MeasureTheory.Measure.QuasiMeasurePreserving` has been deprecated: Use `MeasureTheory.QuasiMeasurePreserving` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.QuasiMeasurePreserving` to `QuasiMeasurePreserving x`).
+
+Hint: Replace the deprecated name:
+  M̵e̵a̵s̵u̵r̵e̵.̵QuasiMeasurePreserving
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilActions/IsFirstChernFamily.lean:23:12: `MeasureTheory.Measure.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  M̵e̵a̵s̵u̵r̵e̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M137737  Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnfoldingCompactness.AbsUnfA
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnfoldingCompactness.AbsUnfA:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnfoldingCompactness.AbsUnfA (17s)
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/UnfoldingCompactness/AbsUnfA.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M137741  Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnfoldingCompactness.ExistsBetaPf
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnfoldingCompactness.ExistsBetaPf:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnfoldingCompactness.ExistsBetaPf (18s)
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/UnfoldingCompactness/ExistsBetaPf.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M137792  Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.WhittakerCovolume.CovolUnique
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.WhittakerCovolume.CovolUnique:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.WhittakerCovolume.CovolUnique (12s)
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/WhittakerCovolume/CovolUnique.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/WhittakerCovolume/CovolUnique.lean:17:11: `MeasureTheory.Measure.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  M̵e̵a̵s̵u̵r̵e̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M137841  Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ZetaEulerProducts.FinMod
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ZetaEulerProducts.FinMod:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ZetaEulerProducts.FinMod (15s)
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/ZetaEulerProducts/FinMod.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/ZetaEulerProducts/FinMod.lean:11:47: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/ZetaEulerProducts/FinMod.lean:16:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/ZetaEulerProducts/FinMod.lean:19:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/ZetaEulerProducts/FinMod.lean:24:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/ZetaEulerProducts/FinMod.lean:26:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/ZetaEulerProducts/FinMod.lean:30:45: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M137843  Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ZetaEulerProducts.MeromorphicAtProd
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ZetaEulerProducts.MeromorphicAtProd:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.ZetaEulerProducts.MeromorphicAtProd (14s)
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/ZetaEulerProducts/MeromorphicAtProd.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/ZetaEulerProducts/MeromorphicAtProd.lean:99:29: `HasFPowerSeriesAt.has_fpower_series_dslope_fslope` has been deprecated: Use `HasFPowerSeriesAt.dslope_fslope` instead
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M137879  Development.WeilBound.CoreStatements.AutomorphicKernels.UnitaryDualGL.GenericUnitaryDual.PComb
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.AutomorphicKernels.UnitaryDualGL.GenericUnitaryDual.PComb:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.AutomorphicKernels.UnitaryDualGL.GenericUnitaryDual.PComb (19s)
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/UnitaryDualGL/GenericUnitaryDual/PComb.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M137896  Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.LocalDefs
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.LocalDefs:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.LocalDefs (13s)
+warning: src/Development/WeilBound/CoreStatements/AutomorphicKernels/UnitarySchrodingerModel/LocalDefs.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M137997  Development.WeilBound.CoreStatements.CentralCharts.TraceMulReNonneg
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.CentralCharts.TraceMulReNonneg:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.CentralCharts.TraceMulReNonneg (16s)
+warning: src/Development/WeilBound/CoreStatements/CentralCharts/TraceMulReNonneg.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/CentralCharts/TraceMulReNonneg.lean:82:33: Variable name `hc` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hc
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/WeilBound/CoreStatements/CentralCharts/TraceMulReNonneg.lean:123:4: This simp argument is unused:
+  nonsing_inv_mul _ hu
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.sub_mul, Matrix.mul_sub, Matrix.one_mul, Matrix.mul_one, Matrix.smul_mul, Matrix.mul_smul,
+    mul_nonsing_inv _ hu, smul_sub, smul_smul, Complex.star_def, Complex.conj_ofReal]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138011  Development.WeilBound.CoreStatements.CommonZeroEvaluation.EventuallyRoot
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.CommonZeroEvaluation.EventuallyRoot:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.CommonZeroEvaluation.EventuallyRoot (27s)
+warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/EventuallyRoot.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/EventuallyRoot.lean:18:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/EventuallyRoot.lean:33:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/EventuallyRoot.lean:236:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/EventuallyRoot.lean:142:17: This simp argument is unused:
+  RingHom.coe_comp
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [RingHom.comp_apply, Function.comp_apply, coeff_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/EventuallyRoot.lean:142:55: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [RingHom.coe_comp, RingHom.comp_apply, coeff_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/EventuallyRoot.lean:248:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/EventuallyRoot.lean:253:58: `Set.Infinite.diff` has been deprecated: Use `Set.Infinite.sdiff` instead
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138015  Development.WeilBound.CoreStatements.CommonZeroEvaluation.ExistsRootAdicComplete
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.CommonZeroEvaluation.ExistsRootAdicComplete:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.CommonZeroEvaluation.ExistsRootAdicComplete (16s)
+warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/ExistsRootAdicComplete.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/ExistsRootAdicComplete.lean:124:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138027  Development.WeilBound.CoreStatements.CommonZeroEvaluation.PolynomialFractionFieldDegree
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.CommonZeroEvaluation.PolynomialFractionFieldDegree:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.CommonZeroEvaluation.PolynomialFractionFieldDegree (21s)
+warning: src/Development/WeilBound/CoreStatements/CommonZeroEvaluation/PolynomialFractionFieldDegree.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138180  Development.WeilBound.CoreStatements.FlagImmersions.MapProdLinear
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.FlagImmersions.MapProdLinear:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.FlagImmersions.MapProdLinear (12s)
+warning: src/Development/WeilBound/CoreStatements/FlagImmersions/MapProdLinear.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138225  Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreCasA
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreCasA:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreCasA (34s)
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasA.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasA.lean:60:0: automatically included section variable(s) unused in theorem `PositivityTheory.KReal.valOp_apply`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasA.lean:105:38: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasA.lean:121:60: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasA.lean:122:6: `Module.End.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : One F} [self : IsOneApplyEqSelf F]
+    (x : α), 1 x = x
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M] (x : M), 1 x = x
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasA.lean:148:19: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138226  Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreCasB
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreCasB:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreCasB (17s)
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasB.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasB.lean:91:38: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasB.lean:149:12: This simp argument is unused:
+  Function.update_of_ne (Fin.succ_ne_zero _)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138227  Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreCasC
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreCasC:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreCasC (40s)
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasC.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasC.lean:20:0: automatically included section variable(s) unused in theorem `PositivityTheory.KReal.sum_upd`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasC.lean:47:0: automatically included section variable(s) unused in theorem `PositivityTheory.KReal.formT_self_nonneg`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasC.lean:75:16: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasC.lean:90:37: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasC.lean:91:6: `Module.End.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : One F} [self : IsOneApplyEqSelf F]
+    (x : α), 1 x = x
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M] (x : M), 1 x = x
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasC.lean:103:54: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasC.lean:104:61: This simp argument is unused:
+  starRingEnd_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_sub, LinearMap.sum_apply, map_sum, Module.End.mul_apply, hk, map_add, map_smul, smul_eq_mul,
+    hΨ', hΨe, h3, Matrix.conjTranspose_apply, star_star, Finset.mul_sum, mul_add, Finset.sum_add_distrib] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasC.lean:104:80: This simp argument is unused:
+  star_star
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_sub, LinearMap.sum_apply, map_sum, Module.End.mul_apply, hk, map_add, map_smul, smul_eq_mul,
+    hΨ', hΨe, h3, Matrix.conjTranspose_apply, starRingEnd_apply, Finset.mul_sum, mul_add, Finset.sum_add_distrib] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/CoreCasC.lean:107:52: This simp argument is unused:
+  mul_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [PositivityTheory.KReal.positionA, sum_inner, inner_smul_left, h3, Matrix.conjTranspose_apply,
+    starRingEnd_apply, star_star, Finset.mul_sum, Finset.sum_add_distrib]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138259  Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.RLLieD
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.RLLieD:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.RLLieD (162s)
+warning: src/Development/WeilBound/CoreStatements/GaussianSeminormBounds/RealSeminormFiltration/RLLieD.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138296  Development.WeilBound.CoreStatements.HodgeTatePoints.CgSplit
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HodgeTatePoints.CgSplit:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HodgeTatePoints.CgSplit (61s)
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/CgSplit.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138319  Development.WeilBound.CoreStatements.HodgeTatePoints.DvrOfHeightOne
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HodgeTatePoints.DvrOfHeightOne:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HodgeTatePoints.DvrOfHeightOne (20s)
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/DvrOfHeightOne.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138323  Development.WeilBound.CoreStatements.HodgeTatePoints.EqOfProdEq
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HodgeTatePoints.EqOfProdEq:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HodgeTatePoints.EqOfProdEq (15s)
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/EqOfProdEq.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/EqOfProdEq.lean:34:16: `Finset.prod_le_prod'` has been deprecated: Use `Finset.prod_le_prod` instead
+
+Hint: Replace the deprecated name:
+  Finset.prod_le_prod'̵
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138393  Development.WeilBound.CoreStatements.HodgeTatePoints.HtatHensA
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HodgeTatePoints.HtatHensA:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HodgeTatePoints.HtatHensA (41s)
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/HtatHensA.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138410  Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLieA
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLieA:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLieA (23s)
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/HtatLieA.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/HtatLieA.lean:67:22: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138437  Development.WeilBound.CoreStatements.HodgeTatePoints.KftwoHostA
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HodgeTatePoints.KftwoHostA:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HodgeTatePoints.KftwoHostA (34s)
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/KftwoHostA.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138478  Development.WeilBound.CoreStatements.HodgeTatePoints.MulEqSmulOneSymm
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HodgeTatePoints.MulEqSmulOneSymm:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HodgeTatePoints.MulEqSmulOneSymm (31s)
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/MulEqSmulOneSymm.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/MulEqSmulOneSymm.lean:45:33: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138481  Development.WeilBound.CoreStatements.HodgeTatePoints.PdvrExt
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HodgeTatePoints.PdvrExt:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HodgeTatePoints.PdvrExt (147s)
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/PdvrExt.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/PdvrExt.lean:59:8: Overlapping instance parameters in `exists_splits`:
+
+⚠️ `[IsDomain V]` and `[IsDiscreteValuationRing V]` each imply `[Nontrivial V]`.
+💡️ Of these, `[IsDomain V]` and `[IsDiscreteValuationRing V]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/PdvrExt.lean:165:8: Overlapping instance parameters in `dvr_ext`:
+
+⚠️ `[IsDomain V]` and `[IsDiscreteValuationRing V]` each imply `[Nontrivial V]`.
+💡️ Of these, `[IsDomain V]` and `[IsDiscreteValuationRing V]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138487  Development.WeilBound.CoreStatements.HodgeTatePoints.PmonoCount
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HodgeTatePoints.PmonoCount:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HodgeTatePoints.PmonoCount (75s)
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/PmonoCount.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/PmonoCount.lean:29:19: This simp argument is unused:
+  mul_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [← pow_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/PmonoCount.lean:36:4: `Finset.prod_le_prod'` has been deprecated: Use `Finset.prod_le_prod` instead
+
+Hint: Replace the deprecated name:
+  Finset.prod_le_prod'̵
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138505  Development.WeilBound.CoreStatements.HodgeTatePoints.RaCarry
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HodgeTatePoints.RaCarry:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HodgeTatePoints.RaCarry (53s)
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/RaCarry.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138510  Development.WeilBound.CoreStatements.HodgeTatePoints.RaTlog
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HodgeTatePoints.RaTlog:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HodgeTatePoints.RaTlog (94s)
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/RaTlog.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/RaTlog.lean:88:26: `mul_lt_one_of_nonneg_of_lt_one_right` has been deprecated: No replacement, use constituent lemmas from proof.
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/RaTlog.lean:89:26: `mul_lt_one_of_nonneg_of_lt_one_right` has been deprecated: No replacement, use constituent lemmas from proof.
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/RaTlog.lean:140:18: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138541  Development.WeilBound.CoreStatements.HodgeTatePoints.SiuaNum
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HodgeTatePoints.SiuaNum:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HodgeTatePoints.SiuaNum (65s)
+warning: src/Development/WeilBound/CoreStatements/HodgeTatePoints/SiuaNum.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138584  Development.WeilBound.CoreStatements.HomogeneousNonvanishing.ExtendsToFractionField
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HomogeneousNonvanishing.ExtendsToFractionField:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HomogeneousNonvanishing.ExtendsToFractionField (101s)
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/ExtendsToFractionField.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138590  Development.WeilBound.CoreStatements.HomogeneousNonvanishing.GermVanishesOfGenericVanishing
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HomogeneousNonvanishing.GermVanishesOfGenericVanishing:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HomogeneousNonvanishing.GermVanishesOfGenericVanishing (20s)
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/GermVanishesOfGenericVanishing.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/GermVanishesOfGenericVanishing.lean:18:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/GermVanishesOfGenericVanishing.lean:18:6: Unused tactic linter: `exact h1` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138634  Development.WeilBound.CoreStatements.HomogeneousNonvanishing.SpectralNormIntegrality.SpecInt
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HomogeneousNonvanishing.SpectralNormIntegrality.SpecInt:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HomogeneousNonvanishing.SpectralNormIntegrality.SpecInt (62s)
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/SpectralNormIntegrality/SpecInt.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138635  Development.WeilBound.CoreStatements.HomogeneousNonvanishing.SubfieldClosureEqTopOfEpi
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HomogeneousNonvanishing.SubfieldClosureEqTopOfEpi:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HomogeneousNonvanishing.SubfieldClosureEqTopOfEpi (80s)
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/SubfieldClosureEqTopOfEpi.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138642  Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGDiff
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGDiff:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGDiff (66s)
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/TwGDiff.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/TwGDiff.lean:19:22: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138643  Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGFree
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGFree:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGFree (80s)
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/TwGFree.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/TwGFree.lean:10:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/TwGFree.lean:23:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/TwGFree.lean:24:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/TwGFree.lean:41:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/TwGFree.lean:42:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/TwGFree.lean:43:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/TwGFree.lean:45:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/TwGFree.lean:47:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/TwGFree.lean:49:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/TwGFree.lean:55:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/TwGFree.lean:56:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138644  Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGHerm
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGHerm:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGHerm (99s)
+warning: src/Development/WeilBound/CoreStatements/HomogeneousNonvanishing/TwGHerm.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138682  Development.WeilBound.CoreStatements.IdealCycleValues.FlatColon
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.IdealCycleValues.FlatColon:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.IdealCycleValues.FlatColon (99s)
+warning: src/Development/WeilBound/CoreStatements/IdealCycleValues/FlatColon.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/IdealCycleValues/FlatColon.lean:48:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/IdealCycleValues/FlatColon.lean:61:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/IdealCycleValues/FlatColon.lean:65:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/IdealCycleValues/FlatColon.lean:66:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138691  Development.WeilBound.CoreStatements.IdealCycleValues.LengthLocQuot
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.IdealCycleValues.LengthLocQuot:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.IdealCycleValues.LengthLocQuot (74s)
+warning: src/Development/WeilBound/CoreStatements/IdealCycleValues/LengthLocQuot.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/IdealCycleValues/LengthLocQuot.lean:30:81: Variable name `hJ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hJ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138693  Development.WeilBound.CoreStatements.IdealCycleValues.ProdMapToMultiset
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.IdealCycleValues.ProdMapToMultiset:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.IdealCycleValues.ProdMapToMultiset (99s)
+warning: src/Development/WeilBound/CoreStatements/IdealCycleValues/ProdMapToMultiset.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/IdealCycleValues/ProdMapToMultiset.lean:53:17: `MvPolynomial.monomial_mul` has been deprecated: Use `MvPolynomial.monomial_mul_monomial` instead
+
+Hint: Replace the deprecated name:
+  monomial_mul_̲m̲o̲n̲o̲m̲i̲a̲l̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138771  Development.WeilBound.CoreStatements.MinimalPrimeDimensions.MemOfForallValuationSubring
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.MinimalPrimeDimensions.MemOfForallValuationSubring:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.MinimalPrimeDimensions.MemOfForallValuationSubring (65s)
+warning: src/Development/WeilBound/CoreStatements/MinimalPrimeDimensions/MemOfForallValuationSubring.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/MinimalPrimeDimensions/MemOfForallValuationSubring.lean:13:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/MinimalPrimeDimensions/MemOfForallValuationSubring.lean:14:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/MinimalPrimeDimensions/MemOfForallValuationSubring.lean:15:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/WeilBound/CoreStatements/MinimalPrimeDimensions/MemOfForallValuationSubring.lean:17:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138825  Development.WeilBound.CoreStatements.PadicHodgeComparison.CocharacterLieDivisors.MeetsOpenCosets
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.PadicHodgeComparison.CocharacterLieDivisors.MeetsOpenCosets:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.CocharacterLieDivisors.MeetsOpenCosets (74s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/CocharacterLieDivisors/MeetsOpenCosets.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138835  Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.AcrisKummerUnits.Splits
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.AcrisKummerUnits.Splits:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.AcrisKummerUnits.Splits (23s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/AcrisKummerUnits/Splits.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138849  Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdicTorsionCup.PowNsmulEqZero
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdicTorsionCup.PowNsmulEqZero:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdicTorsionCup.PowNsmulEqZero (24s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/AdicTorsionCup/PowNsmulEqZero.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/AdicTorsionCup/PowNsmulEqZero.lean:168:18: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138854  Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdmissibleMinors.ConnAbs
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdmissibleMinors.ConnAbs:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdmissibleMinors.ConnAbs (19s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/AdmissibleMinors/ConnAbs.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/AdmissibleMinors/ConnAbs.lean:44:20: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/AdmissibleMinors/ConnAbs.lean:62:12: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/AdmissibleMinors/ConnAbs.lean:62:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/AdmissibleMinors/ConnAbs.lean:62:12: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/AdmissibleMinors/ConnAbs.lean:62:49: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138855  Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdmissibleMinors.ExistsWeightBasisFiltration
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdmissibleMinors.ExistsWeightBasisFiltration:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdmissibleMinors.ExistsWeightBasisFiltration (21s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/AdmissibleMinors/ExistsWeightBasisFiltration.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/AdmissibleMinors/ExistsWeightBasisFiltration.lean:29:22: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/AdmissibleMinors/ExistsWeightBasisFiltration.lean:31:22: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/AdmissibleMinors/ExistsWeightBasisFiltration.lean:46:24: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/AdmissibleMinors/ExistsWeightBasisFiltration.lean:69:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138859  Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdmissibleMinors.RedAbs
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdmissibleMinors.RedAbs:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.AdmissibleMinors.RedAbs (16s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/AdmissibleMinors/RedAbs.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138902  Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.GammaIndependence.HomApply
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.GammaIndependence.HomApply:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.GammaIndependence.HomApply (20s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/GammaIndependence/HomApply.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138904  Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.GammaIndependence.PhiAbs
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.GammaIndependence.PhiAbs:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.GammaIndependence.PhiAbs (33s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/GammaIndependence/PhiAbs.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/GammaIndependence/PhiAbs.lean:83:20: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138929  Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.SmoothGaloisGeometry.IsOpenStabilizer
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.SmoothGaloisGeometry.IsOpenStabilizer:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.SmoothGaloisGeometry.IsOpenStabilizer (58s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/SmoothGaloisGeometry/IsOpenStabilizer.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/SmoothGaloisGeometry/IsOpenStabilizer.lean:17:22: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/SmoothGaloisGeometry/IsOpenStabilizer.lean:23:22: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/SmoothGaloisGeometry/IsOpenStabilizer.lean:31:20: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/SmoothGaloisGeometry/IsOpenStabilizer.lean:54:20: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/SmoothGaloisGeometry/IsOpenStabilizer.lean:79:20: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/SmoothGaloisGeometry/IsOpenStabilizer.lean:92:20: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138932  Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.SmoothGaloisGeometry.RelDim
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.SmoothGaloisGeometry.RelDim:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.SmoothGaloisGeometry.RelDim (59s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/SmoothGaloisGeometry/RelDim.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M138939  Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.TiltSectionUnits.ResAbs
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.TiltSectionUnits.ResAbs:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.TiltSectionUnits.ResAbs (27s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/BocksteinBaseChange/TiltSectionUnits/ResAbs.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M139028  Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.Same
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.Same:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.HodgeTateResidues.Same (85s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/HodgeTateResidues/Same.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M139059  Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.ExistsIntegralNbhd
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.ExistsIntegralNbhd:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.ExistsIntegralNbhd (19s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/ConeSectionRestriction/ExistsIntegralNbhd.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M139060  Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.ExistsTmulOneEqOfIsIntegral
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.ExistsTmulOneEqOfIsIntegral:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.ExistsTmulOneEqOfIsIntegral (31s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/ConeSectionRestriction/ExistsTmulOneEqOfIsIntegral.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M139065  Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.IrreducibleSpaceOfConnectedOfLocally
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.IrreducibleSpaceOfConnectedOfLocally:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.IrreducibleSpaceOfConnectedOfLocally (16s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/ConeSectionRestriction/IrreducibleSpaceOfConnectedOfLocally.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M139092  Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.SeamDefs
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.SeamDefs:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.SeamDefs (14s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/ConeSectionRestriction/SeamDefs.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M139122  Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.FrobeniusWittActions.PsiApply
+====================================================================================================
+$ lake build +Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.FrobeniusWittActions.PsiApply:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.FrobeniusWittActions.PsiApply (25s)
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/FrobeniusWittActions/PsiApply.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/WeilBound/CoreStatements/PadicHodgeComparison/EtaleCohomologyComparison/PerfectoidPullbacks/FrobeniusWittActions/PsiApply.lean:35:20: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+Build completed successfully (18250 jobs).
+# exit code: 0
