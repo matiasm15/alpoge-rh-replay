@@ -1,0 +1,1786 @@
+P0011 port build transcript
+platform: Linux x86_64
+lean: leanprover/lean4:v4.36.0 -> Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+archive: 14 parts from https://alpo.ge/lean.tar.gz.partNN, all matching parts.sha256
+lakefile.toml: the archive's name, srcDir, moreLeanArgs, leanOptions and Mathlib require (rev changed to the target),
+               with only the `Development` lean_lib (as in the archive) and no defaultTargets
+tree: the 64 pinned packet sources, each matching tracker/modules.jsonl.gz, plus port/patches/<ID>.patch
+      applied with `git apply --whitespace=error-all` where present (8 modules); the other 56 are unchanged
+command per module: lake build +<Module>:olean (fresh .lake/build)
+
+| ID | module | patch | source sha256 (pinned) | built file sha256 | olean sha256 | exit |
+| M026409 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralDomainExtensionWithMonicRoots | no | a53d4811d95639815127f05781e31bac3045c207bef3b9cecaa8056a5d89181b | a53d4811d95639815127f05781e31bac3045c207bef3b9cecaa8056a5d89181b | cde39e4d16eaeddc435b36222ddaa082c50c33860668b909b0b235a9fabae562 | 0 |
+| M026435 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralInvOneAddPrimeMulPadic | yes | 8980a9621d1ea6ab09446f7033da345d730d17b7b0b4bcbbd7e97d0e80f4731b | d63665d65f87f8c4cb37808d3f07cbdd12d59c07a703699a2bab987fec4017a2 | 6cd2cf4f9619d33fbe2aa3b9df8f304ca5bb8cfcfb21e75f4b19e734a70c0b49 | 0 |
+| M026472 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralUnimodularMulLowerTriangularOfDetN | no | 22dbac1fa240ab441e68fb58765f8e8fd3a85a3d0ef091233d399c8a23e5620f | 22dbac1fa240ab441e68fb58765f8e8fd3a85a3d0ef091233d399c8a23e5620f | 91a9e2ffcb3a8630b8d624b2beb17c1f27fe7d5d1ffa98eb5f4f4e484e4b0720 | 0 |
+| M026501 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvariantDerivationOfCounitalComul | no | acbac367d254efd76253533f1e2580c60744b416eb113ea84a4f6d611cafe530 | acbac367d254efd76253533f1e2580c60744b416eb113ea84a4f6d611cafe530 | 7cc13e964779734aa9131c8325007b8182d2b74376414d7cf265ac345d48ff05 | 0 |
+| M026517 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvariantPosDefHermitian | yes | 99f2cf5a51ff184d1d19316f7e2622a54034fa902b291c2feacd5cdf2d85c4d5 | 01f5c6ae5f24e6876ae08d1aefd5db82b30761804f4a2b4f696e15bf291667ee | 87831360145589636a1a2ff293cac9d3a9ab601d546c207b9dfb629148bd30e4 | 0 |
+| M026545 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInversionCoordinateLocalizationPolynomial | no | 088be97e3a684a182571ad190227ace7f27f894d0e52b50966f49ff89e85dcd4 | 088be97e3a684a182571ad190227ace7f27f894d0e52b50966f49ff89e85dcd4 | c36e7b886c2766130ad6b7d2c915697c0faebbbb30b676e36632264a293ecfd0 | 0 |
+| M026559 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsAlgClosedEmbeddingsOfFamily | no | ef5e01c070c3117391efc7a9ef72bcf34125ff2cc6a99079be8a7d2331c3852d | ef5e01c070c3117391efc7a9ef72bcf34125ff2cc6a99079be8a7d2331c3852d | a72e794ea6c21811177fcdb932d5fbafba44be848b49f6f72c0092830235e86d | 0 |
+| M026561 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsAlgebraicRatFuncFractionRingDedekind | yes | 4b1b994c233ec56a26bf4e708fb924eef6bd889a6e5cc411a36eed47f9e0e2ff | 3fd8fd6f4dff21a9241329df565eeafe439b197984189db34ec34635ab09877f | 53fd6505779d9cef6918e58f7c6a295b9237e879d7869939c2d994a50330adb6 | 0 |
+| M026615 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsHomogeneousDehomogenize | no | 55510408faf6837133a2cf1ec17f5e35203fa091244ebfba265346a5fb926e7d | 55510408faf6837133a2cf1ec17f5e35203fa091244ebfba265346a5fb926e7d | 378c079104ca2ac72836b804448c19ec49d99e87d7e9834c1492eec3be0add24 | 0 |
+| M026632 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsLocalHomAdicCompletionExtend | yes | 8aae2aa99690cb507adc46688fd52cdba420f53be9b40681edfcd276a6ffc77a | ee7645511676bf681b813980538d7fb66a634c461c168068a82f2d0f4c1bf250 | c96644d7ecbc3659a2d669f2c9101d74d5cca093d24e8b537e50bb8b665a3a71 | 0 |
+| M026971 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviElementIsotropicOrthogonalComplex | no | 0c4ab30a9fee06df90dd6eaf434fa33fbd655d16e280df1f35141ebaac5dd434 | 0c4ab30a9fee06df90dd6eaf434fa33fbd655d16e280df1f35141ebaac5dd434 | 22649e766ddc12b5e50bc265bf150136bb1ee1c91d11be331c2bbc592735dfc0 | 0 |
+| M027020 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftAlgebraicallyClosedPoint | no | 85b8be7d967bb94bdb1b53a4c55df58bb6381ccb99b777b7922987caabdf6737 | 85b8be7d967bb94bdb1b53a4c55df58bb6381ccb99b777b7922987caabdf6737 | 17165b0110f9c932780c0dc997698bc51932edd0c07e0e9f630b4b95b99bff2b | 0 |
+| M027038 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftGeometricPointOfFaithfullyFlatFiniteTy | no | 3aa5f1869099b7c3f65d27b9397ad4819f6cfb3ac26c4158b1c8eaeb4ddefb3d | 3aa5f1869099b7c3f65d27b9397ad4819f6cfb3ac26c4158b1c8eaeb4ddefb3d | a85e66d3da566cdc9acc73f15cb79d92f6e170956279d9f88ab76520d4a457a1 | 0 |
+| M027208 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearIndependentAdaptedToDecreasingChainA | no | 4106795e711680396bc2fff9fe8214b9e309967d56f72cc9a04fafd2db11f96d | 4106795e711680396bc2fff9fe8214b9e309967d56f72cc9a04fafd2db11f96d | 361decb276fcd4df823bc0b0a5cabc247218073a0331c69268e9d9466f34f500 | 0 |
+| M027211 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearIndependentIteratesOfLinearIndepende | no | 8f37b1bae7e71c0edb40bd3ea596f860482c1a2448b4393c6ff27c27cbd184f1 | 8f37b1bae7e71c0edb40bd3ea596f860482c1a2448b4393c6ff27c27cbd184f1 | 057ca5a27fb1c68d8b2f0e1f35e767821ccca93714aee91da0931eabfff0d8b4 | 0 |
+| M027309 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalHomAdicCompletionExtend | yes | 3fa79018f2a6495b2cf0dbf5d7e17f2fea4bae6c6da5512673e5008c727224f2 | afc1c06e0803464228e63fbc0a9532cb6ed83719103a17b2adeb2b2e5e423dec | c543241d1654a2f1b29813986b9fdabf7765de50d226c279fb664118f9ae6406 | 0 |
+| M027381 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalizationAwayFromPrime | no | 331ff789653f3032c096472e03d8cd6a031b468fc64863c151f53005ae86df4e | 331ff789653f3032c096472e03d8cd6a031b468fc64863c151f53005ae86df4e | 0f43053f95ae249997cf552d006ad47d56b3b14067769b6c20d2188489918097 | 0 |
+| M027425 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLower | no | a7df52d29f88edaf6d37a72a4152278c9a37141c3c66c2d1b6250d99e05f6afc | a7df52d29f88edaf6d37a72a4152278c9a37141c3c66c2d1b6250d99e05f6afc | bac6ea34c3c47e4f83d9a030d5aeaf2bb2e42f2b4c779fcf1171355dc4b6a9f9 | 0 |
+| M027458 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatricesIntertwiningOfSemilinear | no | 3c16b23d6a17708f5cf801e325ac4024d3a6ea81bb4ebedbb628cff67a9bfc6b | 3c16b23d6a17708f5cf801e325ac4024d3a6ea81bb4ebedbb628cff67a9bfc6b | b235aaa1669b635ed641e7eb29a1222b418c07f7508bbcb79fec8dccb5b2652e | 0 |
+| M027471 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatrixRangeEq | no | 2e8573f4c366cedf25a729f49757e4032232e43420ff8c69c4f26056defb29f7 | 2e8573f4c366cedf25a729f49757e4032232e43420ff8c69c4f26056defb29f7 | d3d83c6619c63affa8537168a6ade20aa0eba3d0d47b111a8ae3ab50d6e53a17 | 0 |
+| M027472 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatrixSqrtNearOneUltrametric | no | b79c0f2aa00b1c3e967bbd2e5ff88c2ca8b2e6321be32ef03ccc2304f904bead | b79c0f2aa00b1c3e967bbd2e5ff88c2ca8b2e6321be32ef03ccc2304f904bead | 5e23e9752553f8a1f1b420c46d2d7b1a7e5f39325adf529aa742e947438fbefa | 0 |
+| M027495 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMaximalPrimeCharNotMemFiniteTypeInt | no | 854fcd529dfb2c6be02dc0430c878f3d3ae1718c6f83dd4344cd83e2db20c3ca | 854fcd529dfb2c6be02dc0430c878f3d3ae1718c6f83dd4344cd83e2db20c3ca | 8b3560688869f2e6ccf293db96fd16d260d1afa89f4e409e60f89e7ddd1ca6d7 | 0 |
+| M027497 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMaximalSubfieldMissingElemExpOne | no | 86f8571250ca6d8f04a9ffdee7e655ea97d900920e311828cb2ccdaa8cdda68b | 86f8571250ca6d8f04a9ffdee7e655ea97d900920e311828cb2ccdaa8cdda68b | 51622372882ce018d78cee517fed69fcc78990fa6dc812e54e15feef13bd224e | 0 |
+| M027607 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulInvolEqOfFixed | no | 83dea7dfc66a29e1b41338eda016ea85cdcf0a9f2556f83d371638a276779a34 | 83dea7dfc66a29e1b41338eda016ea85cdcf0a9f2556f83d371638a276779a34 | cd95d82e56c982fdde595e100cfa9f8449535977760e8b2a89cbe30a55501d53 | 0 |
+| M027613 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulMemOfForall | no | 40cd2dce07b0c60f1269f84533edc496106ecc646c10c64abaf33e751f2b76c7 | 40cd2dce07b0c60f1269f84533edc496106ecc646c10c64abaf33e751f2b76c7 | be672aa0cd511d9a0b209e6b4c4fb3535e9d73e7adf45355c7cb27d62d08eeb6 | 0 |
+| M027614 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulMulEqOfTraceEq | no | 091f76187e0aab0f100781d784c293462f207978c83101395273e410707be60b | 091f76187e0aab0f100781d784c293462f207978c83101395273e410707be60b | 6b93d3417adcbbfbf1d9c9d0b37275af7f06464b99154a6f76200b2172ac3a9a | 0 |
+| M027663 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulIsIntegral | no | b462beb05d5213fb71c602970d944263eeca1454a7c433b1c124033adbcf19c1 | b462beb05d5213fb71c602970d944263eeca1454a7c433b1c124033adbcf19c1 | 8e188892654e06c971371dd9242cbf22e306652de0c59e19e30de424fab21541 | 0 |
+| M027664 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulMemRangePiQuotientMinimalPrimes | no | 5c242cdc9f5cac6c2796a04f111f13003dde57e3db8e93db97b717a537c8fb24 | 5c242cdc9f5cac6c2796a04f111f13003dde57e3db8e93db97b717a537c8fb24 | 9e3627de6d38e53d2e52bd8ad1c986e9f37c67fb953497fa03d287d4a766fbc7 | 0 |
+| M027668 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatSmulLe | no | 2ea454363eaebf1c3b828ff53bc207ec45711550f52ac4ff020460a9810203de | 2ea454363eaebf1c3b828ff53bc207ec45711550f52ac4ff020460a9810203de | 21553979d2c5791434edaebf4ec28fea7743194e67e2e562b6391d22145ec32b | 0 |
+| M027681 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroAlgebraMapEqMulOfFormallyUnramifiedA | no | c60ff2ba1d587bb2466e5936d8ea12e391d71dde8e9f077b1ee5f02afa79a98c | c60ff2ba1d587bb2466e5936d8ea12e391d71dde8e9f077b1ee5f02afa79a98c | a145032c39c50bbbf25e88f1412599aad23c53141802a0e878005ae02e015655 | 0 |
+| M027702 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroOfRankEq | no | 377bab833f0dd5a5739aae93038a2a4c2d86b905d02f80030a613cb1a9206919 | 377bab833f0dd5a5739aae93038a2a4c2d86b905d02f80030a613cb1a9206919 | 35af02b45a7c26b0a096e1c34c06901406656857e73e6ec897b169829f6e8128 | 0 |
+| M027709 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroSmulMem | no | 49399d58c3e119528b1f1a4cf61d57a75d4b2031432c4694a916c162e5f90575 | 49399d58c3e119528b1f1a4cf61d57a75d4b2031432c4694a916c162e5f90575 | f104c0aaea9bd8fde5b0dd78220b7ac7163d652fdbc355a1dcc61b87d8c9154c | 0 |
+| M027710 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroSmulMemOfMemSpan | no | 22e8d5bb520d1f4baa28cf7df0f45e9d448efc7d9d307b5f7cb4728b10505f65 | 22e8d5bb520d1f4baa28cf7df0f45e9d448efc7d9d307b5f7cb4728b10505f65 | 311b0d7252ca498d11ca55777942c3bed24fc1ecb2b1a004a503bcb49b5b55b1 | 0 |
+| M027711 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroSmulMemSpan | no | 600dab7de50513aa2b5ac0cd2d9da9690f9951b27533cd631de5f533e70b5943 | 600dab7de50513aa2b5ac0cd2d9da9690f9951b27533cd631de5f533e70b5943 | 2959b07541fe79d5ecf0d7bd19b60921fb36b183774e376247082dd2c33d11d4 | 0 |
+| M027726 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNhdsFixOfContinuousCoefficients | no | cb159a17a45e929328b9b47e7591dafafe488c95b77e808d4401d310177459cd | cb159a17a45e929328b9b47e7591dafafe488c95b77e808d4401d310177459cd | 220070a82aca6ea8aedcf9cfb650f82cd74ad9422aedef1a77d40715e0dca6fa | 0 |
+| M027734 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNoetherCoordinatesSInfRootsOfUnityEqBot | no | 8eeb1a5c17f20ad5cbff6bd2c8fa9203551a7d7e20cc8d528c8a5c19b370494a | 8eeb1a5c17f20ad5cbff6bd2c8fa9203551a7d7e20cc8d528c8a5c19b370494a | b482d2531b5c3183c7be20b86b45436d424d9ae4dd3de0956d03f1703ff948f2 | 0 |
+| M027789 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonzeroMinorOfRank | no | 2950bfb196c44f6491ec068f1a925e4bec74e99ac2f9395e02da2f94eecec4a7 | 2950bfb196c44f6491ec068f1a925e4bec74e99ac2f9395e02da2f94eecec4a7 | 9880f9715e6f33f5ecc9160219e4a3fbb139730360a4e1645d7dd80961512f68 | 0 |
+| M027895 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNotMemSmulEqZeroOfSubmodule | no | 0bc0fc884d69c23b8a1ead036acc380a00c2c1b107ab8573b7459781d4eb1ef6 | 0bc0fc884d69c23b8a1ead036acc380a00c2c1b107ab8573b7459781d4eb1ef6 | 7a5824365984d9f308a508d90614960069f82f1849e554cfa58b710cfb6757c3 | 0 |
+| M027905 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNsmulMemSpan | no | f855304bfddd1871830f2ad73dfe046d9e85ca9101e542bb7e3bbd18eb8f070e | f855304bfddd1871830f2ad73dfe046d9e85ca9101e542bb7e3bbd18eb8f070e | 7342cdc89653448cfc796892a0f0d1ed1b860a96401765e96c36319d2c18cfa0 | 0 |
+| M027910 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNumDen | no | fd7491e549fbdac9eaec3d650c85b8ca6a66ba9518dec2a651610844005cb067 | fd7491e549fbdac9eaec3d650c85b8ca6a66ba9518dec2a651610844005cb067 | 8ac457fa78f354b5085aeed79331bf98b450dfd1c035c531536b0d19fe63b0ff | 0 |
+| M027934 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOfValILeOne | no | 5008bd2070be189f05c896648cdff1c6c0a9dae837b65e38dac66db958612a5a | 5008bd2070be189f05c896648cdff1c6c0a9dae837b65e38dac66db958612a5a | 96f65fc14c031439ae8bc34b876c364814514aba0dcaadd8a968de41675d31be | 0 |
+| M027944 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOneTmulEq | no | aaf84ea51fbfad543ca27af2a68d886a0eaa1c46217ca1a5944ea31983ec5ca7 | aaf84ea51fbfad543ca27af2a68d886a0eaa1c46217ca1a5944ea31983ec5ca7 | ab618086ab8238602613d62312fe79b063437615771ae5662b6ce6af0072e35a | 0 |
+| M028060 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOrthogonalEigenIdempotentsOfSeparability | no | 74f3dd5cd6408ae2d22e853d5bcc7016b3913767eb32ed0756982aad25dee83e | 74f3dd5cd6408ae2d22e853d5bcc7016b3913767eb32ed0756982aad25dee83e | 87ee4cc1adff3eea517b08299017ba38bfbba58aef85c4bc340e9987c2197412 | 0 |
+| M028264 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolyAnnihilatesCommutingLinearCombination | yes | 79c672969a73182cdd5b50364e91543ed06dd89f4d375a547e79e2a8a1462e48 | 6fc5fe7d384dee180800178c6280855e9c4cb3a9e56a8e8e0bc1588001d70311 | 98039f98e22f6843ccd280f083be7989c683073f313cdd972553a98088978005 | 0 |
+| M028266 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolyEntriesConjLeftRightMul | no | e02b6e93cb0bf596cbe02f3e4e4f12b484458ffa5e56c337f41ccabd26fcbdf3 | e02b6e93cb0bf596cbe02f3e4e4f12b484458ffa5e56c337f41ccabd26fcbdf3 | 28491154082ccdec7cb05d3a2b878d5fff1202282e8f14e37c8d2ce4b7a11791 | 0 |
+| M028295 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPosMulExtendIntLinearForm | no | 3f92ac1b8b462a5062deafdc63a2a28b555fb391221719275bd49f669a6804f3 | 3f92ac1b8b462a5062deafdc63a2a28b555fb391221719275bd49f669a6804f3 | d8f23d1d45f18c629dece9406ab2bc9ead6bed4af26f7216236a5ed25f73754c | 0 |
+| M028307 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPositiveAveragingFunction | no | e9798c196f165b50af22340ae2cb4025dd67265c932e42d09f96db390ceb8563 | e9798c196f165b50af22340ae2cb4025dd67265c932e42d09f96db390ceb8563 | 5a4ab889c1f6269258e6f6595175f5cb64cddc1c852c9bf9f1b5fb75b34a2a13 | 0 |
+| M028335 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowEqOneIsUnitOneSubPow | yes | 827d0d9c44440f1da14250e64eaa69ddb2aab44eb778d18c9c28046aadc5eaf1 | d58e97bc08251268343e68b42a61db5598524305b8c76a16aa5eb3e35fa10443 | fba3f89bbc2d9fc2919e7a5cf5af156700d4671206aac8ec8e942ee5856adec5 | 0 |
+| M028346 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowKillsOnCompactOfLocal | no | 43ce7b7386548cd8b7bc65eec1e23ad0c3ef4ccf383ba626ff5ab8d247f07a02 | 43ce7b7386548cd8b7bc65eec1e23ad0c3ef4ccf383ba626ff5ab8d247f07a02 | 4a34503eec6e5a015b0c97a370d0ba0aecbd6e4589a9528c8429c7debfa9b767 | 0 |
+| M028351 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowLinearIndependentOfIsFractionRing | no | 6b9d81c5bcab980bf4c9b9156faca5691c60871b015b2524e16bd7c714369d02 | 6b9d81c5bcab980bf4c9b9156faca5691c60871b015b2524e16bd7c714369d02 | 0e2b16065ffd875eab11b8d207feb73f55502a2fc757976062638026c83d7629 | 0 |
+| M028353 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowMulAppEqZeroNearOfRepresented | no | e16a9a39a88dc1b311f3385d2e4b9a091cef01eaf4f35ed8d2397e5921a9fe0e | e16a9a39a88dc1b311f3385d2e4b9a091cef01eaf4f35ed8d2397e5921a9fe0e | b7e1800cc9a89957a4f572849081780e3995fe8bc8c2733098404c94b8b455a9 | 0 |
+| M028359 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowMulMemAdjoinOfLocalizationAway | no | 05a09d68afb1f3363aea8bac5373973d013389f81c253b67b723a1a605744f0a | 05a09d68afb1f3363aea8bac5373973d013389f81c253b67b723a1a605744f0a | 3a21c6737b5272f2d18a3121830d7fc8cf6dff4f29ec5e03998931da510690de | 0 |
+| M028363 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowMulNormLeOne | no | e303f7242d02182a37b8acfaec448d6d4a3f1a6ac9a23be2ad0ffb3fc194840e | e303f7242d02182a37b8acfaec448d6d4a3f1a6ac9a23be2ad0ffb3fc194840e | 7ea8a982bc8a0de9bd50f67288bff279e0c22fd37b1f8a089dfaed863e44c837 | 0 |
+| M028367 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowPowMemRangeIncludeRight | no | 9ed06905ee0f174dd23703d4e1ee6b46a0fe93e1553a14c9272103f6ccf7736b | 9ed06905ee0f174dd23703d4e1ee6b46a0fe93e1553a14c9272103f6ccf7736b | 24128e046c700d95a6a7b0026de52a324e139a63b73bd7e127d73951542d5e99 | 0 |
+| M028385 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowerSeriesOfNoPoleAwayUniformizerX | no | f403064ae20942f24928a28ca5e21ae3f0dfe5a9475d68393477569635780c44 | f403064ae20942f24928a28ca5e21ae3f0dfe5a9475d68393477569635780c44 | 41d6a1c271c09b5cd7488f18e3098e05f35db38843c008fe245e870143c04795 | 0 |
+| M028396 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPresentationMatrixOfProjectiveBaseChange | no | db831a7086c490c40e9153f55634f69eb47e6d50f0704b302166804d046854b5 | db831a7086c490c40e9153f55634f69eb47e6d50f0704b302166804d046854b5 | bc6b62d80992693c7209839ba3b2ed8cd1c07d961318c3c4682eb20d31b8e305 | 0 |
+| M028398 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPresentationSquareAtPointOfLocalFactor | no | 8f04e492184cd1c358ecc454b977bcc08a6f45aa527708921f54ef079563d5d2 | 8f04e492184cd1c358ecc454b977bcc08a6f45aa527708921f54ef079563d5d2 | 92ae641dbe5e315be5e4a87aff176e08615da27486ba1d096b1bc9f13e03e5b0 | 0 |
+| M028416 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimeGtDvdEval | no | e72e71f3ff891ced4d968327c7ab1646f73f26ac85a4362e5c21e7a1c439ddcd | e72e71f3ff891ced4d968327c7ab1646f73f26ac85a4362e5c21e7a1c439ddcd | 2cff325920db5cf074b64491d600af121bf0efe47bbb927c0160d60048adaa1c | 0 |
+| M028419 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimeNatCastMemPowOfRingHom | no | 7c44f44f60041a6c6863919adfb20e22f92bb299271697e1ec8d44e983605e48 | 7c44f44f60041a6c6863919adfb20e22f92bb299271697e1ec8d44e983605e48 | ebcee93708862dec9fe5fadbca63af27170616b89ac828bdf07385f1e84ab351 | 0 |
+| M028442 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimitiveAnnihilator | yes | 111adc8cf1474fe8f51795664cea52c558854ca57c793063662e6f5f282498bf | 4562b46d682d6df4449e06dcae007200473d056f704b4d5bff3d9e6e849bd347 | 7af6063b0e423032242a4de7e868b56608dad825000099fbf333a78a98deea29 | 0 |
+| M028614 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRankIdealOfIdempotent | no | 44f8fa751a2b58e1f1d03a7ab49e9cd30bf90f135626f1fe0d8ee1810a75d6cb | 44f8fa751a2b58e1f1d03a7ab49e9cd30bf90f135626f1fe0d8ee1810a75d6cb | ed9a10869eb4cd301a29d98c3d759ffbc237b2ddfde0f954b130399714e0d25b | 0 |
+| M028618 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRankNormalFormMatrixField | no | 14335e076adb4be106e19265c66fd60157df077a571a69bc4633248ee0e80a21 | 14335e076adb4be106e19265c66fd60157df077a571a69bc4633248ee0e80a21 | 6720e7d383cc315e83f77f4351ed62b970adcff51a293b29c65285df0440292e | 0 |
+| M028626 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRatDetNeZeroOfSymplectic | no | 747c0697ef0ff3b62a143dc0f04eb021b9f02e77eeecd2fa8535c4f63f952dea | 747c0697ef0ff3b62a143dc0f04eb021b9f02e77eeecd2fa8535c4f63f952dea | cf019cc17ca363928b13f07fcee22b1b9fd58790386249ffc519995f98925ef3 | 0 |
+| M028658 | Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalMultiplierOfComplexMultiplier | no | 43b0dbc6392db1d3191b0c0afd2e758e09755f8839236bfc5df81633115eecfe | 43b0dbc6392db1d3191b0c0afd2e758e09755f8839236bfc5df81633115eecfe | 9a3612d182eb98c140808c95bd5a98d14e504bd8abefde637aad2485954b20de | 0 |
+
+====================================================================================================
+M026409  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralDomainExtensionWithMonicRoots
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralDomainExtensionWithMonicRoots:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralDomainExtensionWithMonicRoots (26s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIntegralDomainExtensionWithMonicRoots.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIntegralDomainExtensionWithMonicRoots.lean:40:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M026435  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralInvOneAddPrimeMulPadic
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralInvOneAddPrimeMulPadic:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralInvOneAddPrimeMulPadic (23s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIntegralInvOneAddPrimeMulPadic.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M026472  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralUnimodularMulLowerTriangularOfDetN
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralUnimodularMulLowerTriangularOfDetN:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralUnimodularMulLowerTriangularOfDetN (59s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIntegralUnimodularMulLowerTriangularOfDetN.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIntegralUnimodularMulLowerTriangularOfDetN.lean:9:0: automatically included section variable(s) unused in theorem `GlobalTheory.IwasawaLowerTri.permMatrix_map`:
+  [IsDomain V]
+  [IsDiscreteValuationRing V]
+  [IsFractionRing V F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain V] [IsDiscreteValuationRing V] [IsFractionRing V F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIntegralUnimodularMulLowerTriangularOfDetN.lean:18:0: automatically included section variable(s) unused in theorem `GlobalTheory.IwasawaLowerTri.isUnit_det_permMatrix`:
+  [IsDomain V]
+  [IsDiscreteValuationRing V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain V] [IsDiscreteValuationRing V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIntegralUnimodularMulLowerTriangularOfDetN.lean:40:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIntegralUnimodularMulLowerTriangularOfDetN.lean:57:8: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
+
+Hint: Replace the deprecated name:
+  M̵a̵t̵r̵i̵x̵.̵d̵e̵t̵_̵o̵f̵_̵u̵p̵p̵e̵r̵T̵r̵i̵a̵n̵g̵u̵l̵a̵r̵d̲e̲t̲_̲o̲f̲_̲i̲s̲U̲p̲p̲e̲r̲T̲r̲i̲a̲n̲g̲u̲l̲a̲r̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIntegralUnimodularMulLowerTriangularOfDetN.lean:65:77: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIntegralUnimodularMulLowerTriangularOfDetN.lean:66:37: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIntegralUnimodularMulLowerTriangularOfDetN.lean:77:0: automatically included section variable(s) unused in theorem `GlobalTheory.IwasawaLowerTri.blockExt_det`:
+  [IsDomain V]
+  [IsDiscreteValuationRing V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain V] [IsDiscreteValuationRing V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIntegralUnimodularMulLowerTriangularOfDetN.lean:78:18: This simp argument is unused:
+  Matrix.det_reindex_self
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [blockExt, Matrix.det_fromBlocks_zero₂₁]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIntegralUnimodularMulLowerTriangularOfDetN.lean:78:43: This simp argument is unused:
+  Matrix.det_fromBlocks_zero₂₁
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [blockExt, Matrix.det_reindex_self]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIntegralUnimodularMulLowerTriangularOfDetN.lean:80:0: automatically included section variable(s) unused in theorem `GlobalTheory.IwasawaLowerTri.blockExt_cc`:
+  [IsDomain V]
+  [IsDiscreteValuationRing V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain V] [IsDiscreteValuationRing V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIntegralUnimodularMulLowerTriangularOfDetN.lean:84:0: automatically included section variable(s) unused in theorem `GlobalTheory.IwasawaLowerTri.blockExt_cl`:
+  [IsDomain V]
+  [IsDiscreteValuationRing V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsDomain V] [IsDiscreteValuationRing V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIntegralUnimodularMulLowerTriangularOfDetN.lean:88:0: automatically included section variable(s) unused in theorem `GlobalTheory.IwasawaLowerTri.blockExt_mul_apply`:
+  [IsFractionRing V F]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsFractionRing V F] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIntegralUnimodularMulLowerTriangularOfDetN.lean:121:8: Overlapping instance parameters in `GlobalTheory.iwasawa_lowerTriangular_of_det`:
+
+⚠️ `[IsDomain V]` and `[IsDiscreteValuationRing V]` each imply `[Nontrivial V]`.
+💡️ Of these, `[IsDomain V]` and `[IsDiscreteValuationRing V]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M026501  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvariantDerivationOfCounitalComul
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvariantDerivationOfCounitalComul:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvariantDerivationOfCounitalComul (68s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsInvariantDerivationOfCounitalComul.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsInvariantDerivationOfCounitalComul.lean:17:22: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsInvariantDerivationOfCounitalComul.lean:20:24: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsInvariantDerivationOfCounitalComul.lean:36:22: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M026517  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvariantPosDefHermitian
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvariantPosDefHermitian:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvariantPosDefHermitian (30s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsInvariantPosDefHermitian.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsInvariantPosDefHermitian.lean:13:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsInvariantPosDefHermitian.lean:14:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsInvariantPosDefHermitian.lean:15:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsInvariantPosDefHermitian.lean:17:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsInvariantPosDefHermitian.lean:74:12: This simp argument is unused:
+  Complex.star_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Complex.mul_re]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M026545  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInversionCoordinateLocalizationPolynomial
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInversionCoordinateLocalizationPolynomial:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInversionCoordinateLocalizationPolynomial (35s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsInversionCoordinateLocalizationPolynomial.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsInversionCoordinateLocalizationPolynomial.lean:20:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M026559  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsAlgClosedEmbeddingsOfFamily
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsAlgClosedEmbeddingsOfFamily:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsAlgClosedEmbeddingsOfFamily (61s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIsAlgClosedEmbeddingsOfFamily.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIsAlgClosedEmbeddingsOfFamily.lean:16:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M026561  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsAlgebraicRatFuncFractionRingDedekind
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsAlgebraicRatFuncFractionRingDedekind:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsAlgebraicRatFuncFractionRingDedekind (19s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIsAlgebraicRatFuncFractionRingDedekind.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIsAlgebraicRatFuncFractionRingDedekind.lean:29:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIsAlgebraicRatFuncFractionRingDedekind.lean:59:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIsAlgebraicRatFuncFractionRingDedekind.lean:64:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M026615  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsHomogeneousDehomogenize
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsHomogeneousDehomogenize:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsHomogeneousDehomogenize (15s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIsHomogeneousDehomogenize.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M026632  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsLocalHomAdicCompletionExtend
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsLocalHomAdicCompletionExtend:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsLocalHomAdicCompletionExtend (15s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIsLocalHomAdicCompletionExtend.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsIsLocalHomAdicCompletionExtend.lean:40:10: `IsLocalRing.local_hom_TFAE` has been deprecated: Use `IsLocalRing.local_hom_tfae` instead
+
+Hint: Replace the deprecated name:
+  I̵s̵L̵o̵c̵a̵l̵R̵i̵n̵g̵.̵l̵o̵c̵a̵l̵_̵h̵o̵m̵_̵T̵F̵A̵E̵l̲o̲c̲a̲l̲_̲h̲o̲m̲_̲t̲f̲a̲e̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M026971  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviElementIsotropicOrthogonalComplex
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviElementIsotropicOrthogonalComplex:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviElementIsotropicOrthogonalComplex (20s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLeviElementIsotropicOrthogonalComplex.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027020  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftAlgebraicallyClosedPoint
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftAlgebraicallyClosedPoint:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftAlgebraicallyClosedPoint (15s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLiftAlgebraicallyClosedPoint.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027038  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftGeometricPointOfFaithfullyFlatFiniteTy
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftGeometricPointOfFaithfullyFlatFiniteTy:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftGeometricPointOfFaithfullyFlatFiniteTy (16s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLiftGeometricPointOfFaithfullyFlatFiniteTy.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLiftGeometricPointOfFaithfullyFlatFiniteTy.lean:11:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLiftGeometricPointOfFaithfullyFlatFiniteTy.lean:12:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLiftGeometricPointOfFaithfullyFlatFiniteTy.lean:18:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLiftGeometricPointOfFaithfullyFlatFiniteTy.lean:19:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLiftGeometricPointOfFaithfullyFlatFiniteTy.lean:20:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027208  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearIndependentAdaptedToDecreasingChainA
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearIndependentAdaptedToDecreasingChainA:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearIndependentAdaptedToDecreasingChainA (14s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLinearIndependentAdaptedToDecreasingChainA.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLinearIndependentAdaptedToDecreasingChainA.lean:12:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLinearIndependentAdaptedToDecreasingChainA.lean:16:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027211  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearIndependentIteratesOfLinearIndepende
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearIndependentIteratesOfLinearIndepende:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearIndependentIteratesOfLinearIndepende (21s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLinearIndependentIteratesOfLinearIndepende.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027309  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalHomAdicCompletionExtend
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalHomAdicCompletionExtend:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalHomAdicCompletionExtend (18s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLocalHomAdicCompletionExtend.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLocalHomAdicCompletionExtend.lean:19:31: `IsLocalRing.local_hom_TFAE` has been deprecated: Use `IsLocalRing.local_hom_tfae` instead
+
+Hint: Replace the deprecated name:
+  I̵s̵L̵o̵c̵a̵l̵R̵i̵n̵g̵.̵l̵o̵c̵a̵l̵_̵h̵o̵m̵_̵T̵F̵A̵E̵l̲o̲c̲a̲l̲_̲h̲o̲m̲_̲t̲f̲a̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLocalHomAdicCompletionExtend.lean:45:11: `IsLocalRing.local_hom_TFAE` has been deprecated: Use `IsLocalRing.local_hom_tfae` instead
+
+Hint: Replace the deprecated name:
+  I̵s̵L̵o̵c̵a̵l̵R̵i̵n̵g̵.̵l̵o̵c̵a̵l̵_̵h̵o̵m̵_̵T̵F̵A̵E̵l̲o̲c̲a̲l̲_̲h̲o̲m̲_̲t̲f̲a̲e̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027381  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalizationAwayFromPrime
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalizationAwayFromPrime:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalizationAwayFromPrime (28s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLocalizationAwayFromPrime.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLocalizationAwayFromPrime.lean:10:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLocalizationAwayFromPrime.lean:19:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027425  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLower
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLower:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLower (61s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsLower.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027458  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatricesIntertwiningOfSemilinear
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatricesIntertwiningOfSemilinear:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatricesIntertwiningOfSemilinear (83s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMatricesIntertwiningOfSemilinear.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMatricesIntertwiningOfSemilinear.lean:6:8: Overlapping instance parameters in `exists_matrices_intertwining_of_semilinear`:
+
+⚠️ `[IsDomain O]` and `[IsDiscreteValuationRing O]` each imply `[Nontrivial O]`.
+💡️ Of these, `[IsDomain O]` and `[IsDiscreteValuationRing O]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027471  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatrixRangeEq
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatrixRangeEq:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatrixRangeEq (39s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMatrixRangeEq.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027472  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatrixSqrtNearOneUltrametric
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatrixSqrtNearOneUltrametric:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatrixSqrtNearOneUltrametric (75s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMatrixSqrtNearOneUltrametric.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMatrixSqrtNearOneUltrametric.lean:16:20: `Matrix.norm_entry_le_entrywise_sup_norm` has been deprecated: Use `Matrix.norm_apply_le_norm` instead
+
+Hint: Replace the deprecated name:
+  n̵o̵r̵m̵_̵e̵n̵t̵r̵y̵_̵l̵e̵_̵e̵n̵t̵r̵y̵w̵i̵s̵e̵_̵s̵u̵p̵_̵n̵o̵r̵m̵n̲o̲r̲m̲_̲a̲p̲p̲l̲y̲_̲l̲e̲_̲n̲o̲r̲m̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMatrixSqrtNearOneUltrametric.lean:16:57: `Matrix.norm_entry_le_entrywise_sup_norm` has been deprecated: Use `Matrix.norm_apply_le_norm` instead
+
+Hint: Replace the deprecated name:
+  n̵o̵r̵m̵_̵e̵n̵t̵r̵y̵_̵l̵e̵_̵e̵n̵t̵r̵y̵w̵i̵s̵e̵_̵s̵u̵p̵_̵n̵o̵r̵m̵n̲o̲r̲m̲_̲a̲p̲p̲l̲y̲_̲l̲e̲_̲n̲o̲r̲m̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMatrixSqrtNearOneUltrametric.lean:24:17: `Matrix.norm_entry_le_entrywise_sup_norm` has been deprecated: Use `Matrix.norm_apply_le_norm` instead
+
+Hint: Replace the deprecated name:
+  n̵o̵r̵m̵_̵e̵n̵t̵r̵y̵_̵l̵e̵_̵e̵n̵t̵r̵y̵w̵i̵s̵e̵_̵s̵u̵p̵_̵n̵o̵r̵m̵n̲o̲r̲m̲_̲a̲p̲p̲l̲y̲_̲l̲e̲_̲n̲o̲r̲m̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMatrixSqrtNearOneUltrametric.lean:24:54: `Matrix.norm_entry_le_entrywise_sup_norm` has been deprecated: Use `Matrix.norm_apply_le_norm` instead
+
+Hint: Replace the deprecated name:
+  n̵o̵r̵m̵_̵e̵n̵t̵r̵y̵_̵l̵e̵_̵e̵n̵t̵r̵y̵w̵i̵s̵e̵_̵s̵u̵p̵_̵n̵o̵r̵m̵n̲o̲r̲m̲_̲a̲p̲p̲l̲y̲_̲l̲e̲_̲n̲o̲r̲m̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMatrixSqrtNearOneUltrametric.lean:34:0: automatically included section variable(s) unused in theorem `GlobalTheory.MatSqrtNearOne.commute_iter`:
+  [IsUltrametricDist K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsUltrametricDist K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMatrixSqrtNearOneUltrametric.lean:48:0: automatically included section variable(s) unused in theorem `GlobalTheory.MatSqrtNearOne.matrix_sub_mul_self_sub_eq_neg_mul_of_commute`:
+  [IsUltrametricDist K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsUltrametricDist K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMatrixSqrtNearOneUltrametric.lean:69:0: automatically included section variable(s) unused in theorem `GlobalTheory.MatSqrtNearOne.tau_add`:
+  [IsUltrametricDist K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsUltrametricDist K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMatrixSqrtNearOneUltrametric.lean:73:0: automatically included section variable(s) unused in theorem `GlobalTheory.MatSqrtNearOne.tau_sub`:
+  [IsUltrametricDist K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsUltrametricDist K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMatrixSqrtNearOneUltrametric.lean:77:0: automatically included section variable(s) unused in theorem `GlobalTheory.MatSqrtNearOne.tau_mul`:
+  [IsUltrametricDist K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsUltrametricDist K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMatrixSqrtNearOneUltrametric.lean:81:0: automatically included section variable(s) unused in theorem `GlobalTheory.MatSqrtNearOne.tau_one`:
+  [IsUltrametricDist K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsUltrametricDist K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMatrixSqrtNearOneUltrametric.lean:84:0: automatically included section variable(s) unused in theorem `GlobalTheory.MatSqrtNearOne.tau_smul`:
+  [IsUltrametricDist K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsUltrametricDist K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027495  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMaximalPrimeCharNotMemFiniteTypeInt
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMaximalPrimeCharNotMemFiniteTypeInt:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMaximalPrimeCharNotMemFiniteTypeInt (30s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMaximalPrimeCharNotMemFiniteTypeInt.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMaximalPrimeCharNotMemFiniteTypeInt.lean:13:15: `Ideal.mem_jacobson_bot` has been deprecated: Use `Ring.mem_jacobson_iff` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u} [inst : CommRing R] {x : R}, x ∈ Ring.jacobson R ↔ ∀ (y : R), IsUnit (x * y + 1)
+instead of
+  ∀ {R : Type u} [inst : CommRing R] {x : R}, x ∈ ⊥.jacobson ↔ ∀ (y : R), IsUnit (x * y + 1)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mem_jacobson_bot` to `Ring.mem_jacobson_iff x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMaximalPrimeCharNotMemFiniteTypeInt.lean:21:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMaximalPrimeCharNotMemFiniteTypeInt.lean:25:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMaximalPrimeCharNotMemFiniteTypeInt.lean:26:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMaximalPrimeCharNotMemFiniteTypeInt.lean:27:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMaximalPrimeCharNotMemFiniteTypeInt.lean:29:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMaximalPrimeCharNotMemFiniteTypeInt.lean:30:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMaximalPrimeCharNotMemFiniteTypeInt.lean:31:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMaximalPrimeCharNotMemFiniteTypeInt.lean:36:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMaximalPrimeCharNotMemFiniteTypeInt.lean:38:27: `Ideal.isMaximal_comap_of_isIntegral_of_isMaximal'` has been deprecated: Use `Ideal.isMaximal_comap_of_isIntegral_of_isMaximal` instead
+
+Hint: Replace the deprecated name:
+  Ideal.isMaximal_comap_of_isIntegral_of_isMaximal'̵
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMaximalPrimeCharNotMemFiniteTypeInt.lean:50:12: `Ideal.isMaximal_comap_of_isIntegral_of_isMaximal'` has been deprecated: Use `Ideal.isMaximal_comap_of_isIntegral_of_isMaximal` instead
+
+Hint: Replace the deprecated name:
+  Ideal.isMaximal_comap_of_isIntegral_of_isMaximal'̵
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027497  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMaximalSubfieldMissingElemExpOne
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMaximalSubfieldMissingElemExpOne:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMaximalSubfieldMissingElemExpOne (25s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMaximalSubfieldMissingElemExpOne.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMaximalSubfieldMissingElemExpOne.lean:12:10: `X_pow_sub_C_irreducible_of_prime` has been deprecated: Use `irreducible_X_pow_sub_C_of_prime` instead
+
+Hint: Replace the deprecated name:
+  X̵_̵p̵o̵w̵_̵s̵u̵b̵_̵C̵_̵i̵r̵r̵e̵d̵u̵c̵i̵b̵l̵e̵_̵o̵f̵_̵p̵r̵i̵m̵e̵i̲r̲r̲e̲d̲u̲c̲i̲b̲l̲e̲_̲X̲_̲p̲o̲w̲_̲s̲u̲b̲_̲C̲_̲o̲f̲_̲p̲r̲i̲m̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMaximalSubfieldMissingElemExpOne.lean:58:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027607  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulInvolEqOfFixed
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulInvolEqOfFixed:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulInvolEqOfFixed (25s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMulInvolEqOfFixed.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027613  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulMemOfForall
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulMemOfForall:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulMemOfForall (29s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMulMemOfForall.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMulMemOfForall.lean:128:22: `Submodule.le_of_le_smul_of_le_jacobson_bot` has been deprecated: Use `Submodule.le_of_le_smul_of_le_jacobson` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_3} {M : Type u_4} [inst : CommRing R] [inst_1 : AddCommGroup M] [inst_2 : Module R M] {I : Ideal R}
+    {N N' : Submodule R M}, N'.FG → I ≤ Ring.jacobson R → N' ≤ N ⊔ I • N' → N' ≤ N
+instead of
+  ∀ {R : Type u_3} {M : Type u_4} [inst : CommRing R] [inst_1 : AddCommGroup M] [inst_2 : Module R M] {I : Ideal R}
+    {N N' : Submodule R M}, N'.FG → I ≤ ⊥.jacobson → N' ≤ N ⊔ I • N' → N' ≤ N
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMulMemOfForall.lean:36:29: Variable name `inst` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMulMemOfForall.lean:37:5: Variable name `inst_2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _inst_2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027614  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulMulEqOfTraceEq
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulMulEqOfTraceEq:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulMulEqOfTraceEq (28s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsMulMulEqOfTraceEq.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027663  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulIsIntegral
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulIsIntegral:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulIsIntegral (24s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNatMulIsIntegral.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027664  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulMemRangePiQuotientMinimalPrimes
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulMemRangePiQuotientMinimalPrimes:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulMemRangePiQuotientMinimalPrimes (23s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNatMulMemRangePiQuotientMinimalPrimes.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNatMulMemRangePiQuotientMinimalPrimes.lean:11:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNatMulMemRangePiQuotientMinimalPrimes.lean:17:14: `Ideal.comap_ne_bot_of_integral_mem` has been deprecated: Use `Ideal.under_ne_bot_of_integral_mem` instead
+
+Hint: Replace the deprecated name:
+  I̵d̵e̵a̵l̵.̵c̵o̵m̵a̵p̵_̵n̵e̵_̵b̵o̵t̵_̵o̵f̵_̵i̵n̵t̵e̵g̵r̵a̵l̵_̵m̵e̵m̵I̲d̲e̲a̲l̲.̲u̲n̲d̲e̲r̲_̲n̲e̲_̲b̲o̲t̲_̲o̲f̲_̲i̲n̲t̲e̲g̲r̲a̲l̲_̲m̲e̲m̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNatMulMemRangePiQuotientMinimalPrimes.lean:67:9: `Pi.ringHom` has been deprecated: Use `RingHom.pi` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.ringHom` to `RingHom.pi x`).
+
+Hint: Replace the deprecated name:
+  P̵i̵.̵r̵i̵n̵g̵H̵o̵m̵R̲i̲n̲g̲H̲o̲m̲.̲p̲i̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNatMulMemRangePiQuotientMinimalPrimes.lean:70:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNatMulMemRangePiQuotientMinimalPrimes.lean:71:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNatMulMemRangePiQuotientMinimalPrimes.lean:72:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNatMulMemRangePiQuotientMinimalPrimes.lean:73:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027668  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatSmulLe
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatSmulLe:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatSmulLe (22s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNatSmulLe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027681  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroAlgebraMapEqMulOfFormallyUnramifiedA
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroAlgebraMapEqMulOfFormallyUnramifiedA:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroAlgebraMapEqMulOfFormallyUnramifiedA (38s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroAlgebraMapEqMulOfFormallyUnramifiedA.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroAlgebraMapEqMulOfFormallyUnramifiedA.lean:15:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroAlgebraMapEqMulOfFormallyUnramifiedA.lean:22:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroAlgebraMapEqMulOfFormallyUnramifiedA.lean:23:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroAlgebraMapEqMulOfFormallyUnramifiedA.lean:29:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroAlgebraMapEqMulOfFormallyUnramifiedA.lean:31:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroAlgebraMapEqMulOfFormallyUnramifiedA.lean:32:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroAlgebraMapEqMulOfFormallyUnramifiedA.lean:33:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroAlgebraMapEqMulOfFormallyUnramifiedA.lean:34:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroAlgebraMapEqMulOfFormallyUnramifiedA.lean:35:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroAlgebraMapEqMulOfFormallyUnramifiedA.lean:36:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027702  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroOfRankEq
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroOfRankEq:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroOfRankEq (17s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroOfRankEq.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroOfRankEq.lean:20:0: automatically included section variable(s) unused in theorem `GlobalTheory.SemisimpleCount.map_mem_killed`:
+  [Algebra ℂ Rg]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra ℂ Rg] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroOfRankEq.lean:94:0: automatically included section variable(s) unused in theorem `GlobalTheory.SemisimpleCount.injective_of_ne_zero`:
+  [Algebra ℂ Rg]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Algebra ℂ Rg] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroOfRankEq.lean:114:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroOfRankEq.lean:127:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroOfRankEq.lean:157:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroOfRankEq.lean:209:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027709  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroSmulMem
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroSmulMem:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroSmulMem (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroSmulMem.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027710  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroSmulMemOfMemSpan
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroSmulMemOfMemSpan:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroSmulMemOfMemSpan (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroSmulMemOfMemSpan.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027711  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroSmulMemSpan
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroSmulMemSpan:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroSmulMemSpan (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNeZeroSmulMemSpan.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027726  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNhdsFixOfContinuousCoefficients
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNhdsFixOfContinuousCoefficients:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNhdsFixOfContinuousCoefficients (15s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNhdsFixOfContinuousCoefficients.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNhdsFixOfContinuousCoefficients.lean:49:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNhdsFixOfContinuousCoefficients.lean:57:12: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNhdsFixOfContinuousCoefficients.lean:72:30: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNhdsFixOfContinuousCoefficients.lean:75:34: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027734  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNoetherCoordinatesSInfRootsOfUnityEqBot
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNoetherCoordinatesSInfRootsOfUnityEqBot:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNoetherCoordinatesSInfRootsOfUnityEqBot (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNoetherCoordinatesSInfRootsOfUnityEqBot.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNoetherCoordinatesSInfRootsOfUnityEqBot.lean:8:4: `HasEnoughRootsOfUnity.exists_primitiveRoot` has been deprecated: Use `HasEnoughRootsOfUnity.exists_isPrimitiveRoot` instead
+
+Hint: Replace the deprecated name:
+  HasEnoughRootsOfUnity.exists_p̵i̲s̲P̲rimitiveRoot
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNoetherCoordinatesSInfRootsOfUnityEqBot.lean:47:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNoetherCoordinatesSInfRootsOfUnityEqBot.lean:48:10: `Ideal.isMaximal_comap_of_isIntegral_of_isMaximal'` has been deprecated: Use `Ideal.isMaximal_comap_of_isIntegral_of_isMaximal` instead
+
+Hint: Replace the deprecated name:
+  Ideal.isMaximal_comap_of_isIntegral_of_isMaximal'̵
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNoetherCoordinatesSInfRootsOfUnityEqBot.lean:70:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNoetherCoordinatesSInfRootsOfUnityEqBot.lean:71:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNoetherCoordinatesSInfRootsOfUnityEqBot.lean:72:10: `Ideal.eq_bot_of_comap_eq_bot` has been deprecated: Use `Ideal.eq_bot_of_under_eq_bot` instead
+
+Hint: Replace the deprecated name:
+  I̵d̵e̵a̵l̵.̵e̵q̵_̵b̵o̵t̵_̵o̵f̵_̵c̵o̵m̵a̵p̵_̵e̵q̵_̵b̵o̵t̵I̲d̲e̲a̲l̲.̲e̲q̲_̲b̲o̲t̲_̲o̲f̲_̲u̲n̲d̲e̲r̲_̲e̲q̲_̲b̲o̲t̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027789  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonzeroMinorOfRank
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonzeroMinorOfRank:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonzeroMinorOfRank (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNonzeroMinorOfRank.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNonzeroMinorOfRank.lean:11:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNonzeroMinorOfRank.lean:12:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNonzeroMinorOfRank.lean:30:49: `Matrix.linearIndependent_rows_iff_isUnit` has been deprecated: Use `Matrix.linearIndependent_row_iff_isUnit` instead
+
+Hint: Replace the deprecated name:
+  M̵a̵t̵r̵i̵x̵.̵l̵i̵n̵e̵a̵r̵I̵n̵d̵e̵p̵e̵n̵d̵e̵n̵t̵_̵r̵o̵w̵s̵_̵i̵f̵f̵_̵i̵s̵U̵n̵i̵t̵l̲i̲n̲e̲a̲r̲I̲n̲d̲e̲p̲e̲n̲d̲e̲n̲t̲_̲r̲o̲w̲_̲i̲f̲f̲_̲i̲s̲U̲n̲i̲t̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027895  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNotMemSmulEqZeroOfSubmodule
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNotMemSmulEqZeroOfSubmodule:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNotMemSmulEqZeroOfSubmodule (16s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNotMemSmulEqZeroOfSubmodule.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNotMemSmulEqZeroOfSubmodule.lean:38:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNotMemSmulEqZeroOfSubmodule.lean:84:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027905  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNsmulMemSpan
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNsmulMemSpan:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNsmulMemSpan (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNsmulMemSpan.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNsmulMemSpan.lean:50:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027910  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNumDen
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNumDen:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNumDen (12s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNumDen.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsNumDen.lean:120:47: This simp argument is unused:
+  Ideal.Quotient.lift_mk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [sq, Ideal.Quotient.liftₐ_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027934  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOfValILeOne
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOfValILeOne:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOfValILeOne (14s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOfValILeOne.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOfValILeOne.lean:49:12: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
+
+Hint: Replace the deprecated name:
+  M̵a̵t̵r̵i̵x̵.̵d̵e̵t̵_̵o̵f̵_̵l̵o̵w̵e̵r̵T̵r̵i̵a̵n̵g̵u̵l̵a̵r̵d̲e̲t̲_̲o̲f̲_̲i̲s̲L̲o̲w̲e̲r̲T̲r̲i̲a̲n̲g̲u̲l̲a̲r̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOfValILeOne.lean:54:41: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOfValILeOne.lean:54:65: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOfValILeOne.lean:64:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOfValILeOne.lean:65:15: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOfValILeOne.lean:67:17: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOfValILeOne.lean:74:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOfValILeOne.lean:65:51: This simp argument is unused:
+  map_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [if_true, Fin.succ_ne_zero, map_neg, map_zero, zero_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOfValILeOne.lean:65:60: This simp argument is unused:
+  map_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [if_true, Fin.succ_ne_zero, map_neg, map_one, zero_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOfValILeOne.lean:65:70: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [if_true, Fin.succ_ne_zero, map_neg, map_one, map_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M027944  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOneTmulEq
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOneTmulEq:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOneTmulEq (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOneTmulEq.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOneTmulEq.lean:10:20: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028060  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOrthogonalEigenIdempotentsOfSeparability
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOrthogonalEigenIdempotentsOfSeparability:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOrthogonalEigenIdempotentsOfSeparability (18s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOrthogonalEigenIdempotentsOfSeparability.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOrthogonalEigenIdempotentsOfSeparability.lean:77:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsOrthogonalEigenIdempotentsOfSeparability.lean:77:33: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028264  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolyAnnihilatesCommutingLinearCombination
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolyAnnihilatesCommutingLinearCombination:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolyAnnihilatesCommutingLinearCombination (16s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPolyAnnihilatesCommutingLinearCombination.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPolyAnnihilatesCommutingLinearCombination.lean:15:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPolyAnnihilatesCommutingLinearCombination.lean:23:19: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPolyAnnihilatesCommutingLinearCombination.lean:29:32: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028266  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolyEntriesConjLeftRightMul
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolyEntriesConjLeftRightMul:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolyEntriesConjLeftRightMul (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPolyEntriesConjLeftRightMul.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028295  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPosMulExtendIntLinearForm
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPosMulExtendIntLinearForm:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPosMulExtendIntLinearForm (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPosMulExtendIntLinearForm.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028307  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPositiveAveragingFunction
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPositiveAveragingFunction:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPositiveAveragingFunction (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPositiveAveragingFunction.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028335  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowEqOneIsUnitOneSubPow
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowEqOneIsUnitOneSubPow:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowEqOneIsUnitOneSubPow (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPowEqOneIsUnitOneSubPow.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPowEqOneIsUnitOneSubPow.lean:9:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028346  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowKillsOnCompactOfLocal
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowKillsOnCompactOfLocal:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowKillsOnCompactOfLocal (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPowKillsOnCompactOfLocal.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028351  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowLinearIndependentOfIsFractionRing
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowLinearIndependentOfIsFractionRing:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowLinearIndependentOfIsFractionRing (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPowLinearIndependentOfIsFractionRing.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028353  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowMulAppEqZeroNearOfRepresented
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowMulAppEqZeroNearOfRepresented:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowMulAppEqZeroNearOfRepresented (13s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPowMulAppEqZeroNearOfRepresented.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028359  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowMulMemAdjoinOfLocalizationAway
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowMulMemAdjoinOfLocalizationAway:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowMulMemAdjoinOfLocalizationAway (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPowMulMemAdjoinOfLocalizationAway.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028363  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowMulNormLeOne
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowMulNormLeOne:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowMulNormLeOne (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPowMulNormLeOne.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028367  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowPowMemRangeIncludeRight
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowPowMemRangeIncludeRight:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowPowMemRangeIncludeRight (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPowPowMemRangeIncludeRight.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPowPowMemRangeIncludeRight.lean:16:20: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028385  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowerSeriesOfNoPoleAwayUniformizerX
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowerSeriesOfNoPoleAwayUniformizerX:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowerSeriesOfNoPoleAwayUniformizerX (14s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPowerSeriesOfNoPoleAwayUniformizerX.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPowerSeriesOfNoPoleAwayUniformizerX.lean:14:10: This simp argument is unused:
+  coeff_C_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Ideal.Quotient.eq_zero_iff_mem, Ideal.mem_span_singleton]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPowerSeriesOfNoPoleAwayUniformizerX.lean:14:23: This simp argument is unused:
+  Ideal.Quotient.eq_zero_iff_mem
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [coeff_C_mul, Ideal.mem_span_singleton]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPowerSeriesOfNoPoleAwayUniformizerX.lean:14:55: This simp argument is unused:
+  Ideal.mem_span_singleton
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [coeff_C_mul, Ideal.Quotient.eq_zero_iff_mem]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPowerSeriesOfNoPoleAwayUniformizerX.lean:28:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPowerSeriesOfNoPoleAwayUniformizerX.lean:29:80: `Prime.not_unit` has been deprecated: Use `Prime.not_isUnit` instead
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028396  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPresentationMatrixOfProjectiveBaseChange
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPresentationMatrixOfProjectiveBaseChange:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPresentationMatrixOfProjectiveBaseChange (14s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPresentationMatrixOfProjectiveBaseChange.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPresentationMatrixOfProjectiveBaseChange.lean:29:11: `LinearMap.baseChange_eq_ltensor` has been deprecated: Use `LinearMap.baseChange_eq_lTensor` instead
+
+Hint: Replace the deprecated name:
+  LinearMap.baseChange_eq_lt̵T̲ensor
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPresentationMatrixOfProjectiveBaseChange.lean:34:22: `TensorProduct.induction_on` has been deprecated: Use `TensorProduct.inductionOn` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+instead of
+  ∀ {R : Type u_1} [inst : CommSemiring R] {M : Type u_5} {N : Type u_6} [inst_1 : AddCommMonoid M]
+    [inst_2 : AddCommMonoid N] [inst_3 : Module R M] [inst_4 : Module R N] {motive : M ⊗[R] N → Prop} (z : M ⊗[R] N),
+    motive 0 →
+      (∀ (x : M) (y : N), motive (x ⊗ₜ[R] y)) → (∀ (x y : M ⊗[R] N), motive x → motive y → motive (x + y)) → motive z
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPresentationMatrixOfProjectiveBaseChange.lean:40:12: This simp argument is unused:
+  Finset.sum_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [e, f, Fintype.linearCombination_apply, Finset.sum_apply, Algebra.smul_def, Finset.mul_sum, mul_comm,
+    mul_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028398  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPresentationSquareAtPointOfLocalFactor
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPresentationSquareAtPointOfLocalFactor:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPresentationSquareAtPointOfLocalFactor (13s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPresentationSquareAtPointOfLocalFactor.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028416  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimeGtDvdEval
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimeGtDvdEval:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimeGtDvdEval (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPrimeGtDvdEval.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028419  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimeNatCastMemPowOfRingHom
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimeNatCastMemPowOfRingHom:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimeNatCastMemPowOfRingHom (11s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPrimeNatCastMemPowOfRingHom.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPrimeNatCastMemPowOfRingHom.lean:9:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPrimeNatCastMemPowOfRingHom.lean:10:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPrimeNatCastMemPowOfRingHom.lean:7:72: Variable name `f` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _f
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028442  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimitiveAnnihilator
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimitiveAnnihilator:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimitiveAnnihilator (17s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPrimitiveAnnihilator.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPrimitiveAnnihilator.lean:32:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPrimitiveAnnihilator.lean:50:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPrimitiveAnnihilator.lean:88:50: This simp argument is unused:
+  Matrix.vecMulLinear_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mulVec, dotProduct, P, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPrimitiveAnnihilator.lean:102:10: `Ideal.eq_bot_of_comap_eq_bot` has been deprecated: Use `Ideal.eq_bot_of_under_eq_bot` instead
+
+Hint: Replace the deprecated name:
+  I̵d̵e̵a̵l̵.̵e̵q̵_̵b̵o̵t̵_̵o̵f̵_̵c̵o̵m̵a̵p̵_̵e̵q̵_̵b̵o̵t̵I̲d̲e̲a̲l̲.̲e̲q̲_̲b̲o̲t̲_̲o̲f̲_̲u̲n̲d̲e̲r̲_̲e̲q̲_̲b̲o̲t̲
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPrimitiveAnnihilator.lean:204:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPrimitiveAnnihilator.lean:150:26: This simp argument is unused:
+  map_zsmul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_sum, map_mul, zsmul_eq_mul] at e
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsPrimitiveAnnihilator.lean:110:8: Overlapping instance parameters in `exists_primitive_annihilator`:
+
+⚠️ `[IsDomain W]` and `[IsDiscreteValuationRing W]` each imply `[Nontrivial W]`.
+💡️ Of these, `[IsDomain W]` and `[IsDiscreteValuationRing W]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028614  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRankIdealOfIdempotent
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRankIdealOfIdempotent:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRankIdealOfIdempotent (14s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsRankIdealOfIdempotent.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsRankIdealOfIdempotent.lean:43:6: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028618  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRankNormalFormMatrixField
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRankNormalFormMatrixField:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRankNormalFormMatrixField (10s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsRankNormalFormMatrixField.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028626  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRatDetNeZeroOfSymplectic
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRatDetNeZeroOfSymplectic:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRatDetNeZeroOfSymplectic (15s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsRatDetNeZeroOfSymplectic.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsRatDetNeZeroOfSymplectic.lean:107:15: This simp argument is unused:
+  Matrix.mul_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.neg_mul, mul_one, one_mul, neg_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsRatDetNeZeroOfSymplectic.lean:193:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+Build completed successfully (18250 jobs).
+# exit code: 0
+
+====================================================================================================
+M028658  Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalMultiplierOfComplexMultiplier
+====================================================================================================
+$ lake build +Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalMultiplierOfComplexMultiplier:olean
+# toolchain: leanprover/lean4:v4.36.0; Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+# mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+⚠ [18250/18250] Built Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalMultiplierOfComplexMultiplier (14s)
+warning: src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsRationalMultiplierOfComplexMultiplier.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18250 jobs).
+# exit code: 0
